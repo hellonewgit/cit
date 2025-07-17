@@ -310,19 +310,19 @@ function createScrollTopButton() {
 
   // Плавная прокрутка наверх
   button.addEventListener('click', function () {
-      window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-      });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
 
   // Управление видимостью кнопки в зависимости от прокрутки
   window.onscroll = function () {
-      if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-          button.style.display = "flex";
-      } else {
-          button.style.display = "none";
-      }
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+      button.style.display = "flex";
+    } else {
+      button.style.display = "none";
+    }
   };
 }
 
@@ -330,7 +330,7 @@ function createScrollTopButton() {
 function checkAndCreateButton() {
   // Проверяем, есть ли класс 'has-scroll-btn' на body
   if (document.body.classList.contains('has-scroll-btn')) {
-      createScrollTopButton();
+    createScrollTopButton();
   }
 }
 
@@ -382,6 +382,40 @@ document.addEventListener('DOMContentLoaded', () => {
     closeModalButton.addEventListener('click', closeModal);
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('video-modal');
+  const video = document.getElementById('video-modal-player');
+  const closeBtn = modal.querySelector('.video-modal__close');
+
+  // Открытие
+  document.querySelectorAll('.reviews__play').forEach(button => {
+    button.addEventListener('click', () => {
+      const src = button.dataset.videoSrc;
+      if (!src) return;
+
+      video.src = src;
+      modal.classList.add('active');
+      video.play();
+    });
+  });
+
+  // Закрытие
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function closeModal() {
+    modal.classList.remove('active');
+    video.pause();
+    video.currentTime = 0;
+    video.src = '';
+  }
+});
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

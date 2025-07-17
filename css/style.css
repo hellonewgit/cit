@@ -2285,6 +2285,51 @@ body {
   transform: scaleY(1);
 }
 
+/* Модальное окно для видео */
+.video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.video-modal.active {
+  display: flex;
+}
+
+.video-modal__content {
+  position: relative;
+  max-width: 960px;
+  width: 100%;
+  max-height: 80vh;
+}
+
+#video-modal-player {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.video-modal__close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  background: white;
+  border: none;
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
 .modal-overlay {
   position: fixed;
   display: flex;
@@ -2559,7 +2604,7 @@ body {
   background-size: cover;
 }
 
-.mentor  h2 {
+.mentor h2 {
   color: #000;
   font-family: "Wix Madefor Text";
   font-size: 36px;
@@ -2667,7 +2712,7 @@ body {
   margin-bottom: 64px;
 }
 
-.training h2{
+.training h2 {
   color: #FFF;
   font-family: Unbounded;
   font-size: 36px;
@@ -2712,8 +2757,8 @@ body {
 
 .reviews .center {
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
-  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+  /* -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%); */
 }
 
 .reviews__container {
@@ -2992,7 +3037,7 @@ body {
   margin-bottom: 48px;
 }
 
-.comparison h2{
+.comparison h2 {
   width: 50%;
   font-size: 24px;
   font-weight: bold;
@@ -3250,7 +3295,7 @@ body {
   background: var(--Background-Light, #F1F3FF);
 }
 
-.course-target h3{
+.course-target h3 {
   color: var(--Text-Black, #000);
   font-family: "Wix Madefor Text";
   font-size: 24px;
@@ -4108,7 +4153,7 @@ body {
     margin-bottom: 32px;
   }
 
-  .comparison h2{
+  .comparison h2 {
     width: 100%;
   }
 
@@ -5027,7 +5072,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.interview h2{
+.interview h2 {
   color: var(--Primary-Blue, #413B83);
   font-family: "Wix Madefor Text";
   font-size: 36px;
@@ -5542,7 +5587,7 @@ body {
     margin-left: 0;
   }
 
-  .article-box h2{
+  .article-box h2 {
     font-size: 28px;
   }
 
