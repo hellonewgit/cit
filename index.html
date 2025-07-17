@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <title>IT-курсы от веб-студии Профессионал</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="has-scroll-btn">
+  <header class="header center">
+    <a href="index.html" class="header__logo"><img src="images/logo.svg" alt="logo"></a>
+
+    <!-- Бургер-кнопка -->
+    <button class="burger" aria-label="Открыть меню">
+      <span class="burger__line"></span>
+      <span class="burger__line burger__line_big"></span>
+      <span class="burger__line"></span>
+    </button>
+
+    <!-- Меню -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__li"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__li"><a href="blog.html" class="nav__link">Блог</a></li>
+        <li class="nav__li nav__li--has-dropdown">
+          <a href="#" class="nav__link nav__link_it">IT Курсы <img class="nav__img" src="images/arrow-btm.svg"
+              alt=""></a>
+          <ul class="nav__dropdown">
+            <li class="nav__dropdown-column">
+              <ul class="nav__dropdown-list">
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link"
+                    href="kurs-sozdanie-saytov-na-html5-css3-javascript.html">Создание сайтов на HTML, CSS3,
+                    JavaScript</a></li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="kurs-java-razrabotchik.html">Java
+                    разработчик</a>
+                </li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="kurs-razrabotchik-na-cpp.html">C++
+                    разработчик</a></li>
+              </ul>
+            </li>
+            <li class="nav__dropdown-column">
+              <ul class="nav__dropdown-list">
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="kurs-razrabotchik-na-csharp.html">C#
+                    разработчик</a>
+                </li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link"
+                    href="kurs-vyorstka-saytov-na-professionalnom-urovne-html-css-js-jquery-parallax-bootstrap-sass.html">Верстка
+                    сайтов с использованием HTML, CSS,
+                    JS, Bootstrap, SASS</a></li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link"
+                    href="kurs-javascript-razrabotchik.html">JavaScript разработчик</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <ul class="nav__dropdown-mob">
+            <li class="nav__dropdown-item">
+              <span class="nav__mob-heading">
+                Web-разработка
+                <span class="nav__mob-icon">+</span>
+              </span>
+              <ul>
+                <li class="nav__dropdown-subitem"><a href="kurs-sozdanie-saytov-na-html5-css3-javascript.html"
+                    class="nav__mob-link">Создание сайтов на HTML, CSS3, JavaScript</a></li>
+                <li class="nav__dropdown-subitem"><a
+                    href="kurs-vyorstka-saytov-na-professionalnom-urovne-html-css-js-jquery-parallax-bootstrap-sass.html"
+                    class="nav__mob-link">Верстка сайтов с использованием HTML, CSS, JS, Bootstrap, SASS</a></li>
+                <li class="nav__dropdown-subitem"><a href="kurs-javascript-razrabotchik.html"
+                    class="nav__mob-link">JavaScript разработчик</a></li>
+              </ul>
+            </li>
+            <li class="nav__dropdown-item">
+              <span class="nav__mob-heading">
+                Языки программирования
+                <span class="nav__mob-icon">+</span>
+              </span>
+              <ul>
+                <li class="nav__dropdown-subitem"><a href="kurs-java-razrabotchik.html" class="nav__mob-link">Java
+                    разработчик</a></li>
+                <li class="nav__dropdown-subitem"><a href="kurs-razrabotchik-na-cpp.html" class="nav__mob-link">C++
+                    разработчик</a></li>
+                <li class="nav__dropdown-subitem"><a href="kurs-razrabotchik-na-csharp.html" class="nav__mob-link">C#
+                    разработчик</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__li"><a href="contacts.html" class="nav__link">Контакты</a></li>
+      </ul>
+      <!-- Дополнительный блок для мобильной версии -->
+      <div class="nav__mobile-extra">
+        <a href="tel:+79184184222" class="nav__phone">8 (918) 418-42-22</a>
+        <div class="nav__social">
+          <a href="https://vk.com/alexdarb" class="nav__social-icon" target="_blank"><img src="images/vk.svg"
+              alt="VK"></a>
+          <a href="https://t.me/site_and_seo" class="nav__social-icon" target="_blank"><img src="images/telegram.svg"
+              alt="telegram"></a>
+          <a href="https://wa.me/+79184184222" class="nav__social-icon" target="_blank"><img src="images/watsapp.svg"
+              alt="VK"></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="hero" id="hero">
+    <div class="hero__container">
+      <h1 class="hero__title">
+        IT-курсы <br> от веб-студии <br>
+        <span class="hero__highlight">
+          <span class="hero__highlight-text">С нуля до первых денег</span>
+        </span>
+      </h1>
+      <div class="hero__img">
+        <img src="images/prof.svg" alt="prof">
+      </div>
+      <p class="hero__subtitle">
+        Начните свой путь в IT с курсами на базе веб-студии "Профессионал", созданными основателем студии и
+        преподавателем высшей школы. Получите уникальные знания из первых рук от эксперта с многолетним опытом в
+        индустрии и обучении.
+      </p>
+      <div class="hero__arrow-container">
+        <a href="#programs" class="button">Выбрать курс <img src="images/arrow-right.svg" alt="arrow-right"></a>
+      </div>
+    </div>
+  </section>
+  <section id="programs" class="programs center">
+    <h2 class="programs__title">Программы обучения</h2>
+    <div class="programs__filters">
+      <button class="programs__filter programs__filter_active" data-filter="all">Все программы</button>
+      <button class="programs__filter" data-filter="web">WEB-разработка</button>
+      <button class="programs__filter" data-filter="programming">Языки программирования</button>
+    </div>
+    <div class="programs__list" id="programsList">
+      <div class="course-card" data-id="1" data-category="web">
+        <div class="gradient-circle"></div>
+        <img src="images/Icon program=HTML, Size=64.svg" alt="Разработчик сайтов с нуля icon" class="course-card__icon">
+        <div class="course-card__top">
+          <p class="course-card__start">Старт: 23 января</p>
+          <div class="course-card__lessons">
+            <p class="course-card__info">30 уроков</p>
+            <p class="course-card__info">120 академ. часов</p>
+          </div>
+          <h3 class="course-card__title">Разработчик сайтов с нуля</h3>
+          <p class="course-card__description">Освойте востребованную профессию с нуля! На курсе изучаются: HTML, CSS,
+            JavaScript, Photoshop, Figma, BEM и адаптивная верстка для любых устройств.</p>
+        </div>
+        <div>
+          <div class="pricing">
+            <div class="pricing__price">В группе <span class="pricing__cost">55&nbsp;000 ₽</span></div>
+            <div class="pricing__price">Индивидуально <span class="pricing__cost">120&nbsp;000 ₽</span></div>
+          </div>
+          <button class="course-card__button">Подробнее о курсе</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-id="2" data-category="programming">
+        <div class="gradient-circle"></div>
+        <img src="images/Icon program=Java, Size=64.svg" alt="Java-разработчик icon" class="course-card__icon">
+        <div class="course-card__top">
+          <p class="course-card__start">Старт: 23 января</p>
+          <div class="course-card__lessons">
+            <p class="course-card__info">30 уроков</p>
+            <p class="course-card__info">120 академ. часов</p>
+          </div>
+          <h3 class="course-card__title">Java-разработчик</h3>
+          <p class="course-card__description">Изучите Java: строки, файлы, алгоритмы поиска и сортировки, коллекции,
+            массивы, матрицы и основы ООП.</p>
+        </div>
+        <div>
+          <div class="pricing">
+            <div class="pricing__price">В группе <span class="pricing__cost">55&nbsp;000 ₽</span></div>
+            <div class="pricing__price">Индивидуально <span class="pricing__cost">120&nbsp;000 ₽</span></div>
+          </div>
+          <button class="course-card__button">Подробнее о курсе</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-id="3" data-category="programming">
+        <div class="gradient-circle"></div>
+        <img src="images/Icon program=C++, Size=64.svg" alt="Разработчик на C++ icon" class="course-card__icon">
+        <div class="course-card__top">
+          <p class="course-card__start">Старт: 23 января</p>
+          <div class="course-card__lessons">
+            <p class="course-card__info">30 уроков</p>
+            <p class="course-card__info">120 академ. часов</p>
+          </div>
+          <h3 class="course-card__title">Разработчик на C++</h3>
+          <p class="course-card__description">Освойте C++ для решения сложных задач и укрепите знания алгоритмов,
+            структур данных и стандартной библиотеки. Участвуйте в разработке IT-продуктов.</p>
+        </div>
+        <div>
+          <div class="pricing">
+            <div class="pricing__price">В группе <span class="pricing__cost">55&nbsp;000 ₽</span></div>
+            <div class="pricing__price">Индивидуально <span class="pricing__cost">120&nbsp;000 ₽</span></div>
+          </div>
+          <button class="course-card__button">Подробнее о курсе</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-id="4" data-category="programming">
+        <div class="gradient-circle"></div>
+        <img src="images/Icon program=C, Size=64.svg" alt="C# разработчик icon" class="course-card__icon">
+        <div class="course-card__top">
+          <p class="course-card__start">Старт: 23 января</p>
+          <div class="course-card__lessons">
+            <p class="course-card__info">30 уроков</p>
+            <p class="course-card__info">120 академ. часов</p>
+          </div>
+          <h3 class="course-card__title">C# разработчик</h3>
+          <p class="course-card__description">Освойте C# для создания игр, веб- и Windows-приложений. Изучите ООП и
+            научитесь мыслить, как программист, закрепляя знания на практике.</p>
+        </div>
+        <div>
+          <div class="pricing">
+            <div class="pricing__price">В группе <span class="pricing__cost">55&nbsp;000 ₽</span></div>
+            <div class="pricing__price">Индивидуально <span class="pricing__cost">120&nbsp;000 ₽</span></div>
+          </div>
+          <button class="course-card__button">Подробнее о курсе</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-id="5" data-category="web">
+        <div class="gradient-circle"></div>
+        <img src="images/Icon program=CSS, Size=64.svg" alt="Верстка: HTML, CSS, JS, Bootstrap, SASS и другие icon"
+          class="course-card__icon">
+        <div class="course-card__top">
+          <p class="course-card__start">Старт: 23 января</p>
+          <div class="course-card__lessons">
+            <p class="course-card__info">30 уроков</p>
+            <p class="course-card__info">120 академ. часов</p>
+          </div>
+          <h3 class="course-card__title">Верстка: HTML, CSS, JS, Bootstrap, SASS и другие</h3>
+          <p class="course-card__description">Освойте профессиональную верстку сайта с нуля, используя современные
+            инструменты.</p>
+        </div>
+        <div>
+          <div class="pricing">
+            <div class="pricing__price">В группе <span class="pricing__cost">55&nbsp;000 ₽</span></div>
+            <div class="pricing__price">Индивидуально <span class="pricing__cost">120&nbsp;000 ₽</span></div>
+          </div>
+          <button class="course-card__button">Подробнее о курсе</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-id="6" data-category="web">
+        <div class="gradient-circle"></div>
+        <img src="images/Icon program=Figma, Size=64.svg" alt="Дизайн сайтов в Figma icon" class="course-card__icon">
+        <div class="course-card__top">
+          <p class="course-card__start">Старт: 23 января</p>
+          <div class="course-card__lessons">
+            <p class="course-card__info">30 уроков</p>
+            <p class="course-card__info">120 академ. часов</p>
+          </div>
+          <h3 class="course-card__title">Дизайн сайтов в Figma</h3>
+          <p class="course-card__description">Освойте основы работы с Figma: создание макетов, интерактивных прототипов
+            и графических элементов.</p>
+        </div>
+        <div>
+          <div class="pricing">
+            <div class="pricing__price">В группе <span class="pricing__cost">55&nbsp;000 ₽</span></div>
+            <div class="pricing__price">Индивидуально <span class="pricing__cost">120&nbsp;000 ₽</span></div>
+          </div>
+          <button class="course-card__button">Подробнее о курсе</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="tech-stack center">
+    <div class="tech-stack__container">
+      <div class="tech-stack__content">
+        <p class="tech-stack__subtitle">Инструменты, которые вы освоите</p>
+        <h2 class="tech-stack__title">Техно&shy;логический стек курсов</h2>
+        <p class="tech-stack__description">Освойте эти инструменты и программы, проходя обучение у нас</p>
+      </div>
+      <div class="tech-stack__icons">
+        <img src="images/Icon program=HTML, Size=100.svg" alt="HTML5" class="tech-stack__icon">
+        <img src="images/Icon program=CSS, Size=100.svg" alt="CSS3" class="tech-stack__icon">
+        <img src="images/Icon program=JS, Size=100.svg" alt="JavaScript" class="tech-stack__icon">
+        <img src="images/Icon program=SASS, Size=100.svg" alt="SASS" class="tech-stack__icon">
+        <img src="images/Icon program=Photoshop, Size=100.svg" alt="Photoshop" class="tech-stack__icon">
+        <img src="images/Icon program=Figma, Size=100.svg" alt="Figma" class="tech-stack__icon">
+        <img src="images/Icon program=Java, Size=100.svg" alt="Java" class="tech-stack__icon">
+        <img src="images/Icon program=C++, Size=100.svg" alt="C++" class="tech-stack__icon">
+        <img src="images/Icon program=CSH, Size=100.svg" alt="C++" class="tech-stack__icon">
+      </div>
+    </div>
+  </section>
+  <section class="education-stages">
+    <div class="education-stages__container center">
+      <div class="education-stages__header">
+        <span class="education-stages__badge">с 2000 года в IT-обучении</span>
+        <h2 class="education-stages__title">Этапы обучения:<br>ваш путь к успеху в IT</h2>
+      </div>
+      <div class="education-stages__grid">
+        <div class="education-stages__steps">
+          <div class="form-card form-card_index">
+            <div class="form-card__header">
+              <span class="form-card__step">Шаг 1</span>
+              <img class="form-card__img" src="images/plane.svg" alt="plane">
+            </div>
+            <h3 class="form-card__title">Оставьте заявку</h3>
+            <p class="form-card__description">
+              Оставьте заявку на обучение и сделайте первый шаг к освоению востребованной профессии в IT.
+              Мы поможем вам выбрать подходящий курс и начнем вместе этот путь к новым знаниям и
+              возможностям.
+            </p>
+            <form class="form-card__form">
+              <input type="text" class="form-card__input" placeholder="Имя" />
+              <input type="email" class="form-card__input" placeholder="Email" />
+              <input type="tel" class="form-card__input form-card__input_number phone-number" placeholder="Телефон" />
+              <button class="form-card__submit">Отправить</button>
+              <label class="form-card__consent">
+                <input class="form-card__checkbox custom-checkbox" type="checkbox" />
+                <span>
+                  Отправляя заявку, вы даете согласие на обработку своих
+                  персональных данных в соответствии с политикой конфиденциальности
+                </span>
+              </label>
+            </form>
+          </div>
+          <div class="step-card">
+            <div class="step-card__header">
+              <span class="step-card__step">шаг 2</span>
+              <img class="step-card__img" src="images/Heart.svg" alt="heart">
+            </div>
+            <h3 class="step-card__title">Знакомство</h3>
+            <p class="step-card__description">Обсуждаем ваши пожелания, цели и задачи. Подбираем нужную
+              программу для обучения</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__header">
+              <span class="step-card__step">шаг 3</span>
+              <img class="step-card__img" src="images/Display.svg" alt="display">
+            </div>
+            <h3 class="step-card__title">Пробный урок</h3>
+            <p class="step-card__description">Если вас что-то не устроит в подаче материала или других
+              аспектах — пробный урок для вас будет бесплатным.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__header">
+              <span class="step-card__step">шаг 4</span>
+              <img class="step-card__img" src="images/Calendar.svg" alt="calendar">
+            </div>
+            <h3 class="step-card__title">Бронь</h3>
+            <p class="step-card__description">После оплаты курса выбираем даты и формат для индивидуальных
+              занятий. Групповые занятия начинаются по графику.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__header">
+              <span class="step-card__step">шаг 5</span>
+              <img class="step-card__img" src="images/Lamp.svg" alt="lamp">
+            </div>
+            <h3 class="step-card__title">Обучение</h3>
+            <p class="step-card__description">Вы проходите курс в комфортном графике до получения
+              необходимых навыков и знаний.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__header">
+              <span class="step-card__step">шаг 6</span>
+              <img class="step-card__img" src="images/Diamond.svg" alt="diamond">
+            </div>
+            <h3 class="step-card__title">Стажировка</h3>
+            <p class="step-card__description">При желании вы можете пройти стажировку в нашей веб-студии.
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__header">
+              <span class="step-card__step">шаг 7</span>
+              <img class="step-card__img" src="images/notebook.svg" alt="notebook">
+            </div>
+            <h3 class="step-card__title">Сертификат</h3>
+            <p class="step-card__description">После сдачи дипломной работы, вы получаете подтверждающий
+              документ об успешном прохождении курса.</p>
+          </div>
+          <div class="step-card step-card_big">
+            <div class="step-card__header">
+              <span class="step-card__step">шаг 8</span>
+              <img class="step-card__img" src="images/portfolio.svg" alt="portfolio">
+            </div>
+            <h3 class="step-card__title">Трудоустройство</h3>
+            <p class="step-card__description">Для лучших учеников я активно помогаю в поиске клиентов и компаний, чтобы
+              обеспечить успешное начало карьеры в IT. Моя цель — чтобы ваши знания были востребованы, а вы смогли
+              быстро найти проекты и реализовать себя на рынке.</p>
+          </div>
+          <img class="step-card__img-last" src="images/step-card-img.svg" alt="step">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-expert center">
+    <div class="about-expert__container">
+      <div class="about-expert__info">
+        <p class="about-expert__name">Преподаватель и автор курсов</p>
+        <h2 class="about-expert__fullname">Александр Дарбинян</h2>
+        <p class="about-expert__description">
+          Основатель веб-студии «Профессионал», сертифицированный веб-разработчик с более чем 20-летним опытом.
+        </p>
+      </div>
+      <div class="about-expert__content">
+        <div class="info-card">
+          <h3 class="info-card__title">Сертифицирован<wbr>ный веб-разработчик</h3>
+          <p class="info-card__number">20+</p>
+          <p class="info-card__text">лет опыта</p>
+        </div>
+        <div class="info-card info-card_height">
+          <h3 class="info-card__title">Проводил обучение для групп до 50 человек</h3>
+          <p class="info-card__number">700+</p>
+          <p class="info-card__text">семинаров</p>
+        </div>
+        <div class="about-expert__image about-expert__image_photo">
+          <picture class="about-expert__picture">
+            <source srcset="images/expert.png" media="(min-width: 1440px)">
+            <source srcset="images/expert-photo-lg.png" media="(max-width: 1439px)">
+            <img src="images/expert-photo-lg.png" alt="Эксперт" class="about-expert__photo">
+          </picture>
+        </div>
+        <div class="info-card">
+          <h3 class="info-card__title">Помог сотням людей войти в IT и стать профессионалами</h3>
+          <p class="info-card__number">с 2000г.</p>
+          <p class="info-card__text">в web-разработке</p>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card__title">Работал с ведущими российскими компаниями</h3>
+          <div class="info-card__logos">
+            <span class="info-card__logo">Лукойл</span>
+            <span class="info-card__logo">Роснефть</span>
+            <span class="info-card__logo">Термнефть</span>
+            <span class="info-card__logo">ИнжГео</span>
+            <span class="info-card__logo">КубаньЭнерго</span>
+          </div>
+        </div>
+
+        <div class="info-card info-card_1280">
+          <h3 class="info-card__title">Преподавал в Академии Ворлдскиллс Россия</h3>
+        </div>
+        <div class="info-card info-card_1024">
+          <h3 class="info-card__title">Разрабатывал портал для ФК Краснодар</h3>
+        </div>
+        <div class="about-expert__cta">
+          <h3 class="about-expert__cta-title">Присоединяйтесь к моему Telegram-каналу!</h3>
+          <p class="about-expert__cta-description">
+            Следите за успехами учеников, участвуйте в проектах и получайте свежие новости из мира IT!
+          </p>
+          <a target="_blank" href="https://t.me/example" class="about-expert__cta-link">
+            <img src="images/tg.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="selection-help center">
+    <div class="selection-help__container">
+      <div class="selection-help__discount">
+        <span class="selection-help__discount-text">20% скидка на обучение в группе</span>
+      </div>
+      <h2 class="selection-help__title">Помочь с выбором?</h2>
+      <p class="selection-help__subtitle">
+        Старт занятий в любое удобное время. <br> В группе или индивидуально
+      </p>
+      <div class="selection-help__features">
+        <div class="feature">
+          <img src="images/help1.svg" alt="Networking" class="feature__icon">
+          <p class="feature__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+        </div>
+        <div class="feature">
+          <img src="images/help2.svg" alt="Employment" class="feature__icon">
+          <p class="feature__text">Помощь в трудоустройстве и поиске клиентов</p>
+        </div>
+        <div class="feature">
+          <img src="images/help3.svg" alt="Internship" class="feature__icon">
+          <p class="feature__text">Возможность стажировки в нашей веб-студии</p>
+        </div>
+      </div>
+      <form class="selection-help__form">
+        <div class="selection-help__content">
+          <input type="text" class="selection-help__input" placeholder="Имя" />
+          <input type="email" class="selection-help__input" placeholder="Email" />
+          <input type="tel" class="selection-help__input selection-help__input_phone phone-number"
+            placeholder="+7 (___) ___-__-__" />
+          <button type="submit" class="selection-help__submit">Отправить</button>
+        </div>
+        <label class="selection-help__consent">
+          <input type="checkbox" class="selection-help__checkbox custom-checkbox" />
+          <span>Отправляя заявку, вы даете согласие на обработку своих персональных данных в соответствии с политикой
+            конфиденциальности</span>
+        </label>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="center">
+      <!-- Десктопная структура -->
+      <div class="footer__programs">
+        <h3 class="footer__heading">Образовательные программы</h3>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4 class="footer__subheading">Курсы по веб-разработке</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="kurs-sozdanie-saytov-na-html5-css3-javascript.html"
+                  class="footer__link">Создание сайтов на HTML5, CSS3, JavaScript</a>
+              </li>
+              <li class="footer__item"><a
+                  href="#kurs-vyorstka-saytov-na-professionalnom-urovne-html-css-js-jquery-parallax-bootstrap-sass.html"
+                  class="footer__link">
+                  Верстка сайтов с использованием HTML, CSS, JS, Bootstrap, SASS</a></li>
+              <li class="footer__item"><a href="kurs-javascript-razrabotchik.html" class="footer__link">JavaScript
+                  разработчик</a></li>
+              <!-- <li class="footer__item"><a href="#" class="footer__link">Веб-разработчик (Fullstack)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Создание веб-приложений на React и Redux</a> -->
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Курсы по программированию</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="kurs-java-razrabotchik.html" class="footer__link">Java разработчик</a>
+              </li>
+              <li class="footer__item"><a href="kurs-razrabotchik-na-cpp.html" class="footer__link">C++ разработчик</a>
+              </li>
+              <li class="footer__item"><a href="kurs-razrabotchik-na-csharp.html" class="footer__link">C#
+                  разработчик</a></li>
+              <!-- <li class="footer__item"><a href="#" class="footer__link">JavaScript-разработчик (базовый и
+                  профессиональный уровни)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Python-разработчик (базовый и продвинутый
+                  уровни, включая ООП)</a></li> -->
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Дополнительные курсы</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">MS Excel – базовый курс для новичков</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer__info">
+        <h3 class="footer__heading">Информация и поддержка</h3>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4 class="footer__subheading">О школе:</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="blog.html" class="footer__link">Блог</a></li>
+              <li class="footer__item"><a href="article.html" class="footer__link">Отзывы</a></li>
+              <li class="footer__item"><a href="about-student.html" class="footer__link">О преподавателе</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">История и достижения</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Центр карьеры</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Помощь в выборе курса</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Подготовка к трудоустройству</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Вакансии веб-студии “Профессионал”</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Поддержка студентов</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Полезные ресурсы и материалы</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Правовая информация</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Условия обучения</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика возврата средств</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Социальные и контактные данные -->
+      <div class="footer__social">
+        <a href="index.html" class="footer__logo"><img src="images/logo-footer.svg" alt="logo"></a>
+        <div class="social-icons">
+          <a href="https://vk.com/alexdarb" class="social-icons__icon" target="_blank"><img src="images/vk.svg"
+              alt="vk"></a>
+          <a href="https://t.me/site_and_seo" class="social-icons__icon" target="_blank"><img src="images/telegram.svg"
+              alt="telegram"></a>
+          <a href="https://wa.me/+79184184222" class="social-icons__icon" target="_blank"><img src="images/watsapp.svg"
+              alt="watsapp"></a>
+          <a href="https://www.youtube.com/citprofi" class="social-icons__icon"><img src="images/youtube.svg"
+              alt="youtube" target="_blank"></a>
+        </div>
+        <div class="footer__coll">
+          <a href="tel:+79184184222" class="footer__phone">8(918)482-42-22</a>
+          <p class="footer__text">Позвоните или <button class="footer__text-link show-modal">оставьте заявку</button></p>
+        </div>
+      </div>
+
+      <!-- Мобильная версия с аккордеонами -->
+      <div class="footer__mobile">
+        <!-- Курсы по веб-разработке -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Курсы по веб-разработке
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="kurs-sozdanie-saytov-na-html5-css3-javascript.html"
+                  class="footer__link">Создание сайтов на HTML, CSS3, JavaScript</a></li>
+              <li class="footer__item"><a
+                  href="kurs-vyorstka-saytov-na-professionalnom-urovne-html-css-js-jquery-parallax-bootstrap-sass.html"
+                  class="footer__link">Верстка сайтов с использованием HTML, CSS, JS, Bootstrap, SASS</a></li>
+              <li class="footer__item"><a href="kurs-javascript-razrabotchik.html" class="footer__link">JavaScript
+                  разработчик</a></li>
+              <!-- <li class="footer__item"><a href="#" class="footer__link">Веб-разработчик (Fullstack)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Создание веб-приложений на React и Redux</a></li> -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Курсы по программированию -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Курсы по программированию
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="kurs-java-razrabotchik.html" class="footer__link">Java разработчик</a>
+              </li>
+              <li class="footer__item"><a href="kurs-razrabotchik-na-cpp.html" class="footer__link">C++ разработчик</a>
+              </li>
+              <li class="footer__item"><a href="kurs-razrabotchik-na-csharp.html" class="footer__link">C#
+                  разработчик</a></li>
+              <!-- <li class="footer__item"><a href="#" class="footer__link">JavaScript-разработчик (базовый и профессиональный уровни)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Python-разработчик (базовый и продвинутый уровни, включая ООП)</a></li> -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Дополнительные курсы -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Дополнительные курсы
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">MS Excel – базовый курс для новичков</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- О школе -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            О школе
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Блог</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">О преподавателе</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">История и достижения</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Центр карьеры -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Центр карьеры
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Помощь в выборе курса</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Подготовка к трудоустройству</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Вакансии веб-студии “Профессионал”</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Поддержка студентов</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Полезные ресурсы и материалы</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Правовая информация -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Правовая информация
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Условия обучения</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика возврата средств</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Нижняя часть -->
+      <div class="footer__bottom">
+        <div class="footer__bottom-left">
+          <p class="footer__address">Веб-студия "Профессионал" 350004, г. Краснодар, ул. Бабушкина, 252, оф. 11</p>
+          <p class="footer__address">ИНН 231114234337, ОГРН 304231136600682</p>
+        </div>
+        <p class="footer__credits">
+          Создание сайта: <a href="https://citprofi.ru/" class="footer__link" target="_blank"><img src="images/cit.svg"
+              alt="Разработка сайтов в Краснодаре"></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+    <!-- Модальное окно -->
+    <div>
+      <div class="modal">
+        <button class="modal__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M12.7364 3.2636C13.0879 3.61508 13.0879 4.18492 12.7364 4.5364L9.273 8L12.7364 11.4636C13.0586 11.7858 13.0854 12.2915 12.817 12.6442L12.7364 12.7364C12.3849 13.0879 11.8151 13.0879 11.4636 12.7364L8 9.273L4.5364 12.7364C4.18492 13.0879 3.61508 13.0879 3.2636 12.7364C2.91213 12.3849 2.91213 11.8151 3.2636 11.4636L6.727 8L3.2636 4.5364C2.94142 4.21421 2.91457 3.70853 3.18306 3.35577L3.2636 3.2636C3.61508 2.91213 4.18492 2.91213 4.5364 3.2636L8 6.727L11.4636 3.2636C11.8151 2.91213 12.3849 2.91213 12.7364 3.2636Z"
+              fill="#191816" />
+          </svg>
+        </button>
+        <div class="form-card form-card_modal modal__form">
+          <h3 class="modal__caption">Старт занятий в любое удобное время!</h3>
+          <form class="form-card__form">
+            <input type="text" class="form-card__input" placeholder="Имя" />
+            <input type="email" class="form-card__input" placeholder="Email" />
+            <input type="tel" class="form-card__input form-card__input_number phone-number" placeholder="Телефон" />
+            <button class="button button_w100">Записаться на курс</button>
+            <label class="form-card__consent">
+              <input class="form-card__checkbox custom-checkbox" type="checkbox" />
+              <span>
+                Отправляя заявку, вы даете согласие на обработку своих
+                персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>
+              </span>
+            </label>
+          </form>
+        </div>
+        <div class="modal__sale">
+          <img src="images/20.svg" alt="sale">
+          <h3 class="modal__subheading">Скидка на обучение в группе!</h3>
+          <div class="modal__plus">
+            <div class="modal__item">
+              <div class="modal__icon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M33 7.27551V25.1105C33 26.5655 31.815 27.9005 30.36 28.0805L29.895 28.1405C27.435 28.4705 23.97 29.4905 21.18 30.6605C20.205 31.0655 19.125 30.3305 19.125 29.2655V8.40051C19.125 7.84551 19.44 7.33551 19.935 7.06551C22.68 5.58051 26.835 4.26051 29.655 4.02051H29.745C31.545 4.02051 33 5.47551 33 7.27551Z"
+                    fill="white" />
+                  <path
+                    d="M16.0649 7.06551C13.3199 5.58051 9.16486 4.26051 6.34486 4.02051H6.23986C4.43986 4.02051 2.98486 5.47551 2.98486 7.27551V25.1105C2.98486 26.5655 4.16986 27.9005 5.62486 28.0805L6.08986 28.1405C8.54986 28.4705 12.0149 29.4905 14.8049 30.6605C15.7799 31.0655 16.8599 30.3305 16.8599 29.2655V8.40051C16.8599 7.83051 16.5599 7.33551 16.0649 7.06551ZM7.49986 11.6105H10.8749C11.4899 11.6105 11.9999 12.1205 11.9999 12.7355C11.9999 13.3655 11.4899 13.8605 10.8749 13.8605H7.49986C6.88486 13.8605 6.37486 13.3655 6.37486 12.7355C6.37486 12.1205 6.88486 11.6105 7.49986 11.6105ZM11.9999 18.3605H7.49986C6.88486 18.3605 6.37486 17.8655 6.37486 17.2355C6.37486 16.6205 6.88486 16.1105 7.49986 16.1105H11.9999C12.6149 16.1105 13.1249 16.6205 13.1249 17.2355C13.1249 17.8655 12.6149 18.3605 11.9999 18.3605Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <p class="modal__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+            </div>
+            <div class="modal__item">
+              <div class="modal__icon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M26.8648 16.0794H22.2298V5.27936C22.2298 2.75936 20.8648 2.24936 19.1998 4.13936L17.9998 5.50436L7.84477 17.0544C6.44977 18.6294 7.03477 19.9194 9.13477 19.9194H13.7698V30.7194C13.7698 33.2394 15.1348 33.7494 16.7998 31.8594L17.9998 30.4944L28.1548 18.9444C29.5498 17.3694 28.9648 16.0794 26.8648 16.0794Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <p class="modal__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+            </div>
+            <div class="modal__item">
+              <div class="modal__icon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.2452 23.4602C26.2502 22.8002 27.5702 23.5202 27.5702 24.7202V26.6552C27.5702 28.5602 26.0852 30.6002 24.3002 31.2002L19.5152 32.7902C18.6752 33.0752 17.3102 33.0752 16.4852 32.7902L11.7002 31.2002C9.90018 30.6002 8.43018 28.5602 8.43018 26.6552V24.7052C8.43018 23.5202 9.75018 22.8002 10.7402 23.4452L13.8302 25.4552C15.0152 26.2502 16.5152 26.6402 18.0152 26.6402C19.5152 26.6402 21.0152 26.2502 22.2002 25.4552L25.2452 23.4602Z"
+                    fill="white" />
+                  <path
+                    d="M29.9703 9.68984L20.9853 3.79484C19.3653 2.72984 16.6953 2.72984 15.0753 3.79484L6.04527 9.68984C3.15027 11.5648 3.15027 15.8098 6.04527 17.6998L8.44527 19.2598L15.0753 23.5798C16.6953 24.6448 19.3653 24.6448 20.9853 23.5798L27.5703 19.2598L29.6253 17.9098V22.4998C29.6253 23.1148 30.1353 23.6248 30.7503 23.6248C31.3653 23.6248 31.8753 23.1148 31.8753 22.4998V15.1198C32.4753 13.1848 31.8603 10.9348 29.9703 9.68984Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <p class="modal__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imask@6.4.2/dist/imask.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/script-index.js"></script>
+</body>
+
+</html>

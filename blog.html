@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <title>IT-курсы от веб-студии Профессионал</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header center">
+    <a href="index.html" class="header__logo"><img src="images/logo.svg" alt="logo"></a>
+  
+    <!-- Бургер-кнопка -->
+    <button class="burger" aria-label="Открыть меню">
+      <span class="burger__line"></span>
+      <span class="burger__line burger__line_big"></span>
+      <span class="burger__line"></span>
+    </button>
+  
+    <!-- Меню -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__li"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__li"><a href="blog.html" class="nav__link">Блог</a></li>
+        <li class="nav__li nav__li--has-dropdown">
+          <a href="#" class="nav__link nav__link_it">IT Курсы <img class="nav__img" src="images/arrow-btm.svg" alt=""></a>
+          <ul class="nav__dropdown">
+            <li class="nav__dropdown-column">
+              <ul class="nav__dropdown-list">
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="card-course.html">Разработчик сайтов с
+                    нуля</a></li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="card-course.html">Java-разработчик</a>
+                </li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="card-course.html">Разработчик на
+                    C++</a></li>
+              </ul>
+            </li>
+            <li class="nav__dropdown-column">
+              <ul class="nav__dropdown-list">
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="card-course.html">C# разработчик</a>
+                </li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="card-course.html">Верстка: HTML, CSS,
+                    JS, Bootstrap, SASS и другие</a></li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="card-course.html">Дизайн сайтов в
+                    Figma</a></li>
+              </ul>
+            </li>
+  
+          </ul>
+          <ul class="nav__dropdown-mob">
+            <li class="nav__dropdown-item">
+              <span class="nav__mob-heading">
+                Web-разработка
+                <span class="nav__mob-icon">+</span>
+              </span>
+              <ul>
+                <li class="nav__dropdown-subitem"><a href="card-course.html" class="nav__mob-link">Разработчик сайтов с нуля</a></li>
+                <li class="nav__dropdown-subitem"><a href="#" class="nav__mob-link">Верстка: HTML, CSS, JS</a></li>
+                <li class="nav__dropdown-subitem"><a href="#" class="nav__mob-link">Дизайн сайтов в Figma</a></li>
+              </ul>
+            </li>
+            <li class="nav__dropdown-item">
+              <span class="nav__mob-heading">
+                Языки программирования
+                <span class="nav__mob-icon">+</span>
+              </span>
+              <ul>
+                <li class="nav__dropdown-subitem"><a href="#" class="nav__mob-link">Java-разработчик</a></li>
+                <li class="nav__dropdown-subitem"><a href="#" class="nav__mob-link">Разработчик на C++</a></li>
+                <li class="nav__dropdown-subitem"><a href="#" class="nav__mob-link">C# разработчик</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__li"><a href="contacts.html" class="nav__link">Контакты</a></li>
+      </ul>
+      <!-- Дополнительный блок для мобильной версии -->
+      <div class="nav__mobile-extra">
+        <a href="tel:+79184184222" class="nav__phone">8 (918) 418-42-22</a>
+        <div class="nav__social">
+          <a href="#" class="nav__social-icon"><img src="images/vk.svg" alt="VK"></a>
+          <a href="#" class="nav__social-icon"><img src="images/telegram.svg" alt="telegram"></a>
+          <a href="#" class="nav__social-icon"><img src="images/watsapp.svg" alt="VK"></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <nav class="breadcrumb center">
+    <ul class="breadcrumb__ul">
+      <li class="breadcrumb__li"><a class="breadcrumb__link" href="index.html">Главная</a></li>
+      <li class="breadcrumb__li"><a class="breadcrumb__link" href="#">Блог</a></li>
+    </ul>
+  </nav>
+  <section class="blog-hero center">
+    <div class="blog-hero__container">
+      <div class="blog-hero__content">
+        <div class="blog-hero__left">
+          <span class="block-border">Блог</span>
+          <h1 class="title">Ваш гид в&nbsp;мире&nbsp;IT:</h1>
+          <div class="blog-hero__subtitle">советы, профессии, развитие</div>
+        </div>
+        <p class="blog-hero__description">
+          Здесь вы найдете честные и понятные материалы о карьере в IT. Мы помогаем разобраться в профессиях,
+          сделать первые шаги в новой сфере и уверенно двигаться к профессиональному росту
+        </p>
+      </div>
+      <button class="button blog-hero__button" type="button">Подписаться на рассылку</button>
+    </div>
+  </section>
+  <div class="filters center">
+    <button class="filters__button filters__button_active" data-filter="all">Все статьи</button>
+    <button class="filters__button" data-filter="student-cases">Кейсы студентов</button>
+    <button class="filters__button" data-filter="web-dev">Разработка сайтов</button>
+    <button class="filters__button" data-filter="seo">SEO-продвижению</button>
+    <button class="filters__button" data-filter="marketing">Маркетинг</button>
+    <button class="filters__button" data-filter="citprofi">ЦИТпрофи</button>
+  </div>
+  <section class="cards center">
+    <article class="article-card">
+      <figure class="article-card__image-wrapper">
+        <img class="article-card__image" src="images/card1.png" alt="Превью статьи" />
+      </figure>
+      <div class="article-card__content">
+        <time class="article-card__date" datetime="2024-11">Ноябрь, 2024</time>
+        <div class="article-card__tags">
+          <span class="article-card__tag">web-разработка</span>
+        </div>
+        <h2 class="article-card__title">Разработка сайтов в 2024 году: тренды и новейшие технологии</h2>
+        <p class="article-card__excerpt">
+          В 2024 году разработка сайтов продолжает развиваться с упором на инновации. Тренды Frontend и Backend
+          открывают
+          новые возможности для улучшения интерфейсов и функционала.
+        </p>
+      </div>
+      <a class="article-card__link" href="article.html">Читать статью <svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M17.7719 5C18.4502 5 19 5.54983 19 6.22807V15.0702C19 15.7484 18.4502 16.2982 17.7719 16.2982C17.0937 16.2982 16.5439 15.7484 16.5439 15.0702L16.543 9.193L7.09645 18.6403C6.64883 19.0879 5.94164 19.1178 5.45941 18.7298L5.35969 18.6403C4.8801 18.1607 4.8801 17.3831 5.35969 16.9036L14.806 7.456L8.92982 7.45614C8.29397 7.45614 7.77098 6.9729 7.70809 6.35363L7.70175 6.22807C7.70175 5.54983 8.25158 5 8.92982 5H17.7719Z"
+            fill="#5E53D8" />
+        </svg></a>
+    </article>
+
+    <article class="article-card">
+      <figure class="article-card__image-wrapper">
+        <img class="article-card__image" src="images/card2.png" alt="Превью статьи" />
+      </figure>
+      <time class="article-card__date" datetime="2024-11">Ноябрь, 2024</time>
+      <div class="article-card__tags">
+        <span class="article-card__tag">Маркетинг</span>
+        <span class="article-card__tag">Технологии</span>
+        <span class="article-card__tag">Тренды</span>
+      </div>
+      <h2 class="article-card__title">Как создать сайт, который выделяется: практические советы</h2>
+      <p class="article-card__excerpt">
+        В 2024 году разработка сайтов продолжает развиваться с упором на инновации. Тренды Frontend и Backend открывают
+        новые возможности для улучшения интерфейсов и функционала.
+      </p>
+      <a class="article-card__link" href="article.html">Читать статью <svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M17.7719 5C18.4502 5 19 5.54983 19 6.22807V15.0702C19 15.7484 18.4502 16.2982 17.7719 16.2982C17.0937 16.2982 16.5439 15.7484 16.5439 15.0702L16.543 9.193L7.09645 18.6403C6.64883 19.0879 5.94164 19.1178 5.45941 18.7298L5.35969 18.6403C4.8801 18.1607 4.8801 17.3831 5.35969 16.9036L14.806 7.456L8.92982 7.45614C8.29397 7.45614 7.77098 6.9729 7.70809 6.35363L7.70175 6.22807C7.70175 5.54983 8.25158 5 8.92982 5H17.7719Z"
+            fill="#5E53D8" />
+        </svg></a>
+    </article>
+
+    <article class="article-card">
+      <figure class="article-card__image-wrapper">
+        <img class="article-card__image" src="images/card3.png" alt="Превью статьи" />
+      </figure>
+      <time class="article-card__date" datetime="2024-11">Ноябрь, 2024</time>
+      <div class="article-card__tags">
+        <span class="article-card__tag">Тренды</span>
+        <span class="article-card__tag">ИИ</span>
+      </div>
+      <h2 class="article-card__title">Искусственный интеллект: как технологии меняют мир</h2>
+      <p class="article-card__excerpt">
+        В 2024 году разработка сайтов продолжает развиваться с упором на инновации. Тренды Frontend и Backend открывают
+        новые возможности для улучшения интерфейсов и функционала.
+      </p>
+      <a class="article-card__link" href="article.html">Читать статью <svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M17.7719 5C18.4502 5 19 5.54983 19 6.22807V15.0702C19 15.7484 18.4502 16.2982 17.7719 16.2982C17.0937 16.2982 16.5439 15.7484 16.5439 15.0702L16.543 9.193L7.09645 18.6403C6.64883 19.0879 5.94164 19.1178 5.45941 18.7298L5.35969 18.6403C4.8801 18.1607 4.8801 17.3831 5.35969 16.9036L14.806 7.456L8.92982 7.45614C8.29397 7.45614 7.77098 6.9729 7.70809 6.35363L7.70175 6.22807C7.70175 5.54983 8.25158 5 8.92982 5H17.7719Z"
+            fill="#5E53D8" />
+        </svg></a>
+    </article>
+  </section>
+  <section class="subscribe center">
+    <div class="subscribe__container">
+      <div class="subscribe__content">
+        <h2 class="heading heading_white heading_mob">Подписаться<br> на новые статьи</h2>
+        <p class="subscribe__description">
+          Получайте еженедельные обновления о трендах в разработке, дизайне и маркетинге в сфере IT прямо в свой
+          почтовый ящик
+        </p>
+      </div>
+      <form class="subscribe__form">
+        <div class="subscribe__input-wrapper">
+          <input type="email" class="subscribe__input" placeholder="Email" required />
+          <button type="submit" class="button button_w100">Подписаться</button>
+        </div>
+        <div class="subscribe__consent">
+          <label class="selection-help__consent">
+            <input type="checkbox" class="selection-help__checkbox custom-checkbox">
+            <span>Отправляя заявку, вы даете согласие на обработку своих персональных данных в соответствии с политикой
+              конфиденциальности</span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="box-articles center">
+    <section class="cards ">
+      <article class="article-card">
+        <figure class="article-card__image-wrapper">
+          <img class="article-card__image" src="images/student-case.png" alt="Кейс студента" />
+        </figure>
+        <div class="article-card__content">
+          <time class="article-card__date" datetime="2024-11">Ноябрь, 2024</time>
+          <div class="article-card__tags">
+            <span class="article-card__tag">web-разработка</span>
+            <span class="article-card__tag">Карьера</span>
+            <span class="article-card__tag">Кейс студента</span>
+          </div>
+          <h2 class="article-card__title">Путь Дениса Сергеева к успешной карьере в веб-разработке</h2>
+          <p class="article-card__excerpt">
+            Денис Сергеев делится своими шагами на пути к успеху в веб-разработке. В статье вы узнаете, как современные технологии Frontend и Backend помогают достигать новых высот.
+          </p>
+        </div>
+        <a class="article-card__link" href="about-student.html">Читать статью <svg xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M17.7719 5C18.4502 5 19 5.54983 19 6.22807V15.0702C19 15.7484 18.4502 16.2982 17.7719 16.2982C17.0937 16.2982 16.5439 15.7484 16.5439 15.0702L16.543 9.193L7.09645 18.6403C6.64883 19.0879 5.94164 19.1178 5.45941 18.7298L5.35969 18.6403C4.8801 18.1607 4.8801 17.3831 5.35969 16.9036L14.806 7.456L8.92982 7.45614C8.29397 7.45614 7.77098 6.9729 7.70809 6.35363L7.70175 6.22807C7.70175 5.54983 8.25158 5 8.92982 5H17.7719Z"
+              fill="#5E53D8" />
+          </svg></a>
+      </article>
+
+      <article class="article-card">
+        <figure class="article-card__image-wrapper">
+          <img class="article-card__image" src="images/card5.png" alt="Превью статьи" />
+        </figure>
+        <div class="article-card__content">
+          <time class="article-card__date" datetime="2024-11">Ноябрь, 2024</time>
+          <div class="article-card__tags">
+            <span class="article-card__tag">Тренды</span>
+            <span class="article-card__tag">ИИ</span>
+          </div>
+          <h2 class="article-card__title">Искусственный интеллект: как технологии меняют мир</h2>
+          <p class="article-card__excerpt">
+            Искусственный интеллект открывает новые возможности в технологиях и бизнесе, ускоряя процессы автоматизации
+            и анализа данных.
+          </p>
+        </div>
+        <a class="article-card__link" href="article.html">Читать статью <svg xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M17.7719 5C18.4502 5 19 5.54983 19 6.22807V15.0702C19 15.7484 18.4502 16.2982 17.7719 16.2982C17.0937 16.2982 16.5439 15.7484 16.5439 15.0702L16.543 9.193L7.09645 18.6403C6.64883 19.0879 5.94164 19.1178 5.45941 18.7298L5.35969 18.6403C4.8801 18.1607 4.8801 17.3831 5.35969 16.9036L14.806 7.456L8.92982 7.45614C8.29397 7.45614 7.77098 6.9729 7.70809 6.35363L7.70175 6.22807C7.70175 5.54983 8.25158 5 8.92982 5H17.7719Z"
+              fill="#5E53D8" />
+          </svg></a>
+      </article>
+
+      <article class="article-card">
+        <figure class="article-card__image-wrapper">
+          <img class="article-card__image" src="images/card6.png" alt="Превью статьи" />
+        </figure>
+        <div class="article-card__content">
+          <time class="article-card__date" datetime="2024-11">Ноябрь, 2024</time>
+          <div class="article-card__tags">
+            <span class="article-card__tag">Технологии</span>
+            <span class="article-card__tag">Тренды</span>
+          </div>
+          <h2 class="article-card__title">Как создать сайт, который выделяется: практические советы</h2>
+          <p class="article-card__excerpt">
+            Советы по созданию уникальных сайтов, которые привлекают внимание и удовлетворяют современные требования.
+          </p>
+        </div>
+        <a class="article-card__link" href="article.html">Читать статью <svg xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M17.7719 5C18.4502 5 19 5.54983 19 6.22807V15.0702C19 15.7484 18.4502 16.2982 17.7719 16.2982C17.0937 16.2982 16.5439 15.7484 16.5439 15.0702L16.543 9.193L7.09645 18.6403C6.64883 19.0879 5.94164 19.1178 5.45941 18.7298L5.35969 18.6403C4.8801 18.1607 4.8801 17.3831 5.35969 16.9036L14.806 7.456L8.92982 7.45614C8.29397 7.45614 7.77098 6.9729 7.70809 6.35363L7.70175 6.22807C7.70175 5.54983 8.25158 5 8.92982 5H17.7719Z"
+              fill="#5E53D8" />
+          </svg></a>
+      </article>
+      <article class="article-card">
+        <figure class="article-card__image-wrapper">
+          <img class="article-card__image" src="images/card7.png" alt="Превью статьи" />
+        </figure>
+        <div class="article-card__content">
+          <time class="article-card__date" datetime="2024-11">Ноябрь, 2024</time>
+          <div class="article-card__tags">
+            <span class="article-card__tag">web-разработка</span>
+          </div>
+          <h2 class="article-card__title">Разработка сайтов в 2024 году: тренды и новейшие технологии</h2>
+          <p class="article-card__excerpt">
+            В 2024 году разработка сайтов продолжает развиваться с упором на инновации. Тренды Frontend и Backend
+            открывают новые возможности для улучшения интерфейсов и функционала.
+          </p>
+        </div>
+        <a class="article-card__link" href="article.html">Читать статью <svg xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M17.7719 5C18.4502 5 19 5.54983 19 6.22807V15.0702C19 15.7484 18.4502 16.2982 17.7719 16.2982C17.0937 16.2982 16.5439 15.7484 16.5439 15.0702L16.543 9.193L7.09645 18.6403C6.64883 19.0879 5.94164 19.1178 5.45941 18.7298L5.35969 18.6403C4.8801 18.1607 4.8801 17.3831 5.35969 16.9036L14.806 7.456L8.92982 7.45614C8.29397 7.45614 7.77098 6.9729 7.70809 6.35363L7.70175 6.22807C7.70175 5.54983 8.25158 5 8.92982 5H17.7719Z"
+              fill="#5E53D8" />
+          </svg></a>
+      </article>
+
+      <article class="article-card">
+        <figure class="article-card__image-wrapper">
+          <img class="article-card__image" src="images/card8.png" alt="Превью статьи" />
+        </figure>
+        <div class="article-card__content">
+          <time class="article-card__date" datetime="2024-11">Ноябрь, 2024</time>
+          <div class="article-card__tags">
+            <span class="article-card__tag">Тренды</span>
+            <span class="article-card__tag">ИИ</span>
+          </div>
+          <h2 class="article-card__title">Искусственный интеллект: как технологии меняют мир</h2>
+          <p class="article-card__excerpt">
+            Искусственный интеллект открывает новые возможности в технологиях и бизнесе, ускоряя процессы автоматизации
+            и анализа данных.
+          </p>
+        </div>
+        <a class="article-card__link" href="article.html">Читать статью <svg xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M17.7719 5C18.4502 5 19 5.54983 19 6.22807V15.0702C19 15.7484 18.4502 16.2982 17.7719 16.2982C17.0937 16.2982 16.5439 15.7484 16.5439 15.0702L16.543 9.193L7.09645 18.6403C6.64883 19.0879 5.94164 19.1178 5.45941 18.7298L5.35969 18.6403C4.8801 18.1607 4.8801 17.3831 5.35969 16.9036L14.806 7.456L8.92982 7.45614C8.29397 7.45614 7.77098 6.9729 7.70809 6.35363L7.70175 6.22807C7.70175 5.54983 8.25158 5 8.92982 5H17.7719Z"
+              fill="#5E53D8" />
+          </svg></a>
+      </article>
+
+      <article class="article-card">
+        <figure class="article-card__image-wrapper">
+          <img class="article-card__image" src="images/card9.png" alt="Превью статьи" />
+        </figure>
+        <div class="article-card__content">
+          <time class="article-card__date" datetime="2024-11">Ноябрь, 2024</time>
+          <div class="article-card__tags">
+            <span class="article-card__tag">Технологии</span>
+            <span class="article-card__tag">Тренды</span>
+          </div>
+          <h2 class="article-card__title">Как создать сайт, который выделяется: практические советы</h2>
+          <p class="article-card__excerpt">
+            Советы по созданию уникальных сайтов, которые привлекают внимание и удовлетворяют современные требования.
+          </p>
+        </div>
+        <a class="article-card__link" href="article.html">Читать статью <svg xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M17.7719 5C18.4502 5 19 5.54983 19 6.22807V15.0702C19 15.7484 18.4502 16.2982 17.7719 16.2982C17.0937 16.2982 16.5439 15.7484 16.5439 15.0702L16.543 9.193L7.09645 18.6403C6.64883 19.0879 5.94164 19.1178 5.45941 18.7298L5.35969 18.6403C4.8801 18.1607 4.8801 17.3831 5.35969 16.9036L14.806 7.456L8.92982 7.45614C8.29397 7.45614 7.77098 6.9729 7.70809 6.35363L7.70175 6.22807C7.70175 5.54983 8.25158 5 8.92982 5H17.7719Z"
+              fill="#5E53D8" />
+          </svg></a>
+      </article>
+    </section>
+    <div class="show-all">
+      <button class="button-border button-border_show">Показать больше</button>
+    </div>
+    <div class="pagination">
+      <div class="pagination__left">
+        <div class="pagination__numbers">
+          <span class="pagination__current pagination__current_selected">1</span>
+          <span class="pagination__current">2</span>
+          <span class="pagination__current">3</span>
+          <span class="pagination__current">4</span>
+          <span class="pagination__current">...</span>
+          <span class="pagination__current">6</span>
+        </div>
+        <div class="pagination__controls">
+          <button class="pagination__button pagination__button_prev" aria-label="Previous page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.1112 6.22481C12.3553 6.46888 12.3553 6.86461 12.1112 7.10869L9.21982 10.0001L12.1112 12.8915C12.3553 13.1356 12.3553 13.5313 12.1112 13.7754C11.8671 14.0194 11.4714 14.0194 11.2273 13.7754L7.894 10.442C7.64992 10.1979 7.64992 9.80222 7.894 9.55814L11.2273 6.22481C11.4714 5.98073 11.8671 5.98073 12.1112 6.22481Z"
+                fill="#A5A8B1" />
+            </svg>
+          </button>
+          <button class="pagination__button pagination__button_next" aria-label="Next page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.894 6.22481C8.13807 5.98073 8.5338 5.98073 8.77788 6.22481L12.1112 9.55814C12.3553 9.80222 12.3553 10.1979 12.1112 10.442L8.77788 13.7754C8.5338 14.0194 8.13807 14.0194 7.894 13.7754C7.64992 13.5313 7.64992 13.1356 7.894 12.8915L10.7854 10.0001L7.894 7.10869C7.64992 6.86461 7.64992 6.46888 7.894 6.22481Z"
+                fill="#5E53D8" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="pagination__items-per-page">
+        <label class="pagination__label" for="items-per-page">Показывать по:</label>
+        <select class="pagination__select" id="items-per-page">
+          <option value="12" selected>12</option>
+          <option value="24">24</option>
+          <option value="48">48</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <footer class="footer">
+    <div class="center">
+      <!-- Десктопная структура -->
+      <div class="footer__programs">
+        <h3 class="footer__heading">Образовательные программы</h3>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4 class="footer__subheading">Курсы по веб-разработке</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Создание сайтов на HTML5, CSS3, JavaScript</a>
+              </li>
+              <li class="footer__item"><a href="#" class="footer__link">Вёрстка на профессиональном уровне (HTML, CSS,
+                  JS, jQuery, Bootstrap, SASS)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Frontend-разработка (HTML, CSS, JS, jQuery,
+                  Bootstrap, SASS)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Веб-разработчик (Fullstack)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Создание веб-приложений на React и Redux</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Курсы по программированию</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Java-разработчик (базовый уровень)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">C++ разработчик (базовый уровень)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">C# разработчик (базовый уровень)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">JavaScript-разработчик (базовый и
+                  профессиональный уровни)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Python-разработчик (базовый и продвинутый
+                  уровни, включая ООП)</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Дополнительные курсы</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">MS Excel – базовый курс для новичков</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <h3 class="footer__heading">Информация и поддержка</h3>
+      <div class="footer__info">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4 class="footer__subheading">О школе:</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Блог</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">О преподавателе</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">История и достижения</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Центр карьеры</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Помощь в выборе курса</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Подготовка к трудоустройству</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Вакансии веб-студии “Профессионал”</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Поддержка студентов</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Полезные ресурсы и материалы</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Правовая информация</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Условия обучения</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика возврата средств</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Социальные и контактные данные -->
+      <div class="footer__social">
+        <a href="index.html" class="footer__logo"><img src="images/logo-footer.svg" alt="logo"></a>
+        <div class="social-icons">
+          <a href="#" class="social-icons__icon"><img src="images/vk.svg" alt="vk"></a>
+          <a href="#" class="social-icons__icon"><img src="images/telegram.svg" alt="telegram"></a>
+          <a href="#" class="social-icons__icon"><img src="images/watsapp.svg" alt="watsapp"></a>
+          <a href="#" class="social-icons__icon"><img src="images/youtube.svg" alt="youtube"></a>
+        </div>
+        <div class="footer__coll">
+          <a href="tel:+79184184222" class="footer__phone">8(918)482-42-22</a>
+          <p class="footer__text">Позвоните или <button class="footer__text-link show-modal">оставьте заявку</button></p>
+        </div>
+      </div>
+  
+      <!-- Мобильная версия с аккордеонами -->
+      <div class="footer__mobile">
+        <!-- Курсы по веб-разработке -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Курсы по веб-разработке
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Создание сайтов на HTML5, CSS3, JavaScript</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Вёрстка на профессиональном уровне (HTML, CSS, JS, jQuery, Bootstrap, SASS)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Frontend-разработка (HTML, CSS, JS, jQuery, Bootstrap, SASS)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Веб-разработчик (Fullstack)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Создание веб-приложений на React и Redux</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Курсы по программированию -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Курсы по программированию
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Java-разработчик (базовый уровень)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">C++ разработчик (базовый уровень)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">C# разработчик (базовый уровень)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">JavaScript-разработчик (базовый и профессиональный уровни)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Python-разработчик (базовый и продвинутый уровни, включая ООП)</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Дополнительные курсы -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Дополнительные курсы
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">MS Excel – базовый курс для новичков</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- О школе -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            О школе
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Блог</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">О преподавателе</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">История и достижения</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Центр карьеры -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Центр карьеры
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Помощь в выборе курса</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Подготовка к трудоустройству</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Вакансии веб-студии “Профессионал”</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Поддержка студентов</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Полезные ресурсы и материалы</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Правовая информация -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Правовая информация
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Условия обучения</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика возврата средств</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+  
+      <!-- Нижняя часть -->
+      <div class="footer__bottom">
+        <div class="footer__bottom-left">
+          <p class="footer__address">Веб-студия "Профессионал" 350004, г. Краснодар, ул. Бабушкина, 252, оф. 11</p>
+          <p class="footer__address">ИНН 231114234337, ОГРН 304231136600682</p>
+        </div>
+        <p class="footer__credits">
+          Создание сайта: <a href="#" class="footer__link"><img src="images/cit.svg" alt="cit"></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+    <!-- Модальное окно -->
+    <div>
+      <div class="modal">
+        <button class="modal__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M12.7364 3.2636C13.0879 3.61508 13.0879 4.18492 12.7364 4.5364L9.273 8L12.7364 11.4636C13.0586 11.7858 13.0854 12.2915 12.817 12.6442L12.7364 12.7364C12.3849 13.0879 11.8151 13.0879 11.4636 12.7364L8 9.273L4.5364 12.7364C4.18492 13.0879 3.61508 13.0879 3.2636 12.7364C2.91213 12.3849 2.91213 11.8151 3.2636 11.4636L6.727 8L3.2636 4.5364C2.94142 4.21421 2.91457 3.70853 3.18306 3.35577L3.2636 3.2636C3.61508 2.91213 4.18492 2.91213 4.5364 3.2636L8 6.727L11.4636 3.2636C11.8151 2.91213 12.3849 2.91213 12.7364 3.2636Z"
+              fill="#191816" />
+          </svg>
+        </button>
+        <div class="form-card form-card_modal modal__form">
+          <h3 class="modal__caption">Старт занятий в любое удобное время!</h3>
+          <form class="form-card__form">
+            <input type="text" class="form-card__input" placeholder="Имя" />
+            <input type="email" class="form-card__input" placeholder="Email" />
+            <input type="tel" class="form-card__input form-card__input_number phone-number" placeholder="Телефон" />
+            <button class="button button_w100">Записаться на курс</button>
+            <label class="form-card__consent">
+              <input class="form-card__checkbox custom-checkbox" type="checkbox" />
+              <span>
+                Отправляя заявку, вы даете согласие на обработку своих
+                персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>
+              </span>
+            </label>
+          </form>
+        </div>
+        <div class="modal__sale">
+          <img src="images/20.svg" alt="sale">
+          <h3 class="modal__subheading">Скидка на обучение в группе!</h3>
+          <div class="modal__plus">
+            <div class="modal__item">
+              <div class="modal__icon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M33 7.27551V25.1105C33 26.5655 31.815 27.9005 30.36 28.0805L29.895 28.1405C27.435 28.4705 23.97 29.4905 21.18 30.6605C20.205 31.0655 19.125 30.3305 19.125 29.2655V8.40051C19.125 7.84551 19.44 7.33551 19.935 7.06551C22.68 5.58051 26.835 4.26051 29.655 4.02051H29.745C31.545 4.02051 33 5.47551 33 7.27551Z"
+                    fill="white" />
+                  <path
+                    d="M16.0649 7.06551C13.3199 5.58051 9.16486 4.26051 6.34486 4.02051H6.23986C4.43986 4.02051 2.98486 5.47551 2.98486 7.27551V25.1105C2.98486 26.5655 4.16986 27.9005 5.62486 28.0805L6.08986 28.1405C8.54986 28.4705 12.0149 29.4905 14.8049 30.6605C15.7799 31.0655 16.8599 30.3305 16.8599 29.2655V8.40051C16.8599 7.83051 16.5599 7.33551 16.0649 7.06551ZM7.49986 11.6105H10.8749C11.4899 11.6105 11.9999 12.1205 11.9999 12.7355C11.9999 13.3655 11.4899 13.8605 10.8749 13.8605H7.49986C6.88486 13.8605 6.37486 13.3655 6.37486 12.7355C6.37486 12.1205 6.88486 11.6105 7.49986 11.6105ZM11.9999 18.3605H7.49986C6.88486 18.3605 6.37486 17.8655 6.37486 17.2355C6.37486 16.6205 6.88486 16.1105 7.49986 16.1105H11.9999C12.6149 16.1105 13.1249 16.6205 13.1249 17.2355C13.1249 17.8655 12.6149 18.3605 11.9999 18.3605Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <p class="modal__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+            </div>
+            <div class="modal__item">
+              <div class="modal__icon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M26.8648 16.0794H22.2298V5.27936C22.2298 2.75936 20.8648 2.24936 19.1998 4.13936L17.9998 5.50436L7.84477 17.0544C6.44977 18.6294 7.03477 19.9194 9.13477 19.9194H13.7698V30.7194C13.7698 33.2394 15.1348 33.7494 16.7998 31.8594L17.9998 30.4944L28.1548 18.9444C29.5498 17.3694 28.9648 16.0794 26.8648 16.0794Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <p class="modal__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+            </div>
+            <div class="modal__item">
+              <div class="modal__icon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.2452 23.4602C26.2502 22.8002 27.5702 23.5202 27.5702 24.7202V26.6552C27.5702 28.5602 26.0852 30.6002 24.3002 31.2002L19.5152 32.7902C18.6752 33.0752 17.3102 33.0752 16.4852 32.7902L11.7002 31.2002C9.90018 30.6002 8.43018 28.5602 8.43018 26.6552V24.7052C8.43018 23.5202 9.75018 22.8002 10.7402 23.4452L13.8302 25.4552C15.0152 26.2502 16.5152 26.6402 18.0152 26.6402C19.5152 26.6402 21.0152 26.2502 22.2002 25.4552L25.2452 23.4602Z"
+                    fill="white" />
+                  <path
+                    d="M29.9703 9.68984L20.9853 3.79484C19.3653 2.72984 16.6953 2.72984 15.0753 3.79484L6.04527 9.68984C3.15027 11.5648 3.15027 15.8098 6.04527 17.6998L8.44527 19.2598L15.0753 23.5798C16.6953 24.6448 19.3653 24.6448 20.9853 23.5798L27.5703 19.2598L29.6253 17.9098V22.4998C29.6253 23.1148 30.1353 23.6248 30.7503 23.6248C31.3653 23.6248 31.8753 23.1148 31.8753 22.4998V15.1198C32.4753 13.1848 31.8603 10.9348 29.9703 9.68984Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <p class="modal__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imask@6.4.2/dist/imask.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/script-index.js"></script>
+  <script src="scripts/footer-accordion.js"></script>
+</body>
+
+</html>

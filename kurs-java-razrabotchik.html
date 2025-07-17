@@ -1,0 +1,3365 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курсы по разработке на Java. IT-курсы от веб-студии Профессионал</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="has-scroll-btn">
+  <header class="header center">
+    <a href="index.html" class="header__logo"><img src="images/logo.svg" alt="logo"></a>
+
+    <!-- Бургер-кнопка -->
+    <button class="burger" aria-label="Открыть меню">
+      <span class="burger__line"></span>
+      <span class="burger__line burger__line_big"></span>
+      <span class="burger__line"></span>
+    </button>
+
+    <!-- Меню -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__li"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__li"><a href="blog.html" class="nav__link">Блог</a></li>
+        <li class="nav__li nav__li--has-dropdown">
+          <a href="#" class="nav__link nav__link_it">IT Курсы <img class="nav__img" src="images/arrow-btm.svg"
+              alt=""></a>
+          <ul class="nav__dropdown">
+            <li class="nav__dropdown-column">
+              <ul class="nav__dropdown-list">
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link"
+                    href="kurs-sozdanie-saytov-na-html5-css3-javascript.html">Создание сайтов на HTML, CSS3,
+                    JavaScript</a></li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="kurs-java-razrabotchik.html">Java
+                    разработчик</a>
+                </li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="kurs-razrabotchik-na-cpp.html">C++
+                    разработчик</a></li>
+              </ul>
+            </li>
+            <li class="nav__dropdown-column">
+              <ul class="nav__dropdown-list">
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="kurs-razrabotchik-na-csharp.html">C#
+                    разработчик</a>
+                </li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link"
+                    href="kurs-vyorstka-saytov-na-professionalnom-urovne-html-css-js-jquery-parallax-bootstrap-sass.html">Верстка
+                    сайтов с использованием HTML, CSS,
+                    JS, Bootstrap, SASS</a></li>
+                <li class="nav__dropdown-item"><a class="nav__dropdown-link"
+                    href="kurs-javascript-razrabotchik.html">JavaScript разработчик</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <ul class="nav__dropdown-mob">
+            <li class="nav__dropdown-item">
+              <span class="nav__mob-heading">
+                Web-разработка
+                <span class="nav__mob-icon">+</span>
+              </span>
+              <ul>
+                <li class="nav__dropdown-subitem"><a href="kurs-sozdanie-saytov-na-html5-css3-javascript.html"
+                    class="nav__mob-link">Создание сайтов на HTML, CSS3, JavaScript</a></li>
+                <li class="nav__dropdown-subitem"><a
+                    href="kurs-vyorstka-saytov-na-professionalnom-urovne-html-css-js-jquery-parallax-bootstrap-sass.html"
+                    class="nav__mob-link">Верстка сайтов с использованием HTML, CSS, JS, Bootstrap, SASS</a></li>
+                <li class="nav__dropdown-subitem"><a href="kurs-javascript-razrabotchik.html"
+                    class="nav__mob-link">JavaScript разработчик</a></li>
+              </ul>
+            </li>
+            <li class="nav__dropdown-item">
+              <span class="nav__mob-heading">
+                Языки программирования
+                <span class="nav__mob-icon">+</span>
+              </span>
+              <ul>
+                <li class="nav__dropdown-subitem"><a href="kurs-java-razrabotchik.html" class="nav__mob-link">Java
+                    разработчик</a></li>
+                <li class="nav__dropdown-subitem"><a href="kurs-razrabotchik-na-cpp.html" class="nav__mob-link">C++
+                    разработчик</a></li>
+                <li class="nav__dropdown-subitem"><a href="kurs-razrabotchik-na-csharp.html" class="nav__mob-link">C#
+                    разработчик</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__li"><a href="contacts.html" class="nav__link">Контакты</a></li>
+      </ul>
+      <!-- Дополнительный блок для мобильной версии -->
+      <div class="nav__mobile-extra">
+        <a href="tel:+79184184222" class="nav__phone">8 (918) 418-42-22</a>
+        <div class="nav__social">
+          <a href="https://vk.com/alexdarb" class="nav__social-icon" target="_blank"><img src="images/vk.svg"
+              alt="VK"></a>
+          <a href="https://t.me/site_and_seo" class="nav__social-icon" target="_blank"><img src="images/telegram.svg"
+              alt="telegram"></a>
+          <a href="https://wa.me/+79184184222" class="nav__social-icon" target="_blank"><img src="images/watsapp.svg"
+              alt="VK"></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <nav class="breadcrumb center">
+    <ul class="breadcrumb__ul">
+      <li class="breadcrumb__li"><a class="breadcrumb__link" href="index.html">Главная</a></li>
+      <li class="breadcrumb__li"><a class="breadcrumb__link" href="#">IT-курсы</a></li>
+      <li class="breadcrumb__li">Java разработчик</li>
+    </ul>
+  </nav>
+  <section class="course center">
+    <div class="course__container">
+      <div class="course__info">
+        <div class="course__details">
+          <span class="block-border">30 уроков</span>
+          <span class="block-border">80 ак.часов</span>
+        </div>
+        <h1 class="title">Java разработчик</h1>
+        <p class="course__description">
+          Получите новую компетенцию и востребованную профессию с нуля!
+        </p>
+        <div class="course__technologies">
+          <h2 class="course__technologies-title">Языки и технологии, изучаемые на курсе:</h2>
+          <ul class="course__technologies-list">
+            <li class="course__technology">HTML</li>
+            <li class="course__technology">CSS</li>
+            <li class="course__technology">JavaScript</li>
+            <li class="course__technology">Photoshop</li>
+            <li class="course__technology">Figma</li>
+            <li class="course__technology">BEM</li>
+            <li class="course__technology">Адаптивная верстка для ПК</li>
+            <li class="course__technology">Мобильный адаптив</li>
+          </ul>
+        </div>
+        <div class="pricing">
+          <div class="pricing__price pricing__price_dark">В группе <span
+              class="pricing__cost pricing__cost_big">80&nbsp;000 ₽</span></div>
+          <div class="pricing__price pricing__price_dark">Индивидуально <span
+              class="pricing__cost pricing__cost_big">140&nbsp;000 ₽</span></div>
+        </div>
+        <div class="course__actions">
+          <a href="#pricing" class="button button_course">Узнать тарифы</a>
+          <a href="#program" class="button-border">Смотреть программу</a>
+        </div>
+      </div>
+      <div class="mentor">
+        <h2 class="mentor__name">Александр<br>Дарбинян</h2>
+        <p class="mentor__role">Ваш личный IT-наставник</p>
+      </div>
+      <ul class="mentor-achievements">
+        <li class="mentor-achievements__achievement">
+          <img src="images/code.svg" alt="icon">
+          <p>Эксперт, дипломированный разработчик и преподаватель</p>
+        </li>
+        <li class="mentor-achievements__achievement">
+          <img src="images/teacher.svg" alt="icon">
+          <p>20 лет в наставничестве и профессиональной поддержке</p>
+        </li>
+        <li class="mentor-achievements__achievement">
+          <img src="images/home-trend-up.svg" alt="icon">
+          <p>Основатель и руководитель веб-студии "Профессионал"</p>
+        </li>
+        <li class="mentor-achievements__achievement">
+          <img src="images/book.svg" alt="icon">
+          <p>Автор методики по ускоренному обучению веб-разработки и программированию</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="reasons center">
+    <div class="reasons__container">
+      <h2 class="reasons__title">Шесть причин пройти этот курс у&nbsp;меня</h2>
+      <div class="reasons__items animate-block">
+        <div class="reasons__item">
+          <h3 class="reasons__subtitle">1. Как проходит обучение:</h3>
+          <div class="reasons__content">
+            <p class="reasons__option"><strong>Самостоятельное:</strong> Хаотичное изучение материалов из YouTube</p>
+            <p class="reasons__option"><strong>Обычные групповые туры:</strong> Много теории, мало практики. Учебный
+              темп зависит от группы. Длительность от 6 месяцев.</p>
+            <div class="reasons__highlight">
+              <img src="images/icons-bold1.svg" alt="icon">
+              <p class="reasons__text">
+                <strong>Обучение у меня:</strong> Практика с первого дня. Вы повторяете за мной. Срок — 2 месяца.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reasons__item">
+          <h3 class="reasons__subtitle">2. Как идёт поддержка:</h3>
+          <div class="reasons__content">
+            <p class="reasons__option"><strong>Самостоятельное:</strong> Поиск ответов в Google</p>
+            <p class="reasons__option"><strong>Обычные групповые туры:</strong> Вопросы в чатах, ответы долго идут от
+              немотивированных анонимных разработчиков</p>
+            <div class="reasons__highlight">
+              <img src="images/icons-bold2.svg" alt="icon">
+              <p class="reasons__text">
+                <strong>Обучение у меня:</strong> Личная поддержка от сертифицированного разработчика с 22-летним
+                опытом.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reasons__item">
+          <h3 class="reasons__subtitle">3. Материалы курса:</h3>
+          <div class="reasons__content">
+            <p class="reasons__option"><strong>Самостоятельное:</strong> Хаотичные материалы</p>
+            <p class="reasons__option"><strong>Обычные групповые туры:</strong> Базовые лекции, акцент на теории,
+              ограниченный доступ к материалам</p>
+            <div class="reasons__highlight">
+              <img src="images/icons-bold3.svg" alt="icon">
+              <p class="reasons__text">
+                <strong>Обучение у меня:</strong> 15 уроков по созданию сайта с раздаточными материалами и записями.
+                Цена
+                ниже аналогов.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reasons__item">
+          <h3 class="reasons__subtitle">4. Кто отвечает за обучение:</h3>
+          <div class="reasons__content">
+            <p class="reasons__option"><strong>Самостоятельное:</strong> Вы сами</p>
+            <p class="reasons__option"><strong>Обычные групповые туры:</strong> Преподаватели могут меняться, обучение
+              ведут анонимные разработчики</p>
+            <div class="reasons__highlight">
+              <img src="images/icons-bold4.svg" alt="icon">
+              <p class="reasons__text">
+                <strong>Обучение у меня:</strong> Личное сопровождение и контроль за прогрессом.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reasons__item">
+          <h3 class="reasons__subtitle">5. Приоритеты:</h3>
+          <div class="reasons__content">
+            <p class="reasons__option"><strong>Самостоятельное:</strong> Вы сами</p>
+            <p class="reasons__option"><strong>Обычные групповые туры:</strong> Преподаватели могут меняться, обучение
+              ведут анонимные разработчики</p>
+            <div class="reasons__highlight">
+              <img src="images/icons-bold5.svg" alt="icon">
+              <p class="reasons__text">
+                <strong>Обучение у меня:</strong> Качество обучения и ваши результаты.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reasons__item">
+          <h3 class="reasons__subtitle">6. Дополнительные преимущества:</h3>
+          <div class="reasons__content">
+            <p class="reasons__option"><strong>Самостоятельное:</strong> Пробелы в знаниях, нет плана.</p>
+            <p class="reasons__option"><strong>Обычные групповые туры:</strong> Общие знания, без индивидуального
+              подхода.</p>
+            <div class="reasons__highlight">
+              <img src="images/icons-bold6.svg" alt="icon">
+              <p class="reasons__text">
+                <strong>Обучение у меня:</strong> Индивидуальный подход, портфолио и навыки.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="training center">
+    <div class="training__container">
+      <h2 class="training__title">Это обучение для вас, если вы</h2>
+      <div class="training__items animate-block">
+        <div class="training__item">
+          <img src="images/Size=48Status-up.svg" alt="Status-up">
+          <p class="training__text">
+            Предприниматель и хотите научиться делать сайты для себя, с гарантией и поддержкой
+          </p>
+        </div>
+        <div class="training__item">
+          <img src="images/Size=48Code.svg" alt="code">
+          <p class="training__text">
+            Хотите получить IT-профессию разработчика сайтов, с нуля или повысить свой профессиональный уровень
+          </p>
+        </div>
+        <div class="training__item">
+          <img src="images/Size=48teacher.svg" alt="teacher photo">
+          <p class="training__text">
+            Хотите, чтобы ваш ребенок (школьник, студент) научился создавать сайты и получил востребованную профессию
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="reviews__container">
+      <div class="center">
+        <div class="reviews__top">
+          <div class="reviews__heading">
+            <h2 class="heading">Отзывы наших учеников</h2>
+            <p class="reviews__subtitle text">
+              Посмотрите отзывы о сотрудничестве со мной от предпринимателей, которые прошли обучение
+            </p>
+          </div>
+          <div class="reviews__controls">
+            <button class="reviews__arrow reviews__arrow--prev" aria-label="Предыдущий отзыв">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <path
+                  d="M32.0001 5.33301C46.6934 5.33301 58.6667 17.3063 58.6667 31.9997C58.6667 46.693 46.6934 58.6663 32.0001 58.6663C17.3067 58.6663 5.33341 46.693 5.33341 31.9997C5.33341 17.3063 17.3067 5.33301 32.0001 5.33301ZM24.5601 33.413L33.9734 42.8263C34.3734 43.2263 34.8801 43.413 35.3867 43.413C35.8934 43.413 36.4001 43.2263 36.8001 42.8263C37.5734 42.053 37.5734 40.773 36.8001 39.9997L28.8001 31.9997L36.8001 23.9997C37.5734 23.2263 37.5734 21.9463 36.8001 21.173C36.0267 20.3997 34.7467 20.3997 33.9734 21.173L24.5601 30.5863C23.7601 31.3597 23.7601 32.6397 24.5601 33.413Z"
+                  fill="#575387" />
+              </svg>
+            </button>
+            <button class="reviews__arrow reviews__arrow--next" aria-label="Следующий отзыв">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <path
+                  d="M31.9999 5.33301C17.3066 5.33301 5.33325 17.3063 5.33325 31.9997C5.33325 46.693 17.3066 58.6663 31.9999 58.6663C46.6933 58.6663 58.6666 46.693 58.6666 31.9997C58.6666 17.3063 46.6933 5.33301 31.9999 5.33301ZM39.4399 33.413L30.0266 42.8263C29.6266 43.2263 29.1199 43.413 28.6133 43.413C28.1066 43.413 27.5999 43.2263 27.1999 42.8263C26.4266 42.053 26.4266 40.773 27.1999 39.9997L35.1999 31.9997L27.1999 23.9997C26.4266 23.2263 26.4266 21.9463 27.1999 21.173C27.9733 20.3997 29.2533 20.3997 30.0266 21.173L39.4399 30.5863C40.2399 31.3597 40.2399 32.6397 39.4399 33.413Z"
+                  fill="#575387" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="reviews__slider">
+          <div class="reviews__item">
+            <div class="reviews__content">
+              <div class="reviews__header">
+                <img src="images/avatar1.png" alt="Светлана Гричишина" class="reviews__avatar">
+                <div>
+                  <h3 class="reviews__name">Светлана Гричишина</h3>
+                  <p class="reviews__info">Прошла курсы по веб-разработке</p>
+                </div>
+              </div>
+              <blockquote class="reviews__text">
+                <div class="reviews__content-wrapper">
+                  <p>Стремилась создавать не шаблонные сайты, а профессиональные с технологиями разработки HTML, CSS и
+                    JavaScript. Пройдя обучение у Александра Дарбиняна, я с нуля за два месяца создала два сайта: для
+                    своих услуг и сайт для компании люкс на производство и поставка железобетонных изделий.</p>
+                  <p>Мне понравилось то, что Александр был всегда на связи, отвечал на вопросы, помогал мне.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                </div>
+              </blockquote>
+              <a href="#" class="reviews__link">Читать полностью<img src="images/link-24.svg" alt="link"></a>
+            </div>
+            <div class="reviews__video">
+              <button class="reviews__play">
+                <img src="images/play.svg" alt="Play video">
+              </button>
+              <picture>
+                <source srcset="images/rew-mob.png" media="(max-width: 767px)">
+                <img class="reviews__preview" src="images/slider-photo-1.jpg" alt="slider photo">
+              </picture>
+
+            </div>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__content">
+              <div class="reviews__header">
+                <img src="./images/avatar2.svg" alt="Иван Иванов" class="reviews__avatar">
+                <div>
+                  <h3 class="reviews__name">Иван Иванов</h3>
+                  <p class="reviews__info">Владелец бизнеса</p>
+                </div>
+              </div>
+              <blockquote class="reviews__text">
+                <div class="reviews__content-wrapper">
+                  <p>Обучение помогло мне понять основы HTML и CSS, благодаря чему я смог создать сайт для своей
+                    компании с нуля. Большое спасибо за терпение и советы!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                </div>
+              </blockquote>
+              <a href="#" class="reviews__link">Читать полностью<img src="images/link-24.svg" alt="link"></a>
+            </div>
+            <div class="reviews__video">
+              <button class="reviews__play">
+                <img src="images/play.svg" alt="Play video">
+              </button>
+              <picture>
+                <source srcset="images/rew-mob.png" media="(max-width: 767px)">
+                <img class="reviews__preview" src="images/slider-photo-2.png" alt="slider photo">
+              </picture>
+
+            </div>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__content">
+              <div class="reviews__header">
+                <img src="images/avatar1.png" alt="Светлана Гричишина" class="reviews__avatar">
+                <div>
+                  <h3 class="reviews__name">Светлана Гричишина</h3>
+                  <p class="reviews__info">Прошла курсы по веб-разработке</p>
+                </div>
+              </div>
+              <blockquote class="reviews__text">
+                <div class="reviews__content-wrapper">
+                  <p>Стремилась создавать не шаблонные сайты, а профессиональные с технологиями разработки HTML, CSS и
+                    JavaScript. Пройдя обучение у Александра Дарбиняна, я с нуля за два месяца создала два сайта: для
+                    своих услуг и сайт для компании люкс на производство и поставка железобетонных изделий.</p>
+                  <p>Мне понравилось то, что Александр был всегда на связи, отвечал на вопросы, помогал мне.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                </div>
+              </blockquote>
+              <a href="#" class="reviews__link">Читать полностью<img src="images/link-24.svg" alt="link"></a>
+            </div>
+            <div class="reviews__video">
+              <button class="reviews__play">
+                <img src="images/play.svg" alt="Play video">
+              </button>
+              <picture>
+                <source srcset="images/rew-mob.png" media="(max-width: 767px)">
+                <img class="reviews__preview" src="images/slider-photo-1.jpg" alt="slider photo">
+              </picture>
+
+            </div>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__content">
+              <div class="reviews__header">
+                <img src="./images/avatar2.svg" alt="Иван Иванов" class="reviews__avatar">
+                <div>
+                  <h3 class="reviews__name">Иван Иванов</h3>
+                  <p class="reviews__info">Владелец бизнеса</p>
+                </div>
+              </div>
+              <blockquote class="reviews__text">
+                <div class="reviews__content-wrapper">
+                  <p>Обучение помогло мне понять основы HTML и CSS, благодаря чему я смог создать сайт для своей
+                    компании с нуля. Большое спасибо за терпение и советы!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores nobis provident nostrum.
+                  </p>
+                </div>
+              </blockquote>
+              <a href="#" class="reviews__link">Читать полностью<img src="images/link-24.svg" alt="link"></a>
+            </div>
+            <div class="reviews__video">
+              <button class="reviews__play">
+                <img src="images/play.svg" alt="Play video">
+              </button>
+              <picture>
+                <source srcset="images/rew-mob.png" media="(max-width: 767px)">
+                <img class="reviews__preview" src="images/slider-photo-2.png" alt="slider photo">
+              </picture>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="call-to-action center">
+    <div class="call-to-action__container">
+      <div class="call-to-action__content">
+        <h2 class="call-to-action__title">Нет времени читать?</h2>
+        <p class="call-to-action__subtitle">Позвоните нам! Или оставьте заявку</p>
+      </div>
+      <div class="call-to-action__contacts">
+        <a class="call-to-action__phone" href="tel:+79184184222">8 (918) 418-42-22</a>
+        <button class="button button_course show-modal">Оставить заявку</button>
+      </div>
+    </div>
+  </section>
+  <section class="learning-outcomes center">
+    <h2 class="heading">После обучения вы сможете</h2>
+    <div class="learning-outcomes__content learning-outcomes__content_mt">
+      <h3 class="learning-outcomes__subtitle">После обучения у нас вы сможете:</h3>
+      <div class="learning-outcomes__grid animate-block">
+        <div class="learning-outcomes__item">
+          <div class="learning-outcomes__icon">
+            <img src="images/arrowweb.svg" alt="photo">
+          </div>
+          <p class="learning-outcomes__text">Разрабатывать сайты для своего бизнеса и для партнеров</p>
+        </div>
+        <div class="learning-outcomes__item">
+          <div class="learning-outcomes__icon">
+            <img src="images/ni-diagram-successor.svg" alt="photo">
+          </div>
+          <p class="learning-outcomes__text">Развивать свои сайты под любую бизнес-задачу</p>
+        </div>
+        <div class="learning-outcomes__item">
+          <div class="learning-outcomes__icon">
+            <img src="images/ni-laptop-mobile.svg" alt="photo">
+          </div>
+          <p class="learning-outcomes__text">Получать пассивный доход на сайтах</p>
+        </div>
+        <div class="learning-outcomes__item">
+          <div class="learning-outcomes__icon">
+            <img src="images/ni-pencil.svg" alt="photo">
+          </div>
+          <p class="learning-outcomes__text">Недорого и эффективно делегировать рутинные задачи</p>
+        </div>
+        <div class="learning-outcomes__item">
+          <div class="learning-outcomes__icon">
+            <img src="images/ni-users.svg" alt="photo">
+          </div>
+          <p class="learning-outcomes__text">Контролировать подрядчиков</p>
+        </div>
+        <div class="learning-outcomes__item">
+          <div class="learning-outcomes__icon">
+            <img src="images/ni-folder-user.svg" alt="photo">
+          </div>
+          <p class="learning-outcomes__text">Приобрести запасную профессию</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="learning-outcomes__content">
+      <h3 class="learning-outcomes__subtitle">Во время обучения вы создадите два сайта, которые позволят вам:</h3>
+      <div class="learning-outcomes__grid animate-block">
+        <div class="learning-outcomes__item">
+          <div class="learning-outcomes__icon">
+            <img src="images/ni-ok.svg" alt="photo">
+          </div>
+          <p class="learning-outcomes__text">Продавать свои товары и услуги</p>
+        </div>
+        <div class="learning-outcomes__item">
+          <div class="learning-outcomes__icon">
+            <img src="images/ni-award.svg" alt="photo">
+          </div>
+          <p class="learning-outcomes__text">Отличаться от конкурентов</p>
+        </div>
+        <div class="learning-outcomes__item">
+          <div class="learning-outcomes__icon">
+            <img src="images/ni-arrow-up-right-square.svg" alt="photo">
+          </div>
+          <p class="learning-outcomes__text">Развивать свой бизнес, направляя трафик на сайт</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="comparison center">
+    <div class="comparison__header">
+      <h2 class="heading comparison__title">Конструктор или<br> профессиона&shy;льный сайт?</h2>
+      <p class="comparison__description">
+        Многие предприниматели начинают с конструкторов сайтов, но по мере развития бизнеса понимают, что нужен
+        уникальный сайт, созданный самостоятельно
+      </p>
+    </div>
+
+    <div class="comparison__table">
+      <div class="comparison__cell comparison__cell_empty"></div>
+      <div class="comparison__cell comparison__cell_header comparison__cell_constructor">Конструктор</div>
+      <div class="comparison__cell comparison__cell_header comparison__cell_professional">
+        Сайт, разработанный профессиональными инструментами
+      </div>
+      <div class="comparison__cell comparison__cell_label">Код сайта</div>
+      <div class="comparison__cell comparison__cell_pink">Имеет функциональные ограничения</div>
+      <div class="comparison__cell comparison__cell_content">Можно изменить в любое время, и создать любой функционал
+      </div>
+      <div class="comparison__cell comparison__cell_label">Ежемесячная плата за конструктор</div>
+      <div class="comparison__cell comparison__cell_pink">Оплата ежемесячно по тарифу</div>
+      <div class="comparison__cell comparison__cell_content">
+        Получите новую компетенцию, и востребованную профессию с нуля! Языки и технологии изучаемые на курсе
+      </div>
+      <div class="comparison__cell comparison__cell_label">Влияние санкций на сервисы</div>
+      <div class="comparison__cell comparison__cell_pink">Санкции повлияли на многие</div>
+      <div class="comparison__cell comparison__cell_content">Санкции почти не повлияли</div>
+      <div class="comparison__cell comparison__cell_label">SEO-оптимизация</div>
+      <div class="comparison__cell comparison__cell_pink">Сайт на конструкторе тяжело индексируется</div>
+      <div class="comparison__cell comparison__cell_content">Полноценная</div>
+      <div class="comparison__cell comparison__cell_label">Переезд на другой хостинг</div>
+      <div class="comparison__cell comparison__cell_pink">Ограничено хостингом конструктора</div>
+      <div class="comparison__cell comparison__cell_content">Можно выбрать любой хостинг</div>
+      <div class="comparison__cell comparison__cell_label comparison__cell_last">Дизайн и функционал</div>
+      <div class="comparison__cell comparison__cell_pink comparison__cell_last">Ограничено и шаблонно</div>
+      <div class="comparison__cell comparison__cell_content comparison__cell_last">Гибкий дизайн и функционал</div>
+    </div>
+  </section>
+  <section class="site-types center">
+    <div class="site-types__container">
+      <div class="site-types__content">
+        <h2 class="heading heading_white">
+          Виды коммерческих сайтов, которые<br> вы научитесь создавать на этом курсе
+        </h2>
+      </div>
+      <div class="site-types__info">
+        <div class="site-types__list animate-block">
+          <span class="site-types__item site-types__item--highlighted">Сайт-визитка</span>
+          <span class="site-types__item site-types__item--highlighted">Корпоративный сайт</span>
+          <span class="site-types__item site-types__item--highlighted">Интернет-магазин</span>
+          <span class="site-types__item site-types__item--highlighted">Новостной сайт</span>
+          <span class="site-types__item">Информационный СЕО-сайт</span>
+          <span class="site-types__item">Одностраничный сайт (Лендинг)</span>
+          <span class="site-types__item site-types__item_mini">Блог</span>
+        </div>
+        <img src="images/site-type.svg" alt="Иллюстрация сайта" class="site-types__image">
+      </div>
+    </div>
+  </section>
+  <section class="portfolio center">
+    <div class="portfolio__top">
+      <h2 class="heading">Портфолио наших учеников</h2>
+
+      <div class="portfolio__buttons">
+        <button class="portfolio__arrow portfolio__arrow--prev" aria-label="Предыдущий слайд">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <path
+              d="M32.0001 5.3335C46.6934 5.3335 58.6667 17.3068 58.6667 32.0002C58.6667 46.6935 46.6934 58.6668 32.0001 58.6668C17.3067 58.6668 5.33341 46.6935 5.33341 32.0002C5.33341 17.3068 17.3067 5.3335 32.0001 5.3335ZM24.5601 33.4135L33.9734 42.8268C34.3734 43.2268 34.8801 43.4135 35.3867 43.4135C35.8934 43.4135 36.4001 43.2268 36.8001 42.8268C37.5734 42.0535 37.5734 40.7735 36.8001 40.0002L28.8001 32.0002L36.8001 24.0002C37.5734 23.2268 37.5734 21.9468 36.8001 21.1735C36.0267 20.4002 34.7467 20.4002 33.9734 21.1735L24.5601 30.5868C23.7601 31.3602 23.7601 32.6402 24.5601 33.4135Z"
+              fill="#413B83" />
+          </svg>
+        </button>
+        <button class="portfolio__arrow portfolio__arrow--next" aria-label="Следующий слайд">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="#413B83">
+            <path
+              d="M31.9999 5.3335C17.3066 5.3335 5.33325 17.3068 5.33325 32.0002C5.33325 46.6935 17.3066 58.6668 31.9999 58.6668C46.6933 58.6668 58.6666 46.6935 58.6666 32.0002C58.6666 17.3068 46.6933 5.3335 31.9999 5.3335ZM39.4399 33.4135L30.0266 42.8268C29.6266 43.2268 29.1199 43.4135 28.6133 43.4135C28.1066 43.4135 27.5999 43.2268 27.1999 42.8268C26.4266 42.0535 26.4266 40.7735 27.1999 40.0002L35.1999 32.0002L27.1999 24.0002C26.4266 23.2268 26.4266 21.9468 27.1999 21.1735C27.9733 20.4002 29.2533 20.4002 30.0266 21.1735L39.4399 30.5868C40.2399 31.3602 40.2399 32.6402 39.4399 33.4135Z"
+              fill="#413B83" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="portfolio__slider">
+      <div class="portfolio__slides">
+        <!-- Первый слайд -->
+        <div class="portfolio__slide">
+          <div class="portfolio__info">
+            <div class="portfolio__student">
+              <div class="portfolio__avatar">
+                <img src="images/portfolio-student.png" alt="Аватар Сергея Фомина" class="portfolio__avatar-image">
+              </div>
+              <div class="portfolio__text">
+                <h3 class="portfolio__name">Сергей Фомин</h3>
+                <p class="portfolio__course">Прошла курсы по веб-разработке</p>
+              </div>
+            </div>
+            <p class="portfolio__description">
+              Нанял специалиста и под своим руководством создал высококонверсионный сайт для привлечения игроков на игру
+              МАФИЯ в Краснодаре.
+            </p>
+            <button class="button-border button-border_w100">Смотреть проект</button>
+          </div>
+          <div class="portfolio__preview">
+            <img src="images/shots-so-1.png" alt="Превью проекта" class="portfolio__image">
+          </div>
+        </div>
+        <div class="portfolio__slide">
+          <div class="portfolio__info">
+            <div class="portfolio__student">
+              <div class="portfolio__avatar">
+                <img src="images/portfolio-student.png" alt="Аватар Сергея Фомина" class="portfolio__avatar-image">
+              </div>
+              <div class="portfolio__text">
+                <h3 class="portfolio__name">Сергей Фомин</h3>
+                <p class="portfolio__course">Прошла курсы по веб-разработке</p>
+              </div>
+            </div>
+            <p class="portfolio__description">
+              Нанял специалиста и под своим руководством создал высококонверсионный сайт для привлечения игроков на игру
+              МАФИЯ в Краснодаре.
+            </p>
+            <button class="button-border button-border_w100">Смотреть проект</button>
+          </div>
+          <div class="portfolio__preview">
+            <img src="images/shots-so-1.png" alt="Превью проекта" class="portfolio__image">
+          </div>
+        </div>
+        <div class="portfolio__slide">
+          <div class="portfolio__info">
+            <div class="portfolio__student">
+              <div class="portfolio__avatar">
+                <img src="images/portfolio-student.png" alt="Аватар Сергея Фомина" class="portfolio__avatar-image">
+              </div>
+              <div class="portfolio__text">
+                <h3 class="portfolio__name">Сергей Фомин</h3>
+                <p class="portfolio__course">Прошла курсы по веб-разработке</p>
+              </div>
+            </div>
+            <p class="portfolio__description">
+              Нанял специалиста и под своим руководством создал высококонверсионный сайт для привлечения игроков на игру
+              МАФИЯ в Краснодаре.
+            </p>
+            <button class="button-border button-border_w100">Смотреть проект</button>
+          </div>
+          <div class="portfolio__preview">
+            <img src="images/shots-so-1.png" alt="Превью проекта" class="portfolio__image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="course-target animate-block center">
+    <div class="course-target__card course-target__card_head">
+      <h2 class="heading">Кому также подходит курс</h2>
+    </div>
+
+    <div class="course-target__card course-target__card_gray">
+      <h3 class="course-target__card-title">Маркетологу, рекламщику</h3>
+      <p class="course-target__card-description">
+        Вы повысите свой доход, расширив линейку услуг. Сможете делать сайты для заказчиков. А также успешно
+        контролировать подрядчиков и сотрудников.
+      </p>
+    </div>
+
+    <div class="course-target__card course-target__card_gray">
+      <h3 class="course-target__card-title">Копирайтеру, желающему расширить свои компетенции</h3>
+      <p class="course-target__card-description">
+        Мои ученики копирайтеры на мой вопрос, зачем вам нужна компетенция разработчика, отвечают так: "Когда мы
+        работаем с заказчиками и у меня всё хорошо получается, они просят также хорошо разработать сайт." А так как
+        стать веб-разработчиком несложно — то этот курс именно для вас.
+      </p>
+    </div>
+
+    <div class="course-target__card course-target__card_gray">
+      <h3 class="course-target__card-title">Seo-специалисту</h3>
+      <p class="course-target__card-description">
+        Вы повысите доход, профессионализм и комфорт — вам не придётся месяцами ждать, когда коллеги сверстают новые
+        маркетинговые блоки, сделают внутреннюю оптимизацию кода. После прохождения курса вы сможете всё это делать
+        самостоятельно.
+      </p>
+    </div>
+
+    <div class="course-target__card course-target__card_image">
+      <img src="images/target.svg" alt="Иллюстрация" class="course-target__image">
+    </div>
+
+    <div class="course-target__card course-target__card_gray">
+      <h3 class="course-target__card-title">Контент-менеджеру</h3>
+      <p class="course-target__card-description">
+        Вы получите навыки, которые поднимут вас на вершину профессионализма и увеличат доход. Для профессиональной
+        работы контент-менеджеру необходимо разбираться в SEO, в кодах HTML, в Photoshop для подготовки графики и так
+        далее.
+      </p>
+    </div>
+
+    <div class="course-target__card course-target__card_gray">
+      <h3 class="course-target__card-title">Верстальщику сайтов</h3>
+      <p class="course-target__card-description">
+        Если вы научитесь разрабатывать сайты под ключ, верстать их с использованием методологии БЭМ, семантики версии
+        HTML5, препроцессоров, Bootstrap и др. технологий — вы измените свою жизнь.
+      </p>
+    </div>
+
+    <div class="course-target__card course-target__card_gray">
+      <h3 class="course-target__card-title">Веб-дизайнеру</h3>
+      <p class="course-target__card-description">
+        Что лучше — создать прекрасный дизайн-макет сайта и получить 5–10% стоимости сайта, или самому сверстать и
+        разработать сайт и получить в 10–20 раз больше денег с одного проекта? Именно для дизайнеров жизненно необходим
+        этот курс.
+      </p>
+    </div>
+  </section>
+  <section class="about-expert center">
+    <div class="about-expert__container">
+      <div class="about-expert__info">
+        <p class="about-expert__name">Преподаватель и автор курсов</p>
+        <h2 class="about-expert__fullname">Александр Дарбинян</h2>
+        <p class="about-expert__description">
+          Основатель веб-студии «Профессионал», сертифицированный веб-разработчик с более чем 20-летним опытом.
+        </p>
+      </div>
+      <div class="about-expert__content">
+        <div class="info-card">
+          <h3 class="info-card__title">Сертифицирован<wbr>ный веб-разработчик</h3>
+          <p class="info-card__number">20+</p>
+          <p class="info-card__text">лет опыта</p>
+        </div>
+        <div class="info-card info-card_height">
+          <h3 class="info-card__title">Проводил обучение для групп до 50 человек</h3>
+          <p class="info-card__number">700+</p>
+          <p class="info-card__text">семинаров</p>
+        </div>
+        <div class="about-expert__image about-expert__image_photo">
+          <picture class="about-expert__picture">
+            <source srcset="images/expert.png" media="(min-width: 1440px)">
+            <source srcset="images/expert-photo-lg.png" media="(max-width: 1439px)">
+            <img src="images/expert-photo-lg.png" alt="Эксперт" class="about-expert__photo">
+          </picture>
+        </div>
+        <div class="info-card">
+          <h3 class="info-card__title">Помог сотням людей войти в IT и стать профессионалами</h3>
+          <p class="info-card__number">с 2000г.</p>
+          <p class="info-card__text">в web-разработке</p>
+        </div>
+
+        <div class="info-card">
+          <h3 class="info-card__title">Работал с ведущими российскими компаниями</h3>
+          <div class="info-card__logos">
+            <span class="info-card__logo">Лукойл</span>
+            <span class="info-card__logo">Роснефть</span>
+            <span class="info-card__logo">Термнефть</span>
+            <span class="info-card__logo">ИнжГео</span>
+            <span class="info-card__logo">КубаньЭнерго</span>
+          </div>
+        </div>
+
+        <div class="info-card info-card_1280">
+          <h3 class="info-card__title">Преподавал в Академии Ворлдскиллс Россия</h3>
+        </div>
+        <div class="info-card info-card_1024">
+          <h3 class="info-card__title">Разрабатывал портал для ФК Краснодар</h3>
+        </div>
+        <div class="about-expert__cta">
+          <h3 class="about-expert__cta-title">Присоединяйтесь к моему Telegram-каналу!</h3>
+          <p class="about-expert__cta-description">
+            Следите за успехами учеников, участвуйте в проектах и получайте свежие новости из мира IT!
+          </p>
+          <a target="_blank" href="https://t.me/example" class="about-expert__cta-link">
+            <img src="images/tg.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="program" class="program center">
+    <div class="program__container">
+      <h2 class="heading heading_white">Программа обучения</h2>
+      <div class="program__blocks">
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 1</h3>
+              <p class="program__block-description">История и развитие языка Java</p>
+              <div class="program__content">
+                <h4>Происхождение Java</h4>
+                <ul>
+                  <li>Зарождение современного программирования: язык С </li>
+                  <li>Следующий этап: язык С++ </li>
+                  <li>Предпосылки к созданию Java</li>
+                  <li>Создание языка Java</li>
+                  <li>Связь с языком С#</li>
+                </ul>
+                <h4>Каким образом язык Java повлиял на Интернет</h4>
+                <ul>
+                  <li>Аплеты на Java</li>
+                  <li>Безопасность</li>
+                  <li>Переносимость</li>
+                  <li>Чудо Java: байт-код</li>
+                  <li>Выход за пределы аплетов</li>
+                  <li>Сервлеты: серверные программы на Java</li>
+                </ul>
+                <h4>Терминология Java</h4>
+                <ul>
+                  <li>Простота</li>
+                  <li>Объектная ориентированность</li>
+                  <li>Надежность</li>
+                  <li>Многопоточность</li>
+                  <li>Архитектурная нейтральность</li>
+                  <li>Интерпретируемость и высокая производительность</li>
+                  <li>Распределенность</li>
+                  <li>Динамичность</li>
+                </ul>
+                <h4>Эволюция языка Java</h4>
+                <h4>Версия Java SE 9</h4>
+                <h4>Культура нововведений</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="0"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 2</h3>
+              <p class="program__block-description">Краткий обзор Java</p>
+              <div class="program__content">
+                <h4>Объектно-ориентированное программирование</h4>
+                  <ul>
+                    <li>Основные арифметические операции</li>
+                    <li>Операция деления по модулю</li>
+                    <li>Составные арифметические операции с присваиванием</li>
+                    <li>Операции инкремента и декремента</li>
+                  </ul>
+                <h4>Первый пример простой программы</h4>
+                  <ul>
+                    <li>Ввод кода программы</li>
+                    <li>Компиляция программы</li>
+                    <li>Подробный анализ первого примера программы</li>
+                  </ul>
+                  <h4>Второй пример короткой программы</h4>
+                  <h4>Два управляющих оператора</h4>
+                  <ul>
+                    <li>Условный оператор if</li>
+                    <li>Оператор цикла for</li>
+                  </ul>
+                  <h4>Применение блоков кода</h4>
+                  <ul>
+                    <li>Вопросы лексики</li>
+                    <li>Пробелы</li>
+                    <li>Идентификаторы</li>
+                    <li>Литералы</li>
+                    <li>Комментарии</li>
+                    <li>Разделители</li>
+                  </ul>
+                  <h4>Ключевые слова Java Библиотеки классов Java</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="1"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 3</h3>
+              <p class="program__block-description">Типы данных, переменные и массивы</p>
+              <div class="program__content">
+                <h4>Java - строго типизированный язык</h4>
+                <h4>Примитивные типы</h4>
+                <h4>Целые числа</h4>
+                <ul>
+                  <li>Тип bуtе</li>
+                  <li>Тип short</li>
+                  <li>Тип int</li>
+                  <li>Тип long</li>
+                </ul>
+                <h4>Числа с плавающей точкой</h4>
+                <ul>
+                  <li>Тип float</li>
+                  <li>Тип dоublе</li>
+                </ul>
+                <h4>Символы</h4>
+                <h4>Логические значения</h4>
+                <h4>Подробнее о литералах</h4>
+                <ul>
+                  <li>Целочисленные литералы</li>
+                  <li>Литералы с плавающей точкой</li>
+                  <li>Логические литералы</li>
+                  <li>Символьные литералы</li>
+                  <li>Строковые литералы</li>
+                </ul>
+                <h4>Переменные</h4>
+                <ul>
+                  <li>Объявление переменной</li>
+                  <li>Динамическая инициализация</li>
+                  <li>Область видимости и срок действия переменных</li>
+                </ul>
+                <h4>Преобразование и приведение типов</h4>
+                <ul>
+                  <li>Автоматическое преобразование типов в Java</li>
+                  <li>Приведение несовместимых типов</li>
+                </ul>
+                <h4>Автоматическое продвижение типов в выражениях</h4>
+                <ul>
+                  <li>Правила продвижения типов</li>
+                </ul>
+                  <h4>Массивы</h4>
+                  <ul>
+                    <li>Одномерные массивы</li>
+                    <li>Многомерные массивы</li>
+                    <li>Альтернативный синтаксис объявления массивов</li>
+                  </ul>
+                  <h4>Введение в символьные строки</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 4</h3>
+              <p class="program__block-description">Операции</p>
+              <div class="program__content">
+                <h4>Арифметические операции</h4>
+                <ul>
+                  <li>Основные арифметические операции</li>
+                  <li>Операция деления по модулю</li>
+                  <li>Составные арифметические операции с присваиванием</li>
+                  <li>Операции инкремента и декремента</li>
+                </ul>
+                <h4>Поразрядные операции</h4>
+                <ul>
+                  <li>Поразрядные логические операции</li>
+                  <li>Сдвиг влево</li>
+                  <li>Сдвиг вправо</li>
+                  <li>Беззнаковый сдвиг вправо</li>
+                  <li>Поразрядные составные операции с присваиванием</li>
+                </ul>
+                <h4>Операции отношения</h4>
+                <h4>Логические операции</h4>
+                <ul>
+                  <li>Укороченные логические операции</li>
+                </ul>
+                <h4>Операция присваивания</h4>
+                <ul>
+                  <li>Тернарная операция</li>
+                </ul>
+                <h4>Предшествование операций</h4>
+                <h4>Применение круглых скобок</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="3"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 5</h3>
+              <p class="program__block-description">Управляющие операторы</p>
+              <div class="program__content">
+                <h4>Операторы выбора</h4>
+                <ul>
+                  <li>Условный оператор if</li>
+                  <li>Оператор switch</li>
+                </ul>
+                <h4>Операторы цикла</h4>
+                <ul>
+                  <li>Циклwhilе</li>
+                  <li>Цикл do-while</li>
+                  <li>Цикл for</li>
+                  <li>Вложенные циклы</li>
+                </ul>
+                <h4>
+                  <li>Применение оператора break</li>
+                  <li>Применение оператора cont inue</li>
+                  <li>Оператор return</li>
+                </h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 6</h3>
+              <p class="program__block-description">Введение в классы</p>
+              <div class="program__content">
+                <h4>Основы классов</h4>
+                <ul>
+                  <li>Общая форма класса</li>
+                  <li>Простой класс</li>
+                </ul>
+                <h4>Объявление объектов</h4>
+                <ul>
+                  <li>Подробное рассмотрение операции new</li>
+                </ul>
+                <h4>Присваивание переменным ссылок на объекты</h4>
+                <h4>Введение в методы</h4>
+                <ul>
+                  <li>Ввод метода в класс Вох</li>
+                  <li>Возврат значений</li>
+                  <li>Ввод метода, принимающего параметры</li>
+                </ul>
+                <h4>Конструкторы</h4>
+                <ul>
+                  <li>Параметризированные конструкторы</li>
+                </ul>
+                <h4>Ключевое слово this</h4>
+                <ul>
+                  <li>Сокрытие переменных экземпляра</li>
+                </ul>
+                <h4>Сборка "мусора"</h4>
+                <h4>Класс Stack</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 7</h3>
+              <p class="program__block-description">Подробное рассмотрение классов и методов</p>
+              <div class="program__content">
+                <h4>Перегрузка методов</h4>
+                <ul>
+                  <li>Перегрузка конструкторов</li>
+                </ul>
+                <ul>
+                  <li>Применение объектов в качестве параметров</li>
+                  <li>Подробное рассмотрение особенностей передачи аргументов</li>
+                  <li>Возврат объектов</li>
+                  <li>Рекурсия</li>
+                  <li>Введение в управление доступом</li>
+                  <li>Ключевое слово stаtiс</li>
+                  <li>Ключевое слово final</li>
+                  <li>Еще раз о массивах 205</li>
+                  <li>Вложенные и внутренние классы</li>
+                  <li>Краткий обзор класса String</li>
+                  <li>Применение аргументов командной строки</li>
+                </ul>
+                <h4>Аргументы переменной длины</h4>
+                <ul>
+                  <li>Перегрузка методов с аргументами переменной длины</li>
+                  <li>Аргументы переменной длины и неоднозначность</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 8</h3>
+              <p class="program__block-description">Наследование</p>
+              <div class="program__content">
+                <h4>Основы наследования</h4>
+                <ul>
+                  <li>Доступ к членам класса и наследование</li>
+                  <li>Практический пример наследования</li>
+                  <li>Переменная из суперкласса может ссылаться на объект подкласса</li>
+                </ul>
+                <h4>Ключевое слово super</h4>
+                <ul>
+                  <li>Вызов конструкторов суперкласса с помощью ключевого слова super</li>
+                  <li>Другое применение ключевого слова super</li>
+                </ul>
+                <h4>Создание многоуровневой иерархии</h4>
+                <h4>Порядок вызова конструкторов</h4>
+                <h4>Переопределение методов</h4>
+                <h4>Динамическая диспетчеризация методов</h4>
+                <ul>
+                  <li>Назначение переопределенных методов</li>
+                  <li>Применение переопределения методов</li>
+                </ul>
+                <h4>Применение абстрактных классов</h4>
+                <h4>Ключевое слово final в сочетании с наследованием</h4>
+                <ul>
+                  <li>Предотвращение переопределения с помощью ключевого слова final</li>
+                  <li>Предотвращение наследования с помощью ключевого слова final</li>
+                </ul>
+                <h4>Класс Object</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 9</h3>
+              <p class="program__block-description">Пакеты и интерфейсы</p>
+              <div class="program__content">
+                <h4>Пакеты</h4>
+                <ul>
+                  <li>Определение пакета</li>
+                  <li>Поиск пакетов и переменная окружения CLASSPATH</li>
+                  <li>Краткий пример пакета</li>
+                </ul>
+                <h4>Доступ к пакетам и его компонентам</h4>
+                <ul>
+                  <li>Пример доступа к пакетам</li>
+                </ul>
+                <h4>Импорт пакетов</h4>
+                <h4>Интерфейсы</h4>
+                <ul>
+                  <li>Объявление интерфейса</li>
+                  <li>Реализация интерфейсов</li>
+                  <li>Вложенные интерфейсы</li>
+                  <li>Применение интерфейсов</li>
+                  <li>Переменные в интерфейсах</li>
+                  <li>Расширение интерфейсов</li>
+                </ul>
+                <h4>Методы с реализацией по умолчанию</h4>
+                <ul>
+                  <li>Основы применения методов с реализацией по умолчанию</li>
+                  <li>Прикладной пример</li>
+                  <li>Вопросы множественного наследования</li>
+                </ul>
+                <h4>Применение статических методов в интерфейсе</h4>
+                <h4>Закрытые методы интерфейсов</h4>
+                <h4>Заключительные соображения по поводу пакетов и интерфейсов</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 10</h3>
+              <p class="program__block-description">Обработка исключений</p>
+              <div class="program__content">
+                <ul>
+                  <li>Основы обработки исключений</li>
+                  <li>Типы исключений</li>
+                  <li>Необрабатываемые исключения</li>
+                  <li>Применение блоков операторов try и catch</li>
+                  <li>Вывод описания исключения</li>
+                  <li>Применение нескольких операторов catch 284</li>
+                  <li>Вложенные операторы try</li>
+                  <li>Оператор throw</li>
+                  <li>Оператор throws</li>
+                  <li>Оператор finally</li>
+                  <li>Встроенные в Java исключения</li>
+                  <li>Создание собственных подклассов исключений</li>
+                  <li>Цепочки исключений</li>
+                  <li>Дополнительные средства для обработки исключений</li>
+                  <li>Применение исключений</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 11</h3>
+              <p class="program__block-description">Многопоточное программирование</p>
+              <div class="program__content">
+                <h4>Модель потоков исполнения в Java</h4>
+                <ul>
+                  <li>Приоритеты потоков</li>
+                  <li>Синхронизация</li>
+                  <li>Обмен сообщениями</li>
+                  <li>Класс Thread и интерфейс Runnable</li>
+                </ul>
+                <h4>Главный поток исполнения</h4>
+                <h4>Создание потока исполнения</h4>
+                <ul>
+                  <li>Реализация интерфейса RunnaЫe</li>
+                  <li>Расширение класса Thread</li>
+                  <li>Выбор способа создания потоков исполнения</li>
+                </ul>
+                <h4>Создание многих потоков исполнения</h4>
+                <h4>Применение методов isAlive() и join()</h4>
+                <h4>Приоритеты потоков исполнения</h4>
+                <h4>Синхронизация</h4>
+                <ul>
+                  <li>Применение синхронизированных методов</li>
+                  <li>Оператор synchronized</li>
+                </ul>
+                <h4>Взаимодействие потоков исполнения</h4>
+                <h4>Взаимная блокировка</h4>
+                <h4>Приостановка, возобновление и остановка потоков исполнения</h4>
+                <h4>Получение состояния потока исполнения</h4>
+                <h4>Одновременное создание и запуск потоков исполнения</h4>
+                <h4>фабричными методами</h4>
+                <h4>Применение многопоточности</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 12</h3>
+              <p class="program__block-description">Перечисления, автоупаковка и аннотации</p>
+              <div class="program__content">
+                <h4>Перечисления 337</h4>
+                <ul>
+                  <li>Основные положения о перечислениях</li>
+                  <li>Методы values () и valueOf ()</li>
+                  <li>Перечисления в Java относятся к типам классов</li>
+                  <li>Перечисления наследуются от класса Enum</li>
+                  <li>Еще один пример перечисления</li>
+                </ul>
+                <h4>Оболочки типов</h4>
+                <ul>
+                  <li>Класс Character</li>
+                  <li>Класс Boolean</li>
+                  <li>Оболочки числовых типов</li>
+                </ul>
+                <h4>Автоупаковка 350</h4>
+                <ul>
+                  <li>Автоупаковка и методы</li>
+                  <li>Автоупаковка и автораспаковка в выражениях</li>
+                  <li>Автоупаковка и распаковка значений из классов Boolean и Character</li>
+                  <li>Автоупаковка и автораспаковка помогает предотвратить ошибки</li>
+                  <li>Предупреждение</li>
+                </ul>
+                <h4>Аннотации</h4>
+                <ul>
+                  <li>Основы аннотирования программ</li>
+                  <li>Правила удержания аннотаций</li>
+                  <li>Получение аннотаций во время выполнения с помощью рефлексии</li>
+                  <li>Второй пример применения рефлексии</li>
+                  <li>Получение всех аннотаций</li>
+                  <li>Интерфейс AnnotatedElement</li>
+                  <li>Использование значений по умолчанию</li>
+                  <li>Маркерные аннотации</li>
+                  <li>Одночленные аннотации</li>
+                  <li>Встроенные аннотации</li>
+                </ul>
+                <h4>Типовые аннотации</h4>
+                <h4>Повторяющиеся аннотации</h4>
+                <ul>
+                  <li>Некоторые ограничения на аннотации</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 13</h3>
+              <p class="program__block-description">Ввод-вывод, оператор try с ресурсами и прочие вопросы</p>
+              <div class="program__content">
+                <h4>Основы ввода-вывода</h4>
+                <ul>
+                  <li>Потоки ввода-вывода</li>
+                  <li>Потоки ввода-вывода байтов и символов</li>
+                  <li>Предопределенные потоки ввода-вывода</li>
+                </ul>
+                <h4>Чтение данных, вводимых с консоли</h4>
+                <ul>
+                  <li>Чтение символов</li>
+                  <li>Чтение символьных строк</li>
+                </ul>
+                <h4>Запись данных, выводимых на консоль</h4>
+                <h4>Класс PrintWriter</h4>
+                <h4>Чтение и запись данных в файлы</h4>
+                <h4>Автоматическое закрытие файла</h4>
+                <h4>Модификаторы доступа transient и volatile</h4>
+                <h4>Применение операции instanceof</h4>
+                <h4>Модификатор доступа striсtfр</h4>
+                <h4>Платформенно-ориентированные методы</h4>
+                <h4>Применение ключевого слова assert</h4>
+                <ul>
+                  <li>Параметры включения и отключения режима проверки утверждений</li>
+                </ul>
+                <h4>Статический импорт</h4>
+                <h4>Вызов перегружаемых конструкторов по ссылке this()</h4>
+                <h4>Компактные профили Java API</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 14</h3>
+              <p class="program__block-description">Обобщения</p>
+              <div class="program__content">
+                <h4>Что такое обобщения</h4>
+                <h4>Простой пример обобщения</h4>
+                <ul>
+                  <li>Обобщения оперируют только ссылочными типами</li>
+                  <li>Обобщенные типы различаются по аргументам типа</li>
+                </ul>
+                <h4>Каким образом обобщения повышают типовую безопасность</h4>
+                <h4>Обобщенный класс с двумя параметрами типа</h4>
+                <h4>Общая форма обобщенного класса</h4>
+                <h4>Ограниченные типы</h4>
+                <h4>Применение метасимвольных аргументов</h4>
+                <ul>
+                  <li>Ограниченные метасимвольные аргументы</li>
+                </ul>
+                <h4>Создание обобщенного метода</h4>
+                <ul>
+                  <li>Обобщенные конструкторы</li>
+                </ul>
+                <h4>Обобщенные интерфейсы</h4>
+                <h4>Базовые типы и унаследованный код</h4>
+                <h4>Иерархии обобщенных классов</h4>
+                <ul>
+                  <li>Применение обобщенного суперкласса</li>
+                  <li>Обобщенный подкласс</li>
+                  <li>Сравнение типов в обобщенной иерархии во время выполнения</li>
+                  <li>Приведение типов</li>
+                  <li>Переопределение методов в обобщенном классе</li>
+                </ul>
+                <h4>Выведение типов и обобщения</h4>
+                <h4>Стирание</h4>
+                <ul>
+                  <li>Мостовые методы</li>
+                </ul>
+                <h4>Ошибки неоднозначности</h4>
+                <h4>Некоторые ограничения, присущие обобщениям</h4>
+                <ul>
+                  <li>Получить экземпляр по параметру типа нельзя</li>
+                  <li>Ограничения на статические члены</li>
+                  <li>Ограничения на обобщенные массивы</li>
+                  <li>Ограничения на обобщенные исключения</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 15</h3>
+              <p class="program__block-description">Лямбда-выражения</p>
+              <div class="program__content">
+                <h4>Введение в лямбда-выражения</h4>
+                <ul>
+                  <li>Основные положения о лямбда-выражениях</li>
+                  <li>Функциональные интерфейсы</li>
+                  <li>Некоторые примеры лямбда-выражений</li>
+                </ul>
+                <h4>Блочные лямбда-выражения</h4>
+                <h4>Обобщенные функциональные интерфейсы</h4>
+                <h4>Передача лямбда-выражений в качестве аргументов</h4>
+                <h4>Лямбда-выражения, исключения и захват переменных</h4>
+                <h4>Ссылки на методы</h4>
+                <ul>
+                  <li>Ссылки на статические методы</li>
+                  <li>Ссылки на методы экземпляра</li>
+                  <li>Ссылки на обобщенные методы</li>
+                </ul>
+                <h4>Ссылки на конструкторы</h4>
+                <h4>Предопределенные функциональные интерфейсы</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 16</h3>
+              <p class="program__block-description">Модули</p>
+              <div class="program__content">
+                <h4>Основные положения о модулях</h4>
+                <ul>
+                  <li>Простой пример модуля</li>
+                  <li>Компиляция и выполнение первого примера модульного приложения</li>
+                  <li>Подробное рассмотрение операторов requires и exports</li>
+                </ul>
+                <h4>Модуль java. base и платформенные модули</h4>
+                <h4>Унаследованный код и безымянные модули</h4>
+                <h4>Экспорт в конкретный модуль</h4>
+                <h4>Применение оператора requirеs transitivе</h4>
+                <h4>Применение служб</h4>
+                <ul>
+                  <li>Основные положения о службах и поставщиках их услуг</li>
+                  <li>Ключевые слова для подержки служб</li>
+                  <li>Пример модульной службы</li>
+                </ul>
+                <h4>Графы модулей</h4>
+                <h4>Специальные средства модулей</h4>
+                <ul>
+                  <li>Открытые модули</li>
+                  <li>Оператор opens</li>
+                  <li>Оператор requires static</li>
+                </ul>
+                <h4>Утилита j 1 ink и модульные архивные JАR-файлы</h4>
+                <ul>
+                  <li>Связывание файлов в развернутом каталоге</li>
+                  <li>Связывание модульных архивных JАR-файлов</li>
+                  <li>Файлы формата JMOD</li>
+                </ul>
+                <h4>Об уровнях и автоматических модулях</h4>
+                <h4>Заключительные соображения по поводу модулей 525</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 17</h3>
+              <p class="program__block-description">Обработка символьных строк</p>
+              <div class="program__content">
+                <h4>Конструкторы символьных строк</h4>
+                <h4>Длина символьной строки</h4>
+                <h4>Специальные строковые операции</h4>
+                <ul>
+                  <li>Строковые литералы</li>
+                  <li>Сцепление строк</li>
+                  <li>Сцепление символьных строк с другими типами данных</li>
+                  <li>Преобразование символьных строк и метод toString ()</li>
+                </ul>
+                <h4>Извлечение символов</h4>
+                <ul>
+                  <li>Метод charAt ()</li>
+                  <li>Метод getChars ()</li>
+                  <li>Метод getBytes ()</li>
+                  <li>Метод toCharArray ()</li>
+                </ul>
+                <h4>Сравнение символьных строк</h4>
+                <ul>
+                  <li>Методы equals () и equalsignoreCase ()</li>
+                  <li>Метод regionМatches ()</li>
+                  <li>Методы startsWith () и endsWith ()</li>
+                  <li>Метод equals () в сравнении с операцией==</li>
+                  <li>Метод cornpareTo ()</li>
+                </ul>
+                <h4>Поиск в символьных строках</h4>
+                <h4>Видоизменение символьных строк</h4>
+                <ul>
+                  <li>Метод substring ()</li>
+                  <li>Метод concat ()</li>
+                  <li>Метод replace ()</li>
+                  <li>Метод trirn ()</li>
+                </ul>
+                <h4>Преобразование данных методом vаluеОf ()</h4>
+                <h4>Смена регистра букв в строке</h4>
+                <h4>Соединение символьных строк</h4>
+                <h4>Дополнительные методы из класса String</h4>
+                <h4>Класс StringBuffer</h4>
+                <ul>
+                  <li>Методы length () и сараеity()</li>
+                  <li>Метод ensureCapacity ()</li>
+                  <li>Метод setLength ()</li>
+                  <li>Методы charAt () и setCharAt ()</li>
+                  <li>Метод getChars ()</li>
+                  <li>Метод append ()</li>
+                  <li>Метод insert ()</li>
+                  <li>Метод reverse ()</li>
+                  <li>Методы delete () и deleteCharAt ()</li>
+                  <li>Метод replace ()</li>
+                  <li>Метод substring ()</li>
+                  <li>Дополнительные методы из класса StringBuffer</li>
+                </ul>
+                <h4>Класс StringBuilder</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 18</h3>
+              <p class="program__block-description">Пакет java.lang</p>
+              <div class="program__content">
+                <h4>Оболочки примитивных типов</h4>
+                <ul>
+                  <li>Класс Number</li>
+                  <li>Классы DouЫe и Float</li>
+                  <li>Meтoдыisinfinite() иisNaN()</li>
+                  <li>Классы Byte, Short, Integer и Long</li>
+                  <li>Класс Character</li>
+                  <li>Дополнения класса Character для поддержки кодовых точек в Юникоде</li>
+                  <li>Класс Boolean</li>
+                </ul>
+                <h4>Класс Void</h4>
+                <h4>Класс Process</h4>
+                <h4>Класс Runtime</h4>
+                <ul>
+                  <li>Управление памятью</li>
+                  <li>Выполнение других программ</li>
+                </ul>
+                <h4>Класс Runtime. Version</h4>
+                <h4>Класс ProcessBuilder</h4>
+                <h4>Класс System</h4>
+                <ul>
+                  <li>Измерение времени выполнения программы</li>
+                  <li>методом currentTimeMills()</li>
+                  <li>Применение метода arraycopy()</li>
+                  <li>Свойства окружения</li>
+                </ul>
+                <h4>Интерфейс System. Logger и класс System. LoggerFinder</h4>
+                <h4>Класс Object</h4>
+                <h4>Применение метода clone () и интерфейса CloneaЫe</h4>
+                <h4>Класс Class</h4>
+                <h4>Класс ClassLoader</h4>
+                <h4>Класс ClassLoader</h4>
+                <ul>
+                  <li>Тригонометрические функции</li>
+                  <li>Экспоненциальные функции</li>
+                  <li>Функции округления</li>
+                  <li>Прочие методы из класса Маth</li>
+                </ul>
+                <h4>Класс StrictMath</h4>
+                <h4>Класс Compiler</h4>
+                <h4>Классы Thread, ThreadGroup и интерфейс RunnaЫe</h4>
+                <ul>
+                  <li>Интерфейс RunnaЫe</li>
+                  <li>Класс Thread</li>
+                  <li>Класс ThreadGroup</li>
+                </ul>
+                <h4>Классы ThreadLocal и Inheri taЬleThreadLocal</h4>
+                <h4>Класс Package</h4>
+                <h4>Класс Module</h4>
+                <h4>Класс ModuleLayer</h4>
+                <h4>Класс RuntimePermission</h4>
+                <h4>Класс ThrowaЫe</h4>
+                <h4>Класс SecurityManager</h4>
+                <h4>Класс StackTraceElement</h4>
+                <h4>Класс StackWalker и интерфейс StackWalker. StackFrame</h4>
+                <h4>Класс Enum</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 19</h3>
+              <p class="program__block-description">Collections Framework. Пакет java. util, часть 1</p>
+              <div class="program__content">
+                <h4>Краткий обзор коллекций</h4>
+                <h4>Интерфейсы коллекций</h4>
+                <ul>
+                  <li>Интерфейс Collection</li>
+                  <li>Интерфейс List</li>
+                  <li>Интерфейс Set</li>
+                  <li>Интерфейс SortedSet</li>
+                  <li>Интерфейс NavigaЬleSet</li>
+                  <li>Интерфейс Queue</li>
+                  <li>Интерфейс Dequeue</li>
+                </ul>
+                <h4>Классы коллекций</h4>
+                <ul>
+                  <li>Класс ArrayList</li>
+                  <li>Класс LinkedList</li>
+                  <li>Класс HashSet</li>
+                  <li>Класс LinkedHashSet</li>
+                  <li>Класс TreeSet</li>
+                  <li>Класс PriorityQueue</li>
+                  <li>Класс ArrayDeque</li>
+                  <li>Класс EnumSet</li>
+                </ul>
+                <h4>Доступ к коллекциям через итератор</h4>
+                <ul>
+                  <li>Применение интерфейса Iterator</li>
+                  <li>Цикл for в стиле for each как альтернатива итераторам</li>
+                </ul>
+                <h4>Итераторы-разделители</h4>
+                <h4>Сохранение объектов пользовательских классов в коллекциях</h4>
+                <h4>Интерфейс RandomAccess</h4>
+                <h4>Манипулирование отображениями</h4>
+                <ul>
+                  <li>Интерфейсы отображений</li>
+                  <li>Классы отображений</li>
+                </ul>
+                <h4>Компараторы</h4>
+                <ul>
+                  <li>Применение компараторов</li>
+                </ul>
+                <h4>Алгоритмы коллекций</h4>
+                <h4>Массивы</h4>
+                <h4>Унаследованные классы и интерфейсы</h4>
+                <ul>
+                  <li>Интерфейс Enumeration</li>
+                  <li>Класс Vector</li>
+                  <li>Класс Stack</li>
+                  <li>Класс Dictionary</li>
+                  <li>Класс HashtaЫe</li>
+                  <li>Класс Properties</li>
+                </ul>
+                <h4>Применение методов store () и load ()</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 20</h3>
+              <p class="program__block-description">Пакет java. util, часть 11. Прочие служебные классы</p>
+              <div class="program__content">
+                <h4>Класс StringTokenizer</h4>
+                <h4>Класс BitSet</h4>
+                <h4>Классы Optional, OptionalDouЬle, Optionalint и OptionalLong</h4>
+                <h4>Класс Date</h4>
+                <h4>Класс Calendar</h4>
+                <h4>Класс GregorianCalendar</h4>
+                <h4>Класс TimeZone</h4>
+                <h4>Класс SimpleTimeZone</h4>
+                <h4>Класс Locale</h4>
+                <h4>Класс Random</h4>
+                <h4>Классы Timer и TimerTask</h4>
+                <h4>Класс Currency</h4>
+                <h4>Класс Formatter</h4>
+                <ul>
+                  <li>Конструкторы класса Forrnatter</li>
+                  <li>Методы из класса Forrnatter</li>
+                  <li>Основы форматирования</li>
+                  <li>Форматирование строк и символов</li>
+                  <li>Форматирование чисел</li>
+                  <li>Форматирование времени и даты</li>
+                  <li>Спецификаторы формата %n и%</li>
+                  <li>Указание минимальной ширины поля</li>
+                  <li>Указание точности</li>
+                  <li>Применение признаков формата</li>
+                  <li>Выравнивание выводимых данных</li>
+                  <li>Признаки пробела, +, О и ()</li>
+                  <li>Признак запятой</li>
+                  <li>Признак#</li>
+                  <li>Прописные формы спецификаторов формата</li>
+                  <li>Применение индекса аргумента</li>
+                  <li>Закрытие объекта типа Forrnatter</li>
+                  <li>Аналог функции printf() в Java</li>
+                </ul>
+                <h4>Класс Scanner</h4>
+                <ul>
+                  <li>Конструкторы класса Scanner</li>
+                  <li>Основы сканирования</li>
+                  <li>Некоторые примеры применения класса Scanner</li>
+                  <li>Установка разделителей</li>
+                  <li>Прочие средства класса Scanner</li>
+                </ul>
+                <h4>Классы ResourceBundle, ListResourceBundle</h4>
+                <h4>и PropertyResourceBundle</h4>
+                <h4>Прочие служебные классы и интерфейсы</h4>
+                <h4>Подпакеты, входящие в состав пакета java. util</h4>
+                <ul>
+                  <li>Пакеты java.util. concurrent, java.util.concurrent.</li>
+                  <li>atornic,java.util.concurrent.locks</li>
+                  <li>Пакет j ava.util.function</li>
+                  <li>Пакет java. util.jar</li>
+                  <li>Пaкeтjava.util.logging</li>
+                  <li>Пaкeтjava.util.prefs</li>
+                  <li>Пакет java.util.regex</li>
+                  <li>Пaкeтjava.util.spi</li>
+                  <li>Пакет java. util. stream</li>
+                  <li>Пaкeтjava.util.zip</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 21</h3>
+              <p class="program__block-description">Пакет java.io для ввода-вывода</p>
+              <div class="program__content">
+                <h4>Классы и интерфейсы ввода-вывода</h4>
+                <h4>Класс File</h4>
+                <h4>Каталоги</h4>
+                <ul>
+                  <li>Применение интерфейса FilenameFilter</li>
+                  <li>Альтернативный метод listFilеs()</li>
+                  <li>Создание каталогов</li>
+                </ul>
+                <h4>Интерфейсы AutoCloseaЫe, CloseaЫe и FlushaЫe</h4>
+                <h4>Исключения ввода-вывода</h4>
+                <h4>Два способа закрытия потоков ввода-вывода</h4>
+                <h4>Классы потоков ввода-вывода</h4>
+                <h4>Потоки ввода-вывода байтов</h4>
+            
+              <ul>
+                <li>Класс InputStream</li>
+                <li>Класс OutputStream</li>
+                <li>Класс FileinputStream</li>
+                <li>Класс FileOutputStream</li>
+                <li>Класс ByteArrayinputStream</li>
+                <li>Класс ByteArrayOutputStream</li>
+                <li>Фильтруемые потоки ввода-вывода байтов</li>
+                <li>Буферизованные потоки ввода-вывода байтов</li>
+                <li>Класс SequenceinputStream</li>
+                <li>Класс PrintStream</li>
+                <li>Классы DataOutputStream и DatainputStream</li>
+                <li>Класс RandomAccessFile</li>
+              </ul>
+              <h4>Потоки ввода-вывода символов</h4>
+              <ul>
+                <li>Класс Reader</li>
+                <li>Класс Writer</li>
+                <li>Класс FileReader</li>
+                <li>Класс FileWriter</li>
+                <li>Класс CharArrayReader</li>
+                <li>Класс CharArrayWriter</li>
+                <li>Класс BufferedReader</li>
+                <li>Класс BufferedWriter</li>
+                <li>Класс PushbackReader</li>
+                <li>Класс PrintWriter</li>
+              </ul>
+              <h4>Класс Console</h4>
+              <h4>Сериализация</h4>
+              <ul>
+                <li>Интерфейс SerializaЫe</li>
+                <li>Интерфейс ExternalizaЫe</li>
+                <li>Интерфейс Obj ectOutput</li>
+                <li>Интерфейс Obj ectOutput</li>
+                <li>Интерфейс Obj ectinput</li>
+                <li>KлкcObjectinputStream</li>
+                <li>Пример сериализации</li>
+              </ul>
+              <h4>Преимущества потоков ввода-вывода</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 22</h3>
+              <p class="program__block-description">Система ввода-вывода NIO</p>
+              <div class="program__content">
+                <h4>Классы системы ввода-вывода NIO</h4>
+                <h4>Основные положения о системе ввода-вывода NIO</h4>
+                <ul>
+                  <li>Буферы</li>
+                  <li>Каналы</li>
+                  <li>Наборы символов и селекторы</li>
+                </ul>
+                <h4>Усовершенствования в системе NI0.2</h4>
+                <ul>
+                  <li>Интерфейс Path</li>
+                  <li>Класс Files</li>
+                  <li>Класс Paths</li>
+                  <li>Интерфейсы атрибутов файлов</li>
+                  <li>Классы FileSystem, FileSystems и FileStore</li>
+                </ul>
+                <h4>Применение системы ввода-вывода NIO</h4>
+                <ul>
+                  <li>Применение системы NIO для канального ввода-вывода</li>
+                  <li>Применение системы NIO для потокового ввода-вывода</li>
+                  <li>Применение системы ввода-вывода NIO для операций в файловой системе</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 23</h3>
+              <p class="program__block-description">Работа в сети</p>
+              <div class="program__content">
+                <h4>Основы работы в сети</h4>
+                <h4>Сетевые классы и интерфейсы</h4>
+                <h4>Класс InetAddress</h4>
+                <ul>
+                  <li>Фабричные методы</li>
+                  <li>Методы экземпляра</li>
+                </ul>
+                <h4>Классы Inet4Address и Inet6Address</h4>
+                <h4>Клиентские сокеты по протоколу TCP/IP</h4>
+                <h4>Класс URL</h4>
+                <h4>Класс URLConnection</h4>
+                <h4>Класс Ht tpURLConnection</h4>
+                <h4>Класс URI</h4>
+                <h4>Сооkiе-файлы</h4>
+                <h4>Серверные сокеты по протоколу TCP/IP</h4>
+                <h4>Дейтаграммы</h4>
+                <ul>
+                  <li>Класс DatagramSocket</li>
+                  <li>Класс DatagramPacket</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 24</h3>
+              <p class="program__block-description">Обработка событий</p>
+              <div class="program__content">
+                <h4>Два подхода к обработке событий</h4>
+                <h4>Модель делегирования событий</h4>
+                <ul>
+                  <li>События</li>
+                  <li>Источники событий</li>
+                  <li>Приемники событий</li>
+                </ul>
+                <h4>Классы событий</h4>
+                <ul>
+                  <li>Класс Act ionEvent</li>
+                  <li>Класс AdjustmentEvent</li>
+                  <li>Класс ComponentEvent</li>
+                  <li>Класс ContainerEvent</li>
+                  <li>Класс FocusEvent</li>
+                  <li>Класс ItemEvent</li>
+                  <li>Класс KeyEvent</li>
+                  <li>Класс MouseEvent</li>
+                  <li>Класс MouseWheelEvent</li>
+                  <li>Класс TextEvent</li>
+                  <li>Класс WindowEvent</li>
+                </ul>
+                <h4>Источники событий</h4>
+                <h4>Интерфейсы приемников событий</h4>
+                <ul>
+                  <li>Интерфейс ActionListener</li>
+                  <li>Интерфейс AdjustmentListener</li>
+                  <li>Интерфейс ComponentListener</li>
+                  <li>Интерфейс ContainerListener</li>
+                  <li>Интерфейс FocusListener</li>
+                  <li>Интерфейс ItemListener</li>
+                  <li>Интерфейс KeyListener</li>
+                  <li>Интерфейс MouseListener</li>
+                  <li>Интерфейс MouseMot ionListener</li>
+                  <li>Интерфейс MouseWheelListener</li>
+                  <li>Интерфейс TextListener</li>
+                  <li>Интерфейс WindowFocusListener</li>
+                  <li>Интерфейс WindowListener</li>
+                </ul>
+                <h4>Применение модели делегирования событий</h4>
+                <ul>
+                  <li>Основные принципы обработки событий в ГПИ средствами АWT</li>
+                  <li>Обработка событий от мыши</li>
+                  <li>Обработка событий от клавиатуры</li>
+                </ul>
+                <h4>Классы адаптеров</h4>
+                <h4>Внутренние классы</h4>
+                <ul>
+                  <li>Анонимные внутренние классы</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 25</h3>
+              <p class="program__block-description">Введение в библиотеку AWT: работа с окнами, графикой и текстом</p>
+              <div class="program__content">
+                <h4>Классы библиотеки АWT</h4>
+                <h4>Основные положения об окнах</h4>
+                <ul>
+                  <li>Класс Component</li>
+                  <li>Класс Container</li>
+                  <li>Класс Panel</li>
+                  <li>Класс Window</li>
+                  <li>Класс Frame</li>
+                  <li>Класс Canvas</li>
+                </ul>
+                <h4>Работа с обрамляющими окнами</h4>
+                <ul>
+                  <li>Установка размеров окна</li>
+                  <li>Сокрытие и отображение окна</li>
+                  <li>Установка заголовка окна</li>
+                  <li>Закрытие обрамляющего окна</li>
+                  <li>Meтoдpaint()</li>
+                  <li>Отображение символьной строки</li>
+                  <li>Установка цвета переднего и заднего плана</li>
+                  <li>Запрос на повторное воспроизведение</li>
+                  <li>Создание прикладной программы на основе класса Frame</li>
+                </ul>
+                <h4>Поддержка графики</h4>
+                <ul>
+                  <li>Рисование линий</li>
+                  <li>Рисование прямоугольников</li>
+                  <li>Рисование эллипсов и окружностей</li>
+                  <li>Рисование дуг</li>
+                  <li>Рисование многоугольников</li>
+                  <li>Демонстрация методов рисования</li>
+                  <li>Изменение размеров графики</li>
+                </ul>
+                <h4>Работа с цветом</h4>
+                <ul>
+                  <li>Методы из класса Color</li>
+                  <li>Установка текущего цвета графики</li>
+                  <li>Пример программы, демонстрирующий работу с цветом</li>
+                </ul>
+                <h4>Установка режима рисования</h4>
+                <h4>Работа со шрифтами</h4>
+                <ul>
+                  <li>Определение доступных шрифтов</li>
+                  <li>Создание и выбор шрифта</li>
+                  <li>Получение сведений о шрифте</li>
+                </ul>
+                <h4>Управление форматированием выводимого текста</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 26</h3>
+              <p class="program__block-description">Применение элементов управления, диспетчеров компоновки и меню из библиотеки AWT</p>
+              <div class="program__content">
+                <h4>Основные положения об элементах управления</h4>
+                <ul>
+                  <li>Ввод и удаление элементов управления</li>
+                  <li>Реагирование на элементы управления</li>
+                  <li>Исключение типа HeadlessException</li>
+                </ul>
+                <h4>Метки</h4>
+                <h4>Экранные кнопки</h4>
+                <ul>
+                  <li>Обработка событий от кнопок</li>
+                </ul>
+                <h4>Флажки</h4>
+                <ul>
+                  <li>Обработка событий от флажков</li>
+                </ul>
+                <h4>Кнопки-переключатели</h4>
+                <h4>Элементы управления выбором</h4>
+                <ul>
+                  <li>Обработка событий от раскрывающихся списков</li>
+                </ul>
+                <h4>Использование списков</h4>
+                <h4>Обработка событий от списков</h4>
+                <h4>Управление полосами прокрутки</h4>
+                <ul>
+                  <li>Обработка событий от полос прокрутки</li>
+                </ul>
+                <h4>Текстовые поля</h4>
+                <ul>
+                  <li>Обработка событий в текстовых полях</li>
+                </ul>
+                <h4>Текстовые области</h4>
+                <h4>Диспетчеры компоновки</h4>
+                <ul>
+                  <li>Класс FlowLayout</li>
+                  <li>Класс BorderLayout</li>
+                  <li>Вставки</li>
+                  <li>Класс GridLayout</li>
+                  <li>Класс CardLayout</li>
+                  <li>Класс GridBagLayout</li>
+                </ul>
+                <h4>Меню и строки меню</h4>
+                <h4>Диалоговые окна</h4>
+                <h4>О переопределении метода paint()</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 27</h3>
+              <p class="program__block-description">Изображения</p>
+              <div class="program__content">
+                <h4>Форматы файлов изображений</h4>
+                <h4>Основы работы с изображениями: создание, загрузка и отображение</h4>
+                <ul>
+                  <li>Создание объекта класса Image</li>
+                  <li>Загрузка изображения</li>
+                  <li>Воспроизведение изображения</li>
+                </ul>
+                <h4>Двойная буферизация</h4>
+                <h4>Интерфейс ImageProducer</h4>
+                <ul>
+                  <li>Класс MemoryimageSource</li>
+                </ul>
+                <h4>Интерфейс ImageConsumer</h4>
+                <ul>
+                  <li>Класс PixelGrabber</li>
+                </ul>
+                <h4>Класс ImageFilter</h4>
+                <ul>
+                  <li>Фильтр класса CropimageFilter</li>
+                  <li>Фильтр класса RGBimageFilter</li>
+                </ul>
+                <h4>Дополнительные классы для формирования изображений</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 28</h3>
+              <p class="program__block-description">Служебные средства параллелизма</p>
+              <div class="program__content">
+                <h4>Пакеты параллельного прикладного интерфейса API</h4>
+                <ul>
+                  <li>Пакет java. util.concurrent.atomic</li>
+                  <li>Пакет java. util.concurrent.locks</li>
+                </ul>
+                <h4>Применение объектов синхронизации 1066</h4>
+                <ul>
+                  <li>Класс Semaphore</li>
+                  <li>Класс CountDownLatch</li>
+                  <li>Класс CyclicBarrier</li>
+                  <li>Класс Exchanger</li>
+                  <li>Класс Phaser</li>
+                </ul>
+                <h4>Применение исполнителя</h4>
+                <ul>
+                  <li>Простой пример исполнителя 1089 Применение интерфейсов CallaЫe и Future</li>
+                  <li>Перечисление TimeUnit</li>
+                </ul>
+                <h4>Параллельные коллекции</h4>
+                <ul>
+                  <li>Блокировки</li>
+                  <li>Атомарные операции</li>
+                  <li>Параллельное программирование средствами Foгk/Join Fгamework</li>
+                  <li>Основные классы Fork!Join Framework</li>
+                  <li>Стратегия "разделяй и властвуй"</li>
+                  <li>Первый простой пример вилочного соединения</li>
+                  <li>Влияние уровня параллелизма</li>
+                  <li>Пример применения класса Recursi veTask<V></V></li>
+                  <li>Асинхронное выполнение задач</li>
+                  <li>Отмена задачи</li>
+                  <li>Определение состояния завершения задачи</li>
+                  <li>Перезапуск задачи</li>
+                  <li>Предмет дальнейшего изучения</li>
+                  <li>Рекомендации относительно вилочного соединения</li>
+                </ul>
+                <h4>Служебные средства параллелизма в сравнении с традиционным</h4>
+                <h4>подходом к многозадачности в Java</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 29</h3>
+              <p class="program__block-description">Потоковый прикладной интерфейс API</p>
+              <div class="program__content">
+                <h4>Основные положения о потоках данных</h4>
+                <ul>
+                  <li>Потоковые интерфейсы</li>
+                  <li>Получение потока данных</li>
+                  <li>Простой пример потока данных</li>
+                </ul>
+                <h4>Операции сведения</h4>
+                <h4>Параллельные потоки данных</h4>
+                <h4>Отображение</h4>
+                <h4>Накопление</h4>
+                <h4>Итераторы и потоки данных</h4>
+                <ul>
+                  <li>Применение итератора в потоке данных</li>
+                  <li>Применение итератора-разделителя</li>
+                </ul>
+                <h4>Дальнейшее изучение потокового прикладного интерфейса API</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 30</h3>
+              <p class="program__block-description">Регулярные выражения и другие пакеты</p>
+              <div class="program__content">
+                <h4>Обработка регулярных выражений</h4>
+                <ul>
+                  <li>Класс Pattern</li>
+                  <li>Класс Matcher</li>
+                  <li>Синтаксис регулярных выражений</li>
+                  <li>Примеры, демонстрирующие совпадение с шаблоном</li>
+                  <li>Два варианта сопоставления с шаблоном</li>
+                  <li>Дальнейшее изучение регулярных выражений</li>
+                </ul>
+                <h4>Рефлексия</h4>
+                <ul>
+                  <li>Удаленный вызов методов</li>
+                </ul>
+                <h4>Простое приложение "клиент-сервер', использующее механизм RMI</h4>
+                <h4>Форматирование даты и времени средствами пакета java.text</h4>
+                <ul>
+                  <li>Класс DateFormat</li>
+                  <li>Класс SimpledateFormat</li>
+                </ul>
+                <h4>Пакеты из прикладного интерфейса API даты и времени</h4>
+                <ul>
+                  <li>Основные классы даты и времени</li>
+                  <li>Форматирование даты и времени</li>
+                  <li>Синтаксический анализ символьных строк даты и времени</li>
+                  <li>Дальнейшее изучение пакета jаvа.time</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 31</h3>
+              <p class="program__block-description">Введение в библиотеку Swing</p>
+              <div class="program__content">
+                <h4>Происхождение библиотеки Swing</h4>
+                <h4>Построение библиотеки Swing на основе библиотеки А WT</h4>
+                <h4>Главные особенности библиотеки Swing</h4>
+                <ul>
+                  <li>Легковесные компоненты Swing</li>
+                  <li>Подключаемый стиль оформления</li>
+                </ul>
+                <h4>Связь с архитектурой MVC</h4>
+                <h4>Компоненты и контейнеры</h4>
+                <ul>
+                  <li>Компоненты</li>
+                  <li>Контейнеры</li>
+                  <li>Панели контейнеров верхнего уровня</li>
+                </ul>
+                <h4>Пакеты библиотеки Swing</h4>
+                <h4>Простое Swing-приложение</h4>
+                <h4>Обработка событий</h4>
+                <h4>Рисование средствами Swing</h4>
+                <ul>
+                  <li>Основы рисования</li>
+                  <li>Вычисление области рисования</li>
+                  <li>Пример рисования</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 32</h3>
+              <p class="program__block-description">Исследование библиотеки Swing</p>
+              <div class="program__content">
+                <h4>Классы JLabel и Imageicon</h4>
+                <h4>Класс JTextField</h4>
+                <h4>Кнопки из библиотеки Swing</h4>
+                <ul>
+                  <li>Класс JButton</li>
+                  <li>Класс JToggleButton</li>
+                  <li>Флажки</li>
+                  <li>Кнопки-переключатели</li>
+                </ul>
+                <h4>Класс JTabbedPane</h4>
+                <h4>Класс JScrollPane</h4>
+                <h4>Класс JList</h4>
+                <h4>Класс JComboBox</h4>
+                <h4>Деревья</h4>
+                <h4>Класс JTаblе</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 33</h3>
+              <p class="program__block-description">Введение в меню Swing</p>
+              <div class="program__content">
+                <h4>Основные положения о меню</h4>
+                <h4>Краткий обзор классов JMenuBar, JMenu и JMenuitem</h4>
+                <ul>
+                  <li>Класс JMenuBar</li>
+                  <li>Класс JMenu</li>
+                  <li>Класс JMenuitem</li>
+                </ul>
+                <h4>Создание главного меню</h4>
+                <h4>Ввод мнемоники и оперативных клавиш в меню</h4>
+                <h4>Ввод изображений и всплывающих подсказок в пункты меню</h4>
+                <h4>Классы JRadioButtonMenuitem и JCheckBoxMenuitem</h4>
+                <h4>Классы JRadioButtonMenuitem и JCheckBoxMenuitem</h4>
+                <h4>Создание панели инструментов</h4>
+                <h4>Действия</h4>
+                <h4>Составление окончательного варианта программы MenuDemo</h4>
+                <h4>Дальнейшее изучение библиотеки Swing</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 34</h3>
+              <p class="program__block-description">Введение в JavaFX</p>
+              <div class="program__content">
+                <h4>Основные понятия JavaFX</h4>
+                <ul>
+                  <li>Пакеты JavaFX</li>
+                  <li>Классы подмостков и сцены</li>
+                  <li>Узлы и графы сцены</li>
+                  <li>Компоновки</li>
+                  <li>Класс приложения и методы ero жизненного цикла</li>
+                </ul>
+                <h4>Запуск JаvаFХ-приложения</h4>
+                <h4>Скелет JаvаFХ-приложения</h4>
+                <h4>Компиляция и выполнение JаvаFХ-приложения</h4>
+                <h4>Поток исполнения приложения</h4>
+                <h4>Метка - простейший элемент управления в JavaFX</h4>
+                <h4>Применение кнопок и событий</h4>
+                <ul>
+                  <li>Основы обработки событий в JavaFX</li>
+                  <li>Элемент управления экранной кнопкой</li>
+                  <li>Демонстрация обработки событий на примере экранных кнопок</li>
+                </ul>
+                <h4>Рисование непосредственно на холсте</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 35</h3>
+              <p class="program__block-description">Элементы управления JavaFX</p>
+              <div class="program__content">
+                <h4>Классы Image и ImageView</h4>
+                <ul>
+                  <li>Ввод изображения в метку</li>
+                  <li>Ввод изображения в экранную кнопку</li>
+                </ul>
+                <h4>Класс ToggleButton</h4>
+                <h4>Класс RadioButton</h4>
+                <ul>
+                  <li>Обработка событий изменения в группе кнопок-переключателей</li>
+                  <li>Другой способ управления кнопками-переключателями</li>
+                </ul>
+                <h4>Класс CheckBox</h4>
+                <h4>Класс ListView</h4>
+                <ul>
+                  <li>Представление списка с полосами прокрутки</li>
+                  <li>Активизация режима одновременною выбора нескольких элементов из списка</li>
+                </ul>
+                <h4>Класс ComboBox</h4>
+                <h4>Класс TextField</h4>
+                <h4>Класс ScrollPane</h4>
+                <h4>Класс TreeView</h4>
+                <h4>Эффекты и преобразования</h4>
+                <ul>
+                  <li>Эффекты</li>
+                  <li>Преобразования</li>
+                  <li>Демонстрация эффектов и преобразований</li>
+                </ul>
+                <h4>Ввод всплывающих подсказок</h4>
+                <h4>Отключение элементов управления</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 36</h3>
+              <p class="program__block-description">Введение в меню JavaFX</p>
+              <div class="program__content">
+                <h4>Основные положения о меню</h4>
+                <h4>Краткий обзор классов MenuBar, Menu и Menuitem</h4>
+                <ul>
+                  <li>Класс MenuBar</li>
+                  <li>Класс Menu</li>
+                  <li>Класс Menuitem</li>
+                </ul>
+                <h4>Создание главного меню</h4>
+                <h4>Ввод мнемоники и оперативных клавиш в меню</h4>
+                <h4>Ввод изображений в пункты меню</h4>
+                <h4>Классы RadioMenuitem и CheckMenuitem</h4>
+                <h4>Создание контекстного меню</h4>
+                <h4>Создание панели инструментов</h4>
+                <h4>Составление окончательного варианта приложения MenuDemo</h4>
+                <h4>Дальнейшее изучение JavaFX</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 37</h3>
+              <p class="program__block-description">Компоненты Java Beans</p>
+              <div class="program__content">
+                <h4>Общее представление о компонентах Java Beans</h4>
+                <h4>Преимущества компонентов Java Beans</h4>
+                <h4>Самоанализ</h4>
+                <ul>
+                  <li>Проектные шаблоны для свойств компонентов Java Beans</li>
+                  <li>Проектные шаблоны для событий</li>
+                  <li>Методы и проектные шаблоны</li>
+                  <li>Применение интерфейса Beaninfo</li>
+                </ul>
+                <h4>Привязанные и ограниченные свойства</h4>
+                <h4>Сохраняемость компонентов Java Beans</h4>
+                <h4>Настройщики</h4>
+                <h4>Прикладной интерфейс Java Beans API</h4>
+                <ul>
+                <li>Класс Introspector</li>
+                <li>Класс PropertyDescriptor</li>
+                <li>Класс EventSetDescriptor</li>
+                <li>Класс MethodDescriptor</li>
+                </ul>
+                <h4>Пример компонента Java Bean</h4>
+            </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 38</h3>
+              <p class="program__block-description">Введение в сервлеты</p>
+              <div class="program__content">
+                <h4>Предпосылки для разработки сервлетов</h4>
+                <h4>Жизненный цикл сервлета</h4>
+                <h4>Варианты разработки сервлетов</h4>
+                <h4>Применение контейнера сервлетов Tomcat</h4>
+                <h4>Простой пример сервлета</h4>
+                <ul>
+                  <li>Создание и компиляция исходного кода сервлета</li>
+                  <li>Запуск контейнера сервлетов Tomcat на выполнение</li>
+                  <li>Запуск веб-браузера и запрос сервлета</li>
+                </ul>
+                <h4>Прикладной интерфейс Servlet API</h4>
+                <h4>Пакет javax.servlet</h4>
+                <ul>
+                  <li>Интерфейс Servlet</li>
+                  <li>Интерфейс ServletConfig</li>
+                  <li>Интерфейс ServletContext</li>
+                  <li>Интерфейс ServletRequest</li>
+                  <li>Интерфейс ServletResponse</li>
+                  <li>Класс GenericServlet</li>
+                  <li>Класс ServletinputStrearn</li>
+                  <li>Класс ServletOutputStrearn</li>
+                  <li>Класс ServletException</li>
+                </ul>
+                <h4>Ввод параметров сервлета</h4>
+                <h4>Пакет javax.servlet.http</h4>
+                <ul>
+                  <li>Интерфейс HttpServletRequest</li>
+                  <li>Интерфейс HttpServletResponse</li>
+                  <li>Интерфейс HttpSession</li>
+                  <li>Класс Cookie</li>
+                  <li>Класс HttpServlet</li>
+                </ul>
+                <h4>Обработка НТТР-запросов и ответов</h4>
+                <ul>
+                  <li>Обработка НТТР-запросов типа GET</li>
+                  <li>Обработка НТТР-запросов типа POST</li>
+                </ul>
+                <h4>Применение сооkiе-файлов</h4>
+                <h4>Отслеживание сеансов связи</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 39</h3>
+              <p class="program__block-description">Использование jUnit</p>
+              <div class="program__content">
+                <h4>Что такое модульное тестирование?</h4>
+                <h4>Цели и задачи модульного тестирования</h4>
+                <h4>Необходимость модульного тестирования</h4>
+                <h4>Обзор инструментов для модульного тестирования</h4>
+                <h4>Инструмент jUnit.</h4>
+                <ul>
+                  <li>Что такое jUnit?</li>
+                  <li>История создания jUnit</li>
+                  <li>Практические примеры использования jUnit</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 40</h3>
+              <p class="program__block-description">Паттерны проектирования</p>
+              <div class="program__content">
+                <h4>Что такое паттерны проектирования?</h4>
+                <h4>Причины возникновения паттернов проектирования</h4>
+                <h4>Понятие паттерна проектирования</h4>
+                <h4>Принципы применения паттернов проектирования</h4>
+                <h4>Принципы выбора паттернов проектирования</h4>
+                <h4>Принципы разделения паттернов на категории</h4>
+                <h4>Введение в UML</h4>
+                <ul>
+                  <li>Диаграмма классов</li>
+                  <li>Диаграмма объектов</li>
+                  <li>Диаграмма взаимодействия</li>
+                </ul>
+                <h4>Использование UML при анализе паттернов проектирования</h4>
+                <ul>
+                  <li>Диаграмма классов</li>
+                  <li>Диаграмма объектов</li>
+                  <li>Диаграмма взаимодействия</li>
+                </ul>
+                <h4>Порождающие паттерны</h4>
+                <ul>
+                  <li>Что такое порождающий паттерн?</li>
+                  <li>Цели и задачи порождающих паттернов</li>
+                  <li>Обзор порождающих паттернов</li>
+                  <li>Разбор порождающих паттернов</li>
+                </ul>
+                <h4>Abstract Factory</h4>
+                <ul>
+                  <li>цель паттерна</li>
+                  <li>причины возникновения паттерна</li>
+                  <li>структура паттерна</li>
+                  <li>результаты использования паттерна</li>
+                  <li>практический пример использования паттерна</li>
+                </ul>
+                <h4>Builder</h4>
+                <ul>
+                  <li>цель паттерна</li>
+                  <li>причины возникновения паттерна</li>
+                  <li>структура паттерна</li>
+                  <li>результаты использования паттерна</li>
+                  <li>практический пример использования паттерна</li>
+                </ul>
+                <h4>Factory Metho</h4>
+                <ul>
+                  <li>цель паттерна</li>
+                  <li>причины возникновения паттерна</li>
+                  <li>структура паттерна</li>
+                  <li>результаты использования паттерна</li>
+                  <li>практический пример использования паттерна</li>
+                </ul>
+                <h4>Prototype</h4>
+                <ul>
+                  <li>цель паттерна</li>
+                  <li>причины возникновения паттерна</li>
+                  <li>структура паттерна</li>
+                  <li>результаты использования паттерна</li>
+                  <li>практический пример использования паттерна</li>
+                </ul>
+                <h4>Singleton</h4>
+                <ul>
+                  <li>цель паттерна</li>
+                  <li>причины возникновения паттерна</li>
+                  <li>структура паттерна</li>
+                  <li>результаты использования паттерна</li>
+                  <li>практический пример использования паттерна</li>
+                </ul>
+                <h4>Структурные паттерны</h4>
+                <ul>
+                  <li>Что такое структурный паттерн?</li>
+                  <li>Цели и задачи структурных паттернов</li>
+                  <li>Обзор структурных паттернов</li>
+                </ul>
+                <h4>Разбор структурных паттернов</h4>
+                <ul>
+                  <li>Adapter</li>
+                  <li>Composite</li>
+                  <li>Facade</li>
+                  <li>Proxy</li>
+                  <li>другие структурные паттерны</li>
+                </ul>
+                <h4>Паттерны поведения</h4>
+                <ul>
+                  <li>Что такое паттерны поведения?</li>
+                  <li>Цели и задачи паттернов поведения</li>
+                  <li>Обзор паттернов поведения</li>
+                </ul>
+                <h4>Разбор паттернов поведения</h4>
+                <ul>
+                  <li>Command</li>
+                  <li>Iterator</li>
+                  <li>Observer</li>
+                  <li>Strategy</li>
+                  <li>другие структурные паттерны</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 41</h3>
+              <p class="program__block-description">Паттерн MVC</p>
+              <div class="program__content">
+                <h4>1Что такое паттерн MVC?</h4>
+                <h4>Цели и задачи паттерна Model-View-Controller</h4>
+                <h4>Model</h4>
+                <ul>
+                  <li>Что такое Model?</li>
+                  <li>Цели и задачи Model</li>
+                </ul>
+                <h4>View</h4>
+                <ul>
+                  <li>Что такое View?</li>
+                  <li>Цели и задачи View</li>
+                </ul>
+                <h4>Controller</h4>
+                <ul>
+                  <li>Что такое Controller?</li>
+                  <li>Цели и задачи Controller</li>
+                </ul>
+                <h4>Примеры использования паттерна MVC</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 42</h3>
+              <p class="program__block-description">Принципы проектирования классов SOLID</p>
+              <div class="program__content">
+                <h4>Обзор проблем, встречающихся при проектировании и разработке классов</h4>
+                <h4>Принципы проектирования классов SOLID</h4>
+                <ul>
+                  <li>Принцип единственности ответственности (The Single Responsibility Principle)</li>
+                  <li>Принцип открытости/закрытости (The Open Closed Principle)</li>
+                  <li>Принцип подстановки Барбары Лисков (The Liskov Substitution Principle)</li>
+                  <li>Принцип разделения интерфейса (The Interface Segregation Principle)</li>
+                  <li>Принцип инверсии зависимостей (The Dependency Inversion Principle)</li>
+                </ul>
+                <h4>Примеры использования принципов SOLID</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 43</h3>
+              <p class="program__block-description">Работа в команде, управление программными проектами</p>
+              <div class="program__content">
+                <h4>Что такое управление программными проектами?</h4>
+                <h4>Причины возникновения дисциплины управление программными проектами</h4>
+                <h4>Диаграммы Ганта</h4>
+                <h4>Важные вопросы по управлению программными проектами</h4>
+                <h4>Что такое проект и программный проект?</h4>
+                <h4>Что такое жизненный цикл процесса разработки программного обеспечения?</h4>
+                <h4>Что такое управление проектами?</h4>
+                <h4>Что такое одиночная разработка?</h4>
+                <h4>Что такое командная разработка?</h4>
+                <h4>Анализ проблем одиночной и командной разработки программного обеспечения</h4>
+                <h4>Анализ терминов предметной области</h4>
+                <ul>
+                  <li>Процесс</li>
+                  <li>Проект</li>
+                </ul>
+                <h4>Персонал</h4>
+                <ul>
+                  <li>Продукт</li>
+                  <li>Качество</li>
+                </ul>
+                <h4>Характеристики проекта</h4>
+                <ul>
+                  <li>Тип проекта</li>
+                  <li>Цель проекта</li>
+                  <li>Требования к качеству</li>
+                  <li>Требования к бюджету</li>
+                  <li>Требования по срокам завершения</li>
+                </ul>
+                <h4>Расходы, связанные с проектом</h4>
+                <ul>
+                  <li>Прямые</li>
+                  <li>Непрямые</li>
+                </ul>
+                <h4>Общий обзор моделей и методологий процесса разработки</h4>
+                <h4>Фазы процесса</h4>
+                <ul>
+                  <li>определение требований</li>
+                  <li>проектирование</li>
+                  <li>конструирование («реализация», «кодирование»)</li>
+                  <li>интеграция</li>
+                  <li>тестирование и отладка («верификация»)</li>
+                  <li>инсталляция</li>
+                  <li>поддержка</li>
+                  <li>Водопадная модель</li>
+                  <li>Спиральная модель</li>
+                </ul>
+                <h4>Итеративная модель</h4>
+                <ul>
+                  <li>Agile</li>
+                  <li>Scrum</li>
+                  <li>XP</li>
+                  <li>RUP</li>
+                  <li>MSF</li>
+                </ul>
+                <h4>Анализ существующих моделей и методов</h4>
+                <h4>Подробнее о Scrum</h4>
+                <ul>
+                  <li>Что такое Scrum?</li>
+                  <li>Причины возникновения Scrum</li>
+                  <li>Роли в Scrum</li>
+                  <li>владелец продукта</li>
+                  <li>команда</li>
+                  <li>scrum-мастер</li>
+                  <li>Бэклог продукта</li>
+                  <li>что такое бэклог продукта?</li>
+                  <li>как создавать бэклог?</li>
+                  <li>как оценивать задачи в бэклоге?</li>
+                  <li>что такое scrum-доска?</li>
+                  <li>примеры создания бэклога</li>
+                </ul>
+                <h4>Спринт</h4>
+                <ul>
+                  <li>что такое спринт?</li>
+                  <li>планирование спринтов</li>
+                  <li>ежедневный скрам</li>
+                  <li>обзор спринта</li>
+                  <li>ретроспективное собрание</li>
+                </ul>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+        <div class="program__block">
+          <div class="program__header">
+            <div class="program__text">
+              <h3 class="program__block-title">Блок 44</h3>
+              <p class="program__block-description">Системы контроля версий</p>
+              <div class="program__content">
+                <h4>Что такое контроль версий?</h4>
+                <h4>Зачем нужен контроль версий</h4>
+                <h4>Обзор систем контроля версий</h4>
+                <ul>
+                  <li>CVS</li>
+                  <li>SVN</li>
+                  <li>Git</li>
+                  <li>Другие системы контроля версий</li>
+                </ul>
+                <h4>Git</h4>
+                <ul>
+                  <li>Что такое Git?</li>
+                  <li>Цели и задачи Git?</li>
+                </ul>
+                <h4>Основные термины</h4>
+                <ul>
+                  <li>репозиторий</li>
+                  <li>коммит</li>
+                  <li>ветка</li>
+                  <li>рабочий каталог</li>
+                </ul>
+                <h4>Операции с Git</h4>
+                <ul>
+                  <li>Установка</li>
+                  <li>Создание репозитория</li>
+                  <li>Добавление файла в репозиторий</li>
+                  <li>Запись коммита в репозиторий</li>
+                  <li>Получение текущего состояния рабочего каталога</li>
+                  <li>Отображение веток</li>
+                  <li>Операции с накопительным буфером</li>
+                  <li>git remote</li>
+                  <li>git push</li>
+                  <li>git pull</li>
+                  <li>Другие операции</li>
+                </ul>
+                <h4>Использование внешних сервисов (github)</h4>
+              </div>
+            </div>
+            <button class="program__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="call-to-action center">
+    <div class="call-to-action__container">
+      <div class="call-to-action__content">
+        <h2 class="call-to-action__title">Остались вопросы?</h2>
+        <p class="call-to-action__subtitle">Позвоните нам! Или оставьте заявку</p>
+      </div>
+      <div class="call-to-action__contacts">
+        <a class="call-to-action__phone" href="tel:+79184184222">8 (918) 418-42-22</a>
+        <button class="button button_course show-modal">Оставить заявку</button>
+      </div>
+    </div>
+  </section>
+  <section class="technologies center">
+    <h2 class="heading heading_lang">Языки программирова&shy;ния<br> и технологии, которые вы освоите</h2>
+
+    <div class="technologies__grid animate-block">
+      <div class="technologies__card">
+        <div class="technologies__box-img">
+          <img src="images/Icon program=HTML, Size=48.svg" alt="HTML+CSS" class="technologies__icon">
+          <img src="images/Icon program=CSS, Size=48.svg" alt="HTML+CSS" class="technologies__icon">
+        </div>
+        <h3 class="technologies__name">HTML+CSS</h3>
+        <p class="technologies__description">Разработка страниц и вёрстка макета</p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=JS, Size=48.svg" alt="JavaScript" class="technologies__icon">
+        <h3 class="technologies__name">JavaScript</h3>
+        <p class="technologies__description">
+          Самый востребованный язык программирования для создания интерактивов (динамический контент), анимации 2D/3D
+          графики, веб-приложений, игр, управления мультимедией и многое другое
+        </p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=VS Code, Size=48.svg" alt="Редакторы для разработки" class="technologies__icon">
+        <h3 class="technologies__name">Редакторы для разработки</h3>
+        <p class="technologies__description">
+          VS Code от Microsoft и WebStorm от JetBrains — это интегрированная среда для разработки и позволяет
+          автоматизировать рутинную работу и легко справляться со сложными задачами.
+        </p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=SASS, Size=48.svg" alt="Препроцессор SASS и LESS" class="technologies__icon">
+        <h3 class="technologies__name">Препроцессор SASS и LESS</h3>
+        <p class="technologies__description">CSS препроцессор для профессиональной разработки</p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=Bootstrap, Size=48.svg" alt="Bootstrap" class="technologies__icon">
+        <h3 class="technologies__name">Bootstrap</h3>
+        <p class="technologies__description">CSS и JS библиотека для быстрой разработки сайтов</p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=jQuery, Size=48.svg" alt="jQuery и Parallax" class="technologies__icon">
+        <h3 class="technologies__name">jQuery и Parallax</h3>
+        <p class="technologies__description">
+          JS библиотека для разработки интерфейсов: фотогалереи, слайдеры, спойлеры (Вопросы/Ответы) и т.д. и визуальных
+          эффектов.
+        </p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=Photoshop, Size=48.svg" alt="Photoshop и Figma" class="technologies__icon">
+        <h3 class="technologies__name">Photoshop и Figma (в рамках вёрстки)</h3>
+        <p class="technologies__description">Инструменты для работы с графикой в процессе верстки.</p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=ПК и мобильная верстка, Size=48.svg" alt="ПК и мобильная верстка"
+          class="technologies__icon">
+        <h3 class="technologies__name">ПК и мобильная верстка</h3>
+        <p class="technologies__description">
+          Адаптация сайта под разные устройства (персональный компьютер, планшет и смартфоны)
+        </p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=BEM, Size=48.svg" alt="Методология БЭМ" class="technologies__icon">
+        <h3 class="technologies__name">Методология БЭМ</h3>
+        <p class="technologies__description">
+          Компонентный подход к веб-разработке, в основе которого лежит принцип разделения интерфейса на независимые
+          блоки. БЭМ используется в Яндексе для разработки фронтенда.
+        </p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=Hosting, Size=48.svg" alt="Домены, хостинги, FTP, DNS" class="technologies__icon">
+        <h3 class="technologies__name">Домены, хостинги, FTP, DNS</h3>
+        <p class="technologies__description">Покупка домена и публикация сайта в интернете</p>
+      </div>
+
+      <div class="technologies__card">
+        <img src="images/Icon program=GitHub, Size=48.svg" alt="GitHub" class="technologies__icon">
+        <h3 class="technologies__name">GitHub</h3>
+        <p class="technologies__description">Для размещения сайта и совместной безопасной работы</p>
+      </div>
+    </div>
+  </section>
+  <section class="certificate center">
+    <div class="certificate__grid">
+      <!-- Первый блок: Заголовок и подзаголовок -->
+      <div class="certificate__block">
+        <h2 class="heading">Документ об окончании – сертификат</h2>
+        <p class="certificate__subtitle">
+          Подтвердит, что вы успешно прошли курс, и станет дополнительным аргументом для работодателя
+        </p>
+      </div>
+
+      <!-- Второй блок: Информация о сертификате -->
+      <div class="certificate__block certificate__block_big">
+        <h3 class="certificate__details-title">
+          Получите сертификат об окончании курса создание сайтов на html5, css3, javascript
+        </h3>
+        <p class="text certificate__details-description">
+          Сертификат подтвердит, что вы прошли обучение в действующей веб-студии и получили навыки веб-разработчика с
+          двумя
+          сайтами, разработанными во время обучения.
+        </p>
+        <p class="certificate__note">
+          *Получение сертификата возможно только после успешного прохождения тестирования и разработки финального сайта.
+        </p>
+      </div>
+
+      <!-- Третий блок: Изображение человечка -->
+      <div class="certificate__block">
+        <img src="images/certificate.svg" alt="Иллюстрация человечка" class="certificate__image">
+      </div>
+    </div>
+  </section>
+  <section id="pricing" class="pricing-all center">
+    <div class="pricing__container">
+      <h2 class="heading heading_white">Стоимость участия</h2>
+
+      <div class="pricing__grid">
+        <!-- Карточка Тест-драйв -->
+        <div class="pricing__card pricing__card_test">
+          <div class="pricing__face">
+            <div class="pricing__header">
+              <h3 class="pricing__name">Тест-драйв</h3>
+              <span class="pricing__discount">-45%</span>
+            </div>
+            <div class="pricing__price-box">
+              <span class="pricing__current-price">1 200 ₽</span>
+              <span class="pricing__old-price">2 300 ₽</span>
+            </div>
+            <p class="pricing__note">Возможна рассрочка</p>
+            <button class="button-border button-border_price pricing__button show-modal">Занять место</button>
+          </div>
+          <ul class="pricing__features">
+            <li class="pricing__feature">2 урока – 8 ак.часов</li>
+            <li class="pricing__feature">Формат – онлайн живые уроки</li>
+            <li class="pricing__feature">Скидка на обучение, для участников тест-драйва</li>
+          </ul>
+        </div>
+
+        <!-- Карточка ПРО -->
+        <div class="pricing__card">
+          <div class="pricing__face">
+            <div class="pricing__header">
+              <h3 class="pricing__name">ПРО</h3>
+              <span class="pricing__discount">-45%</span>
+            </div>
+            <div class="pricing__price-box">
+              <span class="pricing__current-price">80 000 ₽</span>
+              <span class="pricing__old-price">146 000 ₽</span>
+            </div>
+            <p class="pricing__note">Возможна рассрочка</p>
+            <button class="button-border button-border_price pricing__button show-modal">Занять место</button>
+          </div>
+          <ul class="pricing__features">
+            <li class="pricing__feature">30 уроков – 80 ак.часов</li>
+            <li class="pricing__feature">Формат – групповые онлайн уроки</li>
+            <li class="pricing__feature">Бессрочная поддержка в чате</li>
+            <li class="pricing__feature">Сертификат, при условии сдачи итогового проекта</li>
+            <li class="pricing__feature">Обратная связь с рекомендациями на домашние задания по всем блокам курса</li>
+            <li class="pricing__feature">Стажировка после курса на базе веб-студии (по желанию)</li>
+          </ul>
+        </div>
+
+        <!-- Карточка VIP -->
+        <div class="pricing__card pricing__card--vip">
+          <div class="pricing__face pricing__face_vip">
+            <div class="pricing__header">
+              <h3 class="pricing__name pricing__name_vip">VIP</h3>
+              <span class="pricing__discount">-45%</span>
+            </div>
+            <div class="pricing__price-box">
+              <span class="pricing__current-price pricing__current-price_vip">140 000 ₽</span>
+              <span class="pricing__old-price pricing__old-price_vip">256 000 ₽</span>
+            </div>
+            <p class="pricing__note">Возможна рассрочка</p>
+            <button class="button-border button-border_price pricing__button show-modal">Занять место</button>
+          </div>
+          <ul class="pricing__features">
+            <li class="pricing__feature">15 уроков – 60 ак.часов</li>
+            <li class="pricing__feature">Формат – индивидуальные онлайн уроки в любое удобное для вас время</li>
+            <li class="pricing__feature">Бессрочная поддержка в чате</li>
+            <li class="pricing__feature">Сертификат, при условии сдачи итогового проекта</li>
+            <li class="pricing__feature">Обратная связь с рекомендациями на домашние задания по всем блокам курса</li>
+            <li class="pricing__feature">Стажировка после курса на базе веб-студии (по желанию)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="installment center">
+    <div class="installment__container">
+      <div class="installment__content">
+        <h2 class="heading">Купить в рассрочку</h2>
+        <p class="installment__description">
+          Никаких переплат. Стоимость курса остается фиксированной и просто «разбивается» на 3, 4, 6, 10, 12, 18 или 24
+          равных выплат.
+        </p>
+        <ul class="installment__features">
+          <li class="installment__feature">
+            <div class="installment__feature-icon installment__feature-icon_delay">
+              <img src="images/vuesax-bold-percentage-circle.svg" alt="">
+            </div>
+            <p class="installment__feature-text">Не нужно ничего платить прямо сейчас. Первый платеж можно оплатить
+              через
+              месяц.</p>
+          </li>
+          <li class="installment__feature">
+            <div class="installment__feature-icon installment__feature-icon_confirmation">
+              <img src="images/vuesax-bold-sms-star.svg" alt="">
+            </div>
+            <p class="installment__feature-text">При оплате курса в рассрочку подтверждение о регистрации придёт на
+              почту
+              в течение 1-3 суток после подписания договора.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="installment__form-wrapper">
+        <div class="form-card form-card_install">
+          <h3 class="form-card__title form-card__title_mb32">Оставьте заявку</h3>
+          <form class="form-card__form">
+            <input type="text" class="form-card__input" placeholder="Имя" />
+            <input type="email" class="form-card__input" placeholder="Email" />
+            <input type="tel" class="form-card__input form-card__input_number phone-number" placeholder="Телефон" />
+            <button class="form-card__submit">Отправить</button>
+            <label class="form-card__consent">
+              <input class="form-card__checkbox custom-checkbox" type="checkbox" />
+              <span>
+                Отправляя заявку, вы даете согласие на обработку своих
+                персональных данных в соответствии с политикой конфиденциальности
+              </span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq center">
+    <div class="faq__container">
+      <h2 class="heading">Ответы и вопросы</h2>
+      <div class="faq__blocks">
+        <div class="faq__block">
+          <div class="faq__header">
+            <h3 class="faq__question" data-index="0">Я новичок и никогда не создавал сайты. Подойдет ли мне этот курс?
+            </h3>
+            <button class="faq__toggle" aria-expanded="false" data-index="0"></button>
+          </div>
+          <div class="faq__content">
+            <p>Курс разработан для  новичков. Изучаются языки HTML +  CSS  с самих основ. Разбираем все детально с самого начала. Вместе разрабатываем сайт, поле нескольких уроков вы будете  уже сами создавать новые блоки. Для обучения вы должны уметь пользоваться интернетом, браузером, электронной почтой, скайпом/зумом и как вариант для  быстрого общения  - WhatsApp или Телеграм</p>
+          </div>
+        </div>
+        <div class="faq__block">
+          <div class="faq__header">
+            <h3 class="faq__question" data-index="1">Сколько времени занимает прохождение курса?
+            </h3>
+            <button class="faq__toggle" aria-expanded="false" data-index="1"></button>
+          </div>
+          <div class="faq__content">
+            <p>
+              Курс продлится в течение двух месяцев и разделен на 30 уроков, общий объем которых составляет 80 академических часов. При выборе индивидуального сопровождения предусмотрена гибкая система обучения: вы можете ускорить темп освоения материала или, напротив, уделить дополнительное время отдельным темам. Двухмесячный срок является достаточным благодаря опыту преподавателя-разработчика и практико-ориентированной программе, где упор сделан на отработку навыков в реальных условиях.</p>
+          </div>
+        </div>
+        <div class="faq__block">
+          <div class="faq__header">
+            <h3 class="faq__question" data-index="2">Где проходит обучение?</h3>
+            <button class="faq__toggle" aria-expanded="false" data-index="2"></button>
+          </div>
+          <div class="faq__content">
+            <p>Курсы можно пройти онлайн по Зуму/Скайпу и Anydesk и офлайн в нашей веб студии. Если онлайн, то для их прохождения и обучения вам не надо куда-либо ехать и тратить время на дорогу. Проходить курсы можно онлайн дома или за рабочим местом. Все что нужно - это компьютер и интернет. </p>
+          </div>
+        </div>
+        <div class="faq__block">
+          <div class="faq__header">
+            <h3 class="faq__question" data-index="3">Могу ли я оплатить курс в рассрочку?</h3>
+            <button class="faq__toggle" aria-expanded="false" data-index="3"></button>
+          </div>
+          <div class="faq__content">
+            <p>Есть рассрочка платежа. Стоимость курса остается фиксированной и просто "разбивается" на равные выплаты. Не нужно ничего платить прямо сейчас. Первый платеж можно оплатить через месяц. При оплате курса в рассрочку подтверждение о регистрации придет на почту в течение 1-3 суток после подписания договора. Оплата в рассрочку действует только для граждан РФ.</p>
+          </div>
+        </div>
+        <div class="faq__block">
+          <div class="faq__header">
+            <h3 class="faq__question" data-index="4">Сколько проектов я смогу создать во время курса?</h3>
+            <button class="faq__toggle" aria-expanded="false" data-index="4"></button>
+          </div>
+          <div class="faq__content">
+            <p>Курс имеет практико-ориентированный подход, благодаря чему по завершении каждого урока вы будете достигать конкретного результата. Например, уже на первом занятии вы создадите собственную веб-страницу. В рамках программы предусмотрена реализация двух полноценных проектов. Второй проект является выпускной работой, успешная защита которой служит обязательным условием для получения сертификата об окончании курса.</p>
+          </div>
+        </div>
+        <div class="faq__block">
+          <div class="faq__header">
+            <h3 class="faq__question" data-index="5">Как организована практика и отработка полученного материала?</h3>
+            <button class="faq__toggle" aria-expanded="false" data-index="5"></button>
+          </div>
+          <div class="faq__content">
+            <p>После каждого урока вы получаете задание для отработки полученных теоретических знаний и практических в виде разработки новых блоков сайта . Готовая  работа  проверяется, вы получаете обратную связь.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="call-to-action center">
+    <div class="call-to-action__container">
+      <div class="call-to-action__content">
+        <h2 class="call-to-action__title">Остались вопросы?</h2>
+        <p class="call-to-action__subtitle">Позвоните нам! Или оставьте заявку</p>
+      </div>
+      <div class="call-to-action__contacts">
+        <a class="call-to-action__phone" href="tel:+79184184222">8 (918) 418-42-22</a>
+        <button class="button button_course show-modal">Оставить заявку</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="center">
+      <!-- Десктопная структура -->
+      <div class="footer__programs">
+        <h3 class="footer__heading">Образовательные программы</h3>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4 class="footer__subheading">Курсы по веб-разработке</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="kurs-sozdanie-saytov-na-html5-css3-javascript.html"
+                  class="footer__link">Создание сайтов на HTML5, CSS3, JavaScript</a>
+              </li>
+              <li class="footer__item"><a
+                  href="#kurs-vyorstka-saytov-na-professionalnom-urovne-html-css-js-jquery-parallax-bootstrap-sass.html"
+                  class="footer__link">
+                  Верстка сайтов с использованием HTML, CSS, JS, Bootstrap, SASS</a></li>
+              <li class="footer__item"><a href="kurs-javascript-razrabotchik.html" class="footer__link">JavaScript
+                  разработчик</a></li>
+              <!-- <li class="footer__item"><a href="#" class="footer__link">Веб-разработчик (Fullstack)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Создание веб-приложений на React и Redux</a> -->
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Курсы по программированию</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="kurs-java-razrabotchik.html" class="footer__link">Java разработчик</a>
+              </li>
+              <li class="footer__item"><a href="kurs-razrabotchik-na-cpp.html" class="footer__link">C++ разработчик</a>
+              </li>
+              <li class="footer__item"><a href="kurs-razrabotchik-na-csharp.html" class="footer__link">C#
+                  разработчик</a></li>
+              <!-- <li class="footer__item"><a href="#" class="footer__link">JavaScript-разработчик (базовый и
+                  профессиональный уровни)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Python-разработчик (базовый и продвинутый
+                  уровни, включая ООП)</a></li> -->
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Дополнительные курсы</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">MS Excel – базовый курс для новичков</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer__info">
+        <h3 class="footer__heading">Информация и поддержка</h3>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4 class="footer__subheading">О школе:</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="blog.html" class="footer__link">Блог</a></li>
+              <li class="footer__item"><a href="article.html" class="footer__link">Отзывы</a></li>
+              <li class="footer__item"><a href="about-student.html" class="footer__link">О преподавателе</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">История и достижения</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Центр карьеры</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Помощь в выборе курса</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Подготовка к трудоустройству</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Вакансии веб-студии “Профессионал”</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Поддержка студентов</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Полезные ресурсы и материалы</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__subheading">Правовая информация</h4>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Условия обучения</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика возврата средств</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Социальные и контактные данные -->
+      <div class="footer__social">
+        <a href="index.html" class="footer__logo"><img src="images/logo-footer.svg" alt="logo"></a>
+        <div class="social-icons">
+          <a href="https://vk.com/alexdarb" class="social-icons__icon" target="_blank"><img src="images/vk.svg"
+              alt="vk"></a>
+          <a href="https://t.me/site_and_seo" class="social-icons__icon" target="_blank"><img src="images/telegram.svg"
+              alt="telegram"></a>
+          <a href="https://wa.me/+79184184222" class="social-icons__icon" target="_blank"><img src="images/watsapp.svg"
+              alt="watsapp"></a>
+          <a href="https://www.youtube.com/citprofi" class="social-icons__icon"><img src="images/youtube.svg"
+              alt="youtube" target="_blank"></a>
+        </div>
+        <div class="footer__coll">
+          <a href="tel:+79184184222" class="footer__phone">8(918)482-42-22</a>
+          <p class="footer__text">Позвоните или <button class="footer__text-link show-modal">оставьте заявку</button></p>
+        </div>
+      </div>
+
+      <!-- Мобильная версия с аккордеонами -->
+      <div class="footer__mobile">
+        <!-- Курсы по веб-разработке -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Курсы по веб-разработке
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="kurs-sozdanie-saytov-na-html5-css3-javascript.html"
+                  class="footer__link">Создание сайтов на HTML, CSS3, JavaScript</a></li>
+              <li class="footer__item"><a
+                  href="kurs-vyorstka-saytov-na-professionalnom-urovne-html-css-js-jquery-parallax-bootstrap-sass.html"
+                  class="footer__link">Верстка сайтов с использованием HTML, CSS, JS, Bootstrap, SASS</a></li>
+              <li class="footer__item"><a href="kurs-javascript-razrabotchik.html" class="footer__link">JavaScript
+                  разработчик</a></li>
+              <!-- <li class="footer__item"><a href="#" class="footer__link">Веб-разработчик (Fullstack)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Создание веб-приложений на React и Redux</a></li> -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Курсы по программированию -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Курсы по программированию
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="kurs-java-razrabotchik.html" class="footer__link">Java разработчик</a>
+              </li>
+              <li class="footer__item"><a href="kurs-razrabotchik-na-cpp.html" class="footer__link">C++ разработчик</a>
+              </li>
+              <li class="footer__item"><a href="kurs-razrabotchik-na-csharp.html" class="footer__link">C#
+                  разработчик</a></li>
+              <!-- <li class="footer__item"><a href="#" class="footer__link">JavaScript-разработчик (базовый и профессиональный уровни)</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Python-разработчик (базовый и продвинутый уровни, включая ООП)</a></li> -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Дополнительные курсы -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Дополнительные курсы
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">MS Excel – базовый курс для новичков</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- О школе -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            О школе
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Блог</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">О преподавателе</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">История и достижения</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Центр карьеры -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Центр карьеры
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Помощь в выборе курса</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Подготовка к трудоустройству</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Вакансии веб-студии “Профессионал”</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Поддержка студентов</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Полезные ресурсы и материалы</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Правовая информация -->
+        <div class="footer__accordion">
+          <button class="footer__accordion-header">
+            Правовая информация
+            <span class="footer__accordion-icon">+</span>
+          </button>
+          <div class="footer__accordion-content">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Условия обучения</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика возврата средств</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Нижняя часть -->
+      <div class="footer__bottom">
+        <div class="footer__bottom-left">
+          <p class="footer__address">Веб-студия "Профессионал" 350004, г. Краснодар, ул. Бабушкина, 252, оф. 11</p>
+          <p class="footer__address">ИНН 231114234337, ОГРН 304231136600682</p>
+        </div>
+        <p class="footer__credits">
+          Создание сайта: <a href="https://citprofi.ru/" class="footer__link" target="_blank"><img src="images/cit.svg"
+              alt="Разработка сайтов в Краснодаре"></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div>
+    <div class="modal">
+      <button class="modal__close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path
+            d="M12.7364 3.2636C13.0879 3.61508 13.0879 4.18492 12.7364 4.5364L9.273 8L12.7364 11.4636C13.0586 11.7858 13.0854 12.2915 12.817 12.6442L12.7364 12.7364C12.3849 13.0879 11.8151 13.0879 11.4636 12.7364L8 9.273L4.5364 12.7364C4.18492 13.0879 3.61508 13.0879 3.2636 12.7364C2.91213 12.3849 2.91213 11.8151 3.2636 11.4636L6.727 8L3.2636 4.5364C2.94142 4.21421 2.91457 3.70853 3.18306 3.35577L3.2636 3.2636C3.61508 2.91213 4.18492 2.91213 4.5364 3.2636L8 6.727L11.4636 3.2636C11.8151 2.91213 12.3849 2.91213 12.7364 3.2636Z"
+            fill="#191816" />
+        </svg>
+      </button>
+      <div class="form-card form-card_modal modal__form">
+        <h3 class="modal__caption">Старт занятий в любое удобное время!</h3>
+        <form class="form-card__form">
+          <input type="text" class="form-card__input" placeholder="Имя" />
+          <input type="email" class="form-card__input" placeholder="Email" />
+          <input type="tel" class="form-card__input form-card__input_number phone-number" placeholder="Телефон" />
+          <button class="button button_w100">Записаться на курс</button>
+          <label class="form-card__consent">
+            <input class="form-card__checkbox custom-checkbox" type="checkbox" />
+            <span>
+              Отправляя заявку, вы даете согласие на обработку своих
+              персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>
+            </span>
+          </label>
+        </form>
+      </div>
+      <div class="modal__sale">
+        <img src="images/20.svg" alt="sale">
+        <h3 class="modal__subheading">Скидка на обучение в группе!</h3>
+        <div class="modal__plus">
+          <div class="modal__item">
+            <div class="modal__icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M33 7.27551V25.1105C33 26.5655 31.815 27.9005 30.36 28.0805L29.895 28.1405C27.435 28.4705 23.97 29.4905 21.18 30.6605C20.205 31.0655 19.125 30.3305 19.125 29.2655V8.40051C19.125 7.84551 19.44 7.33551 19.935 7.06551C22.68 5.58051 26.835 4.26051 29.655 4.02051H29.745C31.545 4.02051 33 5.47551 33 7.27551Z"
+                  fill="white" />
+                <path
+                  d="M16.0649 7.06551C13.3199 5.58051 9.16486 4.26051 6.34486 4.02051H6.23986C4.43986 4.02051 2.98486 5.47551 2.98486 7.27551V25.1105C2.98486 26.5655 4.16986 27.9005 5.62486 28.0805L6.08986 28.1405C8.54986 28.4705 12.0149 29.4905 14.8049 30.6605C15.7799 31.0655 16.8599 30.3305 16.8599 29.2655V8.40051C16.8599 7.83051 16.5599 7.33551 16.0649 7.06551ZM7.49986 11.6105H10.8749C11.4899 11.6105 11.9999 12.1205 11.9999 12.7355C11.9999 13.3655 11.4899 13.8605 10.8749 13.8605H7.49986C6.88486 13.8605 6.37486 13.3655 6.37486 12.7355C6.37486 12.1205 6.88486 11.6105 7.49986 11.6105ZM11.9999 18.3605H7.49986C6.88486 18.3605 6.37486 17.8655 6.37486 17.2355C6.37486 16.6205 6.88486 16.1105 7.49986 16.1105H11.9999C12.6149 16.1105 13.1249 16.6205 13.1249 17.2355C13.1249 17.8655 12.6149 18.3605 11.9999 18.3605Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <p class="modal__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+          </div>
+          <div class="modal__item">
+            <div class="modal__icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.8648 16.0794H22.2298V5.27936C22.2298 2.75936 20.8648 2.24936 19.1998 4.13936L17.9998 5.50436L7.84477 17.0544C6.44977 18.6294 7.03477 19.9194 9.13477 19.9194H13.7698V30.7194C13.7698 33.2394 15.1348 33.7494 16.7998 31.8594L17.9998 30.4944L28.1548 18.9444C29.5498 17.3694 28.9648 16.0794 26.8648 16.0794Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <p class="modal__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+          </div>
+          <div class="modal__item">
+            <div class="modal__icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.2452 23.4602C26.2502 22.8002 27.5702 23.5202 27.5702 24.7202V26.6552C27.5702 28.5602 26.0852 30.6002 24.3002 31.2002L19.5152 32.7902C18.6752 33.0752 17.3102 33.0752 16.4852 32.7902L11.7002 31.2002C9.90018 30.6002 8.43018 28.5602 8.43018 26.6552V24.7052C8.43018 23.5202 9.75018 22.8002 10.7402 23.4452L13.8302 25.4552C15.0152 26.2502 16.5152 26.6402 18.0152 26.6402C19.5152 26.6402 21.0152 26.2502 22.2002 25.4552L25.2452 23.4602Z"
+                  fill="white" />
+                <path
+                  d="M29.9703 9.68984L20.9853 3.79484C19.3653 2.72984 16.6953 2.72984 15.0753 3.79484L6.04527 9.68984C3.15027 11.5648 3.15027 15.8098 6.04527 17.6998L8.44527 19.2598L15.0753 23.5798C16.6953 24.6448 19.3653 24.6448 20.9853 23.5798L27.5703 19.2598L29.6253 17.9098V22.4998C29.6253 23.1148 30.1353 23.6248 30.7503 23.6248C31.3653 23.6248 31.8753 23.1148 31.8753 22.4998V15.1198C32.4753 13.1848 31.8603 10.9348 29.9703 9.68984Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <p class="modal__text">Нетворкинг с другими учениками, проходящими ваш курс и коллегами</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/imask@6.4.2/dist/imask.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/reviews.js"></script>
+  <script src="scripts/program.js"></script>
+  <script src="scripts/script-index.js"></script>
+</body>
+
+</html>
