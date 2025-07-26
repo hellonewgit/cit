@@ -856,6 +856,17 @@ h2 {
   .form-card_about {
     display: none;
   }
+
+  .top__container {
+    padding: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 24px;
+  }
+
+  .top__content,
+  .top__video {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 996px) {
@@ -904,7 +915,9 @@ h2 {
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 32px !important;
+    line-height: normal !important;
+
   }
 
   .heading_lang {
@@ -918,12 +931,6 @@ h2 {
   .slider-articles__card {
     flex: 0 0 calc(90% - 8px);
     gap: 8px;
-  }
-
-  .top__container {
-    padding: 24px;
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 24px;
   }
 
   .top__content {
@@ -1187,7 +1194,7 @@ body {
   font-weight: 500;
   line-height: 75px;
   position: relative;
-  background: url(../images/back-top1.svg) no-repeat 25% 70%, url(../images/back-top2.svg) no-repeat 80% 29px;
+  background: url(../images/back-top1.svg) no-repeat 15% 70%, url(../images/back-top2.svg) no-repeat 90% 29px;
 }
 
 .hero__highlight {
@@ -1762,6 +1769,7 @@ body {
   margin-left: auto;
   position: relative;
   z-index: 100;
+  top: -20px;
 }
 
 .about-expert h2 {
@@ -2115,7 +2123,7 @@ body {
 .footer__columns {
   display: grid;
   margin-top: 64px;
-  grid-template-columns: repeat(3, 342px);
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 146px;
   margin-bottom: 80px;
 }
@@ -2568,6 +2576,7 @@ body {
   font-weight: 400;
   line-height: normal;
   margin-top: 48px;
+  margin-bottom: 16px;
 }
 
 .course__technologies-list {
@@ -2594,6 +2603,16 @@ body {
   gap: 24px;
 }
 
+.course__actions .button-border {
+  background-color: transparent;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.course__actions .button-border:hover {
+  background-color: #535bed;
+}
+
 .mentor {
   min-height: 424px;
   border-radius: 32px;
@@ -2612,6 +2631,7 @@ body {
   font-weight: 700;
   line-height: 40px;
   margin-bottom: 12px;
+  margin-top: 0;
 }
 
 .mentor__role {
@@ -2631,6 +2651,7 @@ body {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 .mentor-achievements__achievement {
@@ -3035,11 +3056,18 @@ body {
   display: flex;
   gap: 24px;
   margin-bottom: 48px;
+  justify-content: space-between;
+}
+
+.comparison__info {
+  font-size: 14px;
+  color: #A5A8B1;
+  margin-bottom: 12px;
 }
 
 .comparison h2 {
   width: 50%;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
   line-height: 1.4;
   color: #000;
@@ -3047,6 +3075,7 @@ body {
 
 .comparison__description {
   width: 50%;
+  max-width: 540px;
   font-size: 16px;
   line-height: 1.6;
   color: #555;
@@ -3192,6 +3221,7 @@ body {
   border-radius: 32px;
   background: var(--Background-Light, #F1F3FF);
   padding: 64px;
+  justify-content: space-between;
 }
 
 .portfolio__info {
@@ -3261,6 +3291,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 740px;
 }
 
 .portfolio__image {
@@ -3318,6 +3349,10 @@ body {
   margin-bottom: 64px;
 }
 
+.program ul {
+  padding-left: 20px;
+}
+
 .program__container {
   display: flex;
   padding: 64px;
@@ -3364,6 +3399,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 8px;
 }
 
 .program__block-description {
@@ -3543,12 +3579,12 @@ body {
   display: flex;
   gap: 24px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .pricing__card {
   display: flex;
-  width: 383px;
+  max-width: 383px;
+  min-width: 345px;
   padding: 16px;
   flex-direction: column;
   align-items: flex-start;
@@ -3671,6 +3707,10 @@ body {
   display: flex;
   padding: 64px;
   justify-content: space-between;
+}
+
+.installment__arrow {
+  margin-top: 51px;
 }
 
 .installment__description {
@@ -3804,6 +3844,12 @@ body {
   opacity: 1;
 }
 
+@media (min-width: 1081px) {
+  .comparison__info {
+    display: none;
+  }
+}
+
 @media (max-width: 1080px) {
   .course__container {
     grid-template-columns: repeat(1, 1fr);
@@ -3813,9 +3859,31 @@ body {
     grid-column: span 1;
   }
 
+  .course__actions {
+    align-items: center;
+  }
+
+  .course__actions .button-border {
+    padding: 16px;
+  }
+
+  .pricing {
+    margin-bottom: 32px;
+  }
+
+  .button_course {
+    width: 340px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
   .mentor {
     background-size: contain;
     background-position: 60% 0;
+  }
+
+  .mentor-achievements {
+    padding-bottom: 28px;
   }
 
   .mentor-achievements__achievement {
@@ -3832,6 +3900,7 @@ body {
 
   .training__item {
     width: 100%;
+    padding-bottom: 32px;
   }
 
   .call-to-action__container {
@@ -3925,8 +3994,12 @@ body {
 
   .installment__container {
     flex-direction: column;
-    gap: 64px;
+    gap: 48px;
     align-items: center;
+  }
+
+  .installment__arrow {
+    margin-top: 0;
   }
 
   .installment__content {
@@ -3944,12 +4017,50 @@ body {
   .installment__feature {
     align-items: center;
   }
+
+  .comparison__header {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .comparison h2 {
+    width: 100%;
+  }
+
+  .comparison__description {
+    width: 100%;
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .comparison__cell_header {
+    height: auto;
+  }
+
+  .site-types__image {
+    display: none;
+  }
+
+  .certificate h3,
+  .certificate__details-description {
+    width: 100%;
+  }
+
+  .certificate__block_big {
+    background: url(../images/arrow-certificat.svg) no-repeat 83px 243px, url(../images/certificat-tablet.png) no-repeat 130px 178px, linear-gradient(112deg, rgba(255, 203, 203, 0.2) 21.92%, rgba(135, 149, 242, 0.2) 76.74%);
+    height: 1037px;
+    padding: 48px;
+  }
 }
 
 @media (max-width: 996px) {
   .reviews__item {
     flex: 0 0 90%;
     max-width: 90%;
+  }
+
+  .portfolio .button-border {
+    width: 100%;
   }
 }
 
@@ -4148,18 +4259,13 @@ body {
     margin-bottom: 40px;
   }
 
-  .comparison__header {
-    flex-direction: column;
-    margin-bottom: 32px;
-  }
-
-  .comparison h2 {
-    width: 100%;
-  }
-
   .comparison__cell_professional,
   .comparison__cell_content {
     margin-right: 16px;
+  }
+
+  .comparison h2 {
+    font-size: 32px;
   }
 
   .comparison__table {
@@ -4178,10 +4284,6 @@ body {
   .comparison__cell_pink,
   .comparison__cell_constructor {
     grid-column: 2/3;
-  }
-
-  .comparison__description {
-    width: 100%;
   }
 
   .comparison__cell {
@@ -4297,8 +4399,13 @@ body {
   .certificate__block_big {
     border-radius: 24px;
     grid-column: span 1;
+    height: 722px;
     grid-row: 3/4;
-    background: url(../images/arrow-certificat.svg) no-repeat 580px, url(../images/certificat-mob.png) no-repeat center 295px/70%, linear-gradient(112deg, rgba(255, 203, 203, 0.2) 21.92%, rgba(135, 149, 242, 0.2) 76.74%);
+    background: url(../images/arrow-certificat.svg) no-repeat 580px, url(../images/certificat-mob.png) no-repeat center 265px/70%, linear-gradient(112deg, rgba(255, 203, 203, 0.2) 21.92%, rgba(135, 149, 242, 0.2) 76.74%);
+  }
+
+  .installment__description {
+    font-size: 18px;
   }
 
   .program {
@@ -4380,6 +4487,10 @@ body {
     padding: 32px 24px;
   }
 
+  .installment__arrow {
+    display: none;
+  }
+
   .form-card_install {
     width: 100%;
   }
@@ -4429,7 +4540,7 @@ body {
     max-width: 100%;
   }
 
-  h1 {
+  .hero h1 {
     font-size: 28px;
     line-height: 39px;
   }
@@ -5082,7 +5193,7 @@ body {
   grid-column: span 12;
 }
 
-.interview__title_vr {
+.interview .interview__title_vr {
   grid-column: span 6;
 }
 
@@ -5680,6 +5791,10 @@ body {
     padding-right: 36px;
   }
 
+  .portfolio__preview {
+    max-width: 666px;
+  }
+
   .about-expert__image_photo {
     display: grid;
     align-items: flex-end;
@@ -5720,11 +5835,29 @@ body {
   .hero__container {
     width: 100%;
   }
+
+  .hero h1 {
+    background: url(../images/back-top1.svg) no-repeat 15% 70%, url(../images/back-top2.svg) no-repeat 95% 29px;
+  }
+
+  .footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
+
+
 
 @media (max-width: 1140px) {
   .footer {
     padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero h1 {
+    background: url(../images/back-top1.svg) no-repeat 5% 70%, url(../images/back-top2.svg) no-repeat 99% 29px;
+    background-size: 140px;
   }
 
   .footer h3 {
@@ -5841,6 +5974,26 @@ body {
     width: 100%;
     margin-top: 8px;
   }
+
+  .about-expert__cta-link {
+    position: absolute;
+    top: 6px;
+    right: 0;
+  }
+
+  .about-expert__cta-description {
+    max-width: 210px;
+  }
+
+  .program__content {
+    margin: 0;
+    transition: all 0.3s ease;
+  }
+
+  .program__block_open .program__content {
+    margin-top: 24px;
+    transition: all 0.3s ease;
+  }
 }
 
 @media (max-width: 996px) {
@@ -5849,6 +6002,11 @@ body {
   .hero {
     padding-left: calc(50% - 348px);
     padding-right: calc(50% - 348px);
+  }
+
+  .hero h1 {
+    background: url(../images/back-top1.svg) no-repeat 0% 70%, url(../images/back-top2.svg) no-repeat 99% 29px;
+    background-size: 90px;
   }
 
   .gradient-circle {
@@ -5864,8 +6022,8 @@ body {
     right: 16px;
     background-color: #fff;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 64px;
+    height: 64px;
     justify-content: center;
     align-items: center;
   }
@@ -5876,7 +6034,7 @@ body {
 
   .burger__line {
     align-self: start;
-    margin-left: 6px;
+    margin-left: 10px;
   }
 
   .header__logo {
@@ -5979,7 +6137,11 @@ body {
   .nav__mob-link {
     text-decoration: none;
     color: inherit;
-    padding: 4px 8px;
+  }
+
+  .nav__dropdown-mob ul {
+    padding-left: 16px;
+    list-style-type: none;
   }
 
   .nav__img {
@@ -6095,6 +6257,18 @@ body {
 }
 
 @media (max-width: 767px) {
+  .header__logo {
+    left: 8px;
+    top: 8px;
+  }
+
+  .hero h1 {
+    background: url(../images/back-top1.svg) no-repeat 0% 60%, url(../images/back-top2.svg) no-repeat 105% 29px;
+    background-size: 80px;
+    font-size: 32px;
+    line-height: 42px;
+    padding-top: 72px;
+  }
 
   .center,
   .hero {
@@ -6152,19 +6326,21 @@ body {
 
   .burger {
     gap: 6px;
-    /* Анимация крестика */
+    width: 40px;
+    height: 40px;
   }
 
   .burger__line {
-    width: 24px;
+    width: 20px;
     height: 4px;
     border-radius: 4px;
     background: #000;
     transition: all 0.3s ease-in-out;
+    margin-left: 6px;
   }
 
   .burger__line_big {
-    width: 32px;
+    width: 28px;
   }
 
   .burger--active .burger__line:nth-child(1) {
