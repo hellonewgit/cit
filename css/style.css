@@ -3375,7 +3375,18 @@ body {
   padding: 23px 32px;
   border-radius: 32px;
   background: var(--White, #fff);
+  transition: all .3s;
 }
+
+.program__block:hover {
+  background-color: #f4f3ff;
+  box-shadow: 0 0 7px #f4f3ff;
+}
+
+.program__block_open {
+  background-color: #f4f3ff;
+}
+
 
 .program__header {
   display: flex;
@@ -3779,6 +3790,17 @@ body {
   padding: 23px 32px;
   border-radius: 32px;
   background: #F1F3FF;
+  transition: all .3s;
+}
+
+.faq__block:hover {
+  background: #e9ecff;
+  box-shadow: 0 0 5px #9784cb;
+}
+
+.faq__block_open {
+  background: #e9ecff;
+  box-shadow: 0 0 5px #9784cb;
 }
 
 .faq__header {
