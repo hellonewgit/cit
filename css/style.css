@@ -6494,6 +6494,7 @@ body {
     margin-left: -20px;
     margin-bottom: -8px;
     margin-top: -8px;
+    position: static;
   }
 
   .about-expert__name {
