@@ -3390,6 +3390,7 @@ body {
   flex: 1;
   /* Текст занимает доступное пространство */
   max-width: calc(100% - 70px);
+  cursor: pointer;
   /* Учитываем фиксированную ширину кнопки */
 }
 
@@ -3789,6 +3790,7 @@ body {
 
 .faq__question {
   flex: 1;
+  cursor: pointer;
   max-width: calc(100% - 70px);
   color: #191816;
   font-family: "Wix Madefor Text";
